@@ -1,14 +1,14 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/lama-sans" rel="stylesheet">
+
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <style>
     body{
-font-family: 'IBM Plex Sans Arabic', sans-serif !important;
+font-family: 'Lama Sans', sans-serif !important;
+font-style: {{ app()->getLocale() == 'ar' ? 'italic' : 'normal' }};
 }
 </style>
 <section class="py-5">
-    <div class="container" id="bookNaw"  style="padding: 0 5rem;font-family: 'IBM Plex Sans Arabic', sans-serif !important;">
+    <div class="container" id="bookNaw"  style="padding: 0 5rem;font-family: 'Lama Sans', sans-serif !important;font-style: {{ app()->getLocale() == 'ar' ? 'italic' : 'normal' }};">
         <h2 class="mb-5 mt-3 text-center" style="font-size: 45px;color: var(--primary-color);font-weight: bold;">
             {{ __('messagess.our_service_categories') }}
         </h2>
@@ -19,12 +19,15 @@ font-family: 'IBM Plex Sans Arabic', sans-serif !important;
   </div>
   <div style="height: 2px; width: 50px; background: #bc9a69; border-radius: 2px;"></div>
 </div>
+
+
+
         @if(isset($categories) && $categories->count() > 0)
             <div class="row g-4">
                 @foreach($categories as $index => $category)
                     <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="{{ $index * 100 }}">
                         @include('components.frontend.category-card', [
-                            'image' => $category->feature_image,
+                            'image' => $category->av2,
                             'name' => $category->name,
                             'price_range' => $category->services && $category->services->count() > 0 && $category->services->whereNotNull('default_price')->count() > 0 ?
                                 'SR ' . number_format($category->services->whereNotNull('default_price')->min('default_price'), 2) . ' - SR ' . number_format($category->services->whereNotNull('default_price')->max('default_price'), 2) :
@@ -91,65 +94,73 @@ font-family: 'IBM Plex Sans Arabic', sans-serif !important;
 </div>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    const currentLang = '{{ app()->getLocale() }}'; // ar أو en
+</script>
+
 <script>
     AOS.init({ once: true });
 
-    function showCategoryServices(categoryId) {
-        const modal = new bootstrap.Modal(document.getElementById('pricingModal'));
-        const contentDiv = document.getElementById('pricingTable');
+function showCategoryServices(categoryId) {
+    const modal = new bootstrap.Modal(document.getElementById('pricingModal'));
+    const contentDiv = document.getElementById('pricingTable');
 
-        contentDiv.innerHTML = `
+    contentDiv.innerHTML = `
       <div class="text-center">
         <div class="spinner-border text-primary" role="status">
-          <span class="visually-hidden">{{ __('messagess.loading_services') }}</span>
+          <span class="visually-hidden">${currentLang === 'ar' ? 'جارٍ تحميل الخدمات...' : 'Loading services...'}</span>
         </div>
-        <p class="mt-2">{{ __('messagess.loading_services') }}</p>
+        <p class="mt-2">${currentLang === 'ar' ? 'جارٍ تحميل الخدمات...' : 'Loading services...'}</p>
       </div>
     `;
 
-        modal.show();
+    modal.show();
 
-        fetch(`/api/v1/services?category_id=${categoryId}`)
-            .then(response => response.json())
-            .then(data => {
-                if (data.status && data.data && data.data.length > 0) {
-                    const services = data.data;
-                    let tableRows = '';
+    fetch(`/api/v1/services?category_id=${categoryId}`)
+        .then(response => response.json())
+        .then(data => {
+            if (data.status && data.data && data.data.length > 0) {
+                const services = data.data;
+                let tableRows = '';
 
-                    services.forEach(service => {
-                        tableRows += `
-              <tr>
-                <td>${service.name}</td>
-                <td>${service.category ? service.category.name : '{{ __('messagess.general') }}'}</td>
-                <td>${parseFloat(service.default_price).toFixed(2)}</td>
-                <td>${service.duration_min}</td>
-              </tr>
-            `;
-                    });
+                services.forEach(service => {
+                    const serviceName = service.name[currentLang] ?? service.name['en'];
+                    const categoryName = service.category?.name?.[currentLang] ?? service.category?.name?.['en'] ?? '-';
 
-                    contentDiv.innerHTML = `
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>{{ __('messagess.service') }}</th>
-                  <th>{{ __('messagess.category') }}</th>
-                  <th>{{ __('messagess.price') }}</th>
-                  <th>{{ __('messagess.duration') }}</th>
-                </tr>
-              </thead>
-              <tbody>
-                ${tableRows}
-              </tbody>
-            </table>
-          `;
-                } else {
-                    contentDiv.innerHTML = `<div class="text-center text-muted"><p>{{ __('messagess.no_services_available') }}</p></div>`;
-                }
-            })
-            .catch(() => {
-                contentDiv.innerHTML = `<div class="text-center text-danger"><p>{{ __('messagess.error_loading_services') }}</p></div>`;
-            });
-    }
+                    tableRows += `
+                      <tr>
+                        <td>${serviceName}</td>
+                        <td>${categoryName}</td>
+                        <td>${parseFloat(service.default_price).toFixed(2)}</td>
+                        <td>${service.duration_min}</td>
+                      </tr>
+                    `;
+                });
+
+                contentDiv.innerHTML = `
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>${currentLang === 'ar' ? 'الخدمة' : 'Service'}</th>
+                      <th>${currentLang === 'ar' ? 'الفئة' : 'Category'}</th>
+                      <th>${currentLang === 'ar' ? 'السعر' : 'Price'}</th>
+                      <th>${currentLang === 'ar' ? 'المدة' : 'Duration'}</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    ${tableRows}
+                  </tbody>
+                </table>
+              `;
+            } else {
+                contentDiv.innerHTML = `<div class="text-center text-muted"><p>${currentLang === 'ar' ? 'لا توجد خدمات متاحة' : 'No services available'}</p></div>`;
+            }
+        })
+        .catch(() => {
+            contentDiv.innerHTML = `<div class="text-center text-danger"><p>${currentLang === 'ar' ? 'حدث خطأ أثناء تحميل الخدمات' : 'Error loading services'}</p></div>`;
+        });
+}
 
     document.addEventListener('DOMContentLoaded', function() {
         const pricingModal = document.getElementById('pricingModal');

@@ -1,9 +1,9 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/lama-sans" rel="stylesheet">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <section class="py-5">
-    <div class="container" style="padding: 0 5rem;font-family: 'IBM Plex Sans Arabic', sans-serif !important;">
+
+    <div class="container" style="padding: 0 5rem;font-family: 'Lama Sans', sans-serif !important;font-style: {{ app()->getLocale() == 'ar' ? 'italic' : 'normal' }};">
+
         <h2 class="mb-5 text-center" style="color: var(--primary-color); font-size: 2.5rem; font-weight: bold;">
             {{ __('messagess.our_premium_packages') }}
         </h2>
@@ -20,7 +20,7 @@
                 @foreach($packages as $index => $package)
                     <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="{{ $index * 100 }}">
                         @include('components.frontend.package-card', [
-                            'image' => $package->feature_image,
+                            'image' => $package->media->first()->original_url ?? asset('images/frontend/slider1.webp'),
                             'name' => $package->name,
                             'description' => Str::limit($package->description ?? '', 100),
                             'price' => 'SR ' . number_format($package->package_price ?? 0, 2),

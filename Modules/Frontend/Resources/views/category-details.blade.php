@@ -172,7 +172,7 @@
 
                             <div class="service-info">
                                 <i class="fas fa-clock"></i>
-                                <span>{{ $service->duration_min ?? 0 }} minutes</span>
+                                <span>{{ $service->duration_min ?? 0 }} {{ __('messagess.minutes') }}</span>
                             </div>
 
                             @if($service->sub_category)
@@ -182,17 +182,17 @@
                                 </div>
                             @endif
 
-                            @if($service->branches && $service->branches->count() > 0)
-                                <div class="service-info">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span class="small">{{ $service->branches->pluck('name')->implode(', ') }}</span>
-                                </div>
-                            @endif
+                            <!--@if($service->branches && $service->branches->count() > 0)-->
+                            <!--    <div class="service-info">-->
+                            <!--        <i class="fas fa-map-marker-alt"></i>-->
+                            <!--        <span class="small">{{ $service->branches->pluck('name')->implode(', ') }}</span>-->
+                            <!--    </div>-->
+                            <!--@endif-->
 
                             <div class="mt-3">
                                 <a href="{{ route('frontend.service.details', $service->id) }}"
                                    class="btn btn-outline-primary btn-sm">
-                                    <i class="fas fa-info-circle me-1"></i>View Details
+                                    <i class="fas fa-info-circle me-1"></i>{{ __('messagess.view_details') }}
                                 </a>
                             </div>
                         </div>
@@ -201,7 +201,7 @@
             </div>
         @else
             <div class="text-center py-5">
-                <p class="text-muted">No services available in this category.</p>
+                <p class="text-muted">{{ __('messagess.no_services_in_category') }}</p>
             </div>
         @endif
     </main>

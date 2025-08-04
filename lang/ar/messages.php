@@ -1,6 +1,23 @@
 <?php
 
 return [
+    'login_successfully' => 'تم تسجيل الدخول بنجاح',
+    'invalid_credentials' => 'بيانات تسجيل الدخول غير صحيحة',
+    'account_created_successfully' => 'تم إنشاء الحساب بنجاح',
+    'invalid_amount' => 'المبلغ غير صالح',
+    'total' => 'الإجمالي',
+    'invoice_discount' => 'خصم الفاتورة',
+    'loyalty_discount' => 'خصم نقاط الولاء',
+    'bookings' => 'الحجوزات',
+    'booking_id' => 'رقم الحجز',
+    'branch' => 'الفرع',
+    'insufficient_loyalty_balance' => 'الرصيد الحالي لنقاط الولاء غير كافي',
+    'loyalty_points_applied' => 'تم تطبيق نقاط الولاء',
+    'loyalty_points_removed' => 'تم إلغاء نقاط الولاء',
+    'yes' => 'نعم',
+    'no'  => 'لا',
+    'apply_loyalty_points' => 'تطبيق نقاط الولاء',
+    'cart_item_deleted' => 'تم حذف العنصر من السلة',
     'profile_updated' => 'تم تحديث البيانات بنجاح',
     'Welcome to' => 'مرحبًا بك في لوحة تحكم المشرف :name.',
     'yes' => 'نعم',
@@ -287,8 +304,11 @@ return [
     'gift_card_delivery_method_required' => 'طريقة التوصيل مطلوبة',
 
     'gift_cards_list' => 'قائمة بطاقات الهدايا',
+    'invoice_cards_list' => 'قائمة الفواتير ',
     'gift_card_name' => 'اسم البطاقة',
     'gift_card_code' => 'الكود',
+    'name__' => 'الاسم',
+    'du_min' => 'المدة بالدقيقة',
     'gift_card_amount' => 'القيمة',
     'gift_card_status' => 'الحالة',
     'gift_card_active' => 'مفعلة',
@@ -307,8 +327,10 @@ return [
     'updated_at'         => 'تاريخ التحديث',
     'action' => 'الإجراء',
     'no_gift_cards' => 'لا توجد بطاقات هدايا',
+    'no_invice_cards' => 'لا توجد فواتير ',
     'delete'         => 'حذف',
     'confirm_delete' => 'هل أنت متأكد أنك تريد حذف هذه الهدية؟',
+    'confirm_delete_invice' => 'هل أنت متأكد أنك تريد حذف هذه الفاتورة؟',
     'gift_deleted_successfully' => 'تم حذف الهدية بنجاح.',
 
 ];

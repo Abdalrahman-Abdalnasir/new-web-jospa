@@ -15,7 +15,11 @@ class Coupon extends Model
      */
     protected $table = 'promotions_coupon';
 
-    protected $fillable = ['coupon_code','coupon_type','is_expired', 'timezone', 'discount_type', 'discount_percentage', 'discount_amount', 'start_date_time', 'end_date_time', 'promotion_id', 'use_limit'];
+    protected $fillable = ['coupon_code','coupon_type','is_expired', 'timezone', 'services' , 'discount_type', 'discount_percentage', 'discount_amount', 'start_date_time', 'end_date_time', 'promotion_id', 'use_limit'];
+
+    protected $casts = [
+        'services' => 'array',
+    ];
 
     protected static function newFactory(): CouponFactory
     {

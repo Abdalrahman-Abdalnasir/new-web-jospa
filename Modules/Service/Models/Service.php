@@ -21,7 +21,7 @@ class Service extends BaseModel
 
     protected $table = 'services';
 
-    protected $fillable = ['slug', 'name', 'description', 'duration_min', 'default_price', 'category_id', 'sub_category_id', 'status'];
+    protected $fillable = ['slug', 'odoo_id', 'name', 'description', 'duration_min', 'default_price', 'category_id', 'sub_category_id', 'status'];
 
     protected $appends = ['feature_image'];
 

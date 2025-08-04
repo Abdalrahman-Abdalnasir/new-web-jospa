@@ -1,0 +1,1664 @@
+[2025-07-28 09:01:43] local.INFO: === وقت الدوام ===  
+[2025-07-28 09:01:43] local.INFO: Start Time: 09:00  
+[2025-07-28 09:01:43] local.INFO: End Time: 18:00  
+[2025-07-28 09:01:43] local.INFO: Booked Times:  ["10:30"] 
+[2025-07-28 09:01:43] local.INFO: Breaks:   
+[2025-07-28 09:01:43] local.INFO: Is Today? No  
+[2025-07-28 09:01:43] local.INFO: Current Time Now (Asia/Riyadh): 2025-07-28 12:01:00  
+[2025-07-28 09:01:43] local.INFO: Input Date: 2025-07-31  
+[2025-07-28 09:01:43] local.INFO: Checking Time Slot: 09:00  
+[2025-07-28 09:01:43] local.INFO: Full Current: 2025-07-31 09:00:00  
+[2025-07-28 09:01:43] local.INFO: >> Available: 09:00  
+[2025-07-28 09:01:43] local.INFO: Checking Time Slot: 09:30  
+[2025-07-28 09:01:43] local.INFO: Full Current: 2025-07-31 09:30:00  
+[2025-07-28 09:01:43] local.INFO: >> Available: 09:30  
+[2025-07-28 09:01:43] local.INFO: Checking Time Slot: 10:00  
+[2025-07-28 09:01:43] local.INFO: Full Current: 2025-07-31 10:00:00  
+[2025-07-28 09:01:43] local.INFO: >> Available: 10:00  
+[2025-07-28 09:01:43] local.INFO: Checking Time Slot: 10:30  
+[2025-07-28 09:01:43] local.INFO: Full Current: 2025-07-31 10:30:00  
+[2025-07-28 09:01:43] local.INFO: >> Skipped (Booked): 10:30  
+[2025-07-28 09:01:43] local.INFO: Checking Time Slot: 11:00  
+[2025-07-28 09:01:43] local.INFO: Full Current: 2025-07-31 11:00:00  
+[2025-07-28 09:01:43] local.INFO: >> Available: 11:00  
+[2025-07-28 09:01:43] local.INFO: Checking Time Slot: 11:30  
+[2025-07-28 09:01:43] local.INFO: Full Current: 2025-07-31 11:30:00  
+[2025-07-28 09:01:43] local.INFO: >> Available: 11:30  
+[2025-07-28 09:01:43] local.INFO: Checking Time Slot: 12:00  
+[2025-07-28 09:01:43] local.INFO: Full Current: 2025-07-31 12:00:00  
+[2025-07-28 09:01:43] local.INFO: >> Available: 12:00  
+[2025-07-28 09:01:43] local.INFO: Checking Time Slot: 12:30  
+[2025-07-28 09:01:43] local.INFO: Full Current: 2025-07-31 12:30:00  
+[2025-07-28 09:01:43] local.INFO: >> Available: 12:30  
+[2025-07-28 09:01:43] local.INFO: Checking Time Slot: 13:00  
+[2025-07-28 09:01:43] local.INFO: Full Current: 2025-07-31 13:00:00  
+[2025-07-28 09:01:43] local.INFO: >> Available: 13:00  
+[2025-07-28 09:01:43] local.INFO: Checking Time Slot: 13:30  
+[2025-07-28 09:01:43] local.INFO: Full Current: 2025-07-31 13:30:00  
+[2025-07-28 09:01:43] local.INFO: >> Available: 13:30  
+[2025-07-28 09:01:43] local.INFO: Checking Time Slot: 14:00  
+[2025-07-28 09:01:43] local.INFO: Full Current: 2025-07-31 14:00:00  
+[2025-07-28 09:01:43] local.INFO: >> Available: 14:00  
+[2025-07-28 09:01:43] local.INFO: Checking Time Slot: 14:30  
+[2025-07-28 09:01:43] local.INFO: Full Current: 2025-07-31 14:30:00  
+[2025-07-28 09:01:43] local.INFO: >> Available: 14:30  
+[2025-07-28 09:01:43] local.INFO: Checking Time Slot: 15:00  
+[2025-07-28 09:01:43] local.INFO: Full Current: 2025-07-31 15:00:00  
+[2025-07-28 09:01:43] local.INFO: >> Available: 15:00  
+[2025-07-28 09:01:43] local.INFO: Checking Time Slot: 15:30  
+[2025-07-28 09:01:43] local.INFO: Full Current: 2025-07-31 15:30:00  
+[2025-07-28 09:01:43] local.INFO: >> Available: 15:30  
+[2025-07-28 09:01:43] local.INFO: Checking Time Slot: 16:00  
+[2025-07-28 09:01:43] local.INFO: Full Current: 2025-07-31 16:00:00  
+[2025-07-28 09:01:43] local.INFO: >> Available: 16:00  
+[2025-07-28 09:01:43] local.INFO: Checking Time Slot: 16:30  
+[2025-07-28 09:01:43] local.INFO: Full Current: 2025-07-31 16:30:00  
+[2025-07-28 09:01:43] local.INFO: >> Available: 16:30  
+[2025-07-28 09:01:43] local.INFO: Checking Time Slot: 17:00  
+[2025-07-28 09:01:43] local.INFO: Full Current: 2025-07-31 17:00:00  
+[2025-07-28 09:01:43] local.INFO: >> Available: 17:00  
+[2025-07-28 09:01:43] local.INFO: Checking Time Slot: 17:30  
+[2025-07-28 09:01:43] local.INFO: Full Current: 2025-07-31 17:30:00  
+[2025-07-28 09:01:43] local.INFO: >> Available: 17:30  
+[2025-07-28 09:01:43] local.INFO: === Available Times After Filtering ===  
+[2025-07-28 09:01:43] local.INFO: array (
+  0 => '09:00',
+  1 => '09:30',
+  2 => '10:00',
+  3 => '11:00',
+  4 => '11:30',
+  5 => '12:00',
+  6 => '12:30',
+  7 => '13:00',
+  8 => '13:30',
+  9 => '14:00',
+  10 => '14:30',
+  11 => '15:00',
+  12 => '15:30',
+  13 => '16:00',
+  14 => '16:30',
+  15 => '17:00',
+  16 => '17:30',
+)  
+[2025-07-28 12:53:19] local.INFO: === وقت الدوام ===  
+[2025-07-28 12:53:19] local.INFO: Start Time: 09:00  
+[2025-07-28 12:53:19] local.INFO: End Time: 18:00  
+[2025-07-28 12:53:19] local.INFO: Booked Times:  ["10:30"] 
+[2025-07-28 12:53:19] local.INFO: Breaks:   
+[2025-07-28 12:53:19] local.INFO: Is Today? No  
+[2025-07-28 12:53:19] local.INFO: Current Time Now (Asia/Riyadh): 2025-07-28 15:53:00  
+[2025-07-28 12:53:19] local.INFO: Input Date: 2025-07-31  
+[2025-07-28 12:53:19] local.INFO: Checking Time Slot: 09:00  
+[2025-07-28 12:53:19] local.INFO: Full Current: 2025-07-31 09:00:00  
+[2025-07-28 12:53:19] local.INFO: >> Available: 09:00  
+[2025-07-28 12:53:19] local.INFO: Checking Time Slot: 09:30  
+[2025-07-28 12:53:19] local.INFO: Full Current: 2025-07-31 09:30:00  
+[2025-07-28 12:53:19] local.INFO: >> Available: 09:30  
+[2025-07-28 12:53:19] local.INFO: Checking Time Slot: 10:00  
+[2025-07-28 12:53:19] local.INFO: Full Current: 2025-07-31 10:00:00  
+[2025-07-28 12:53:19] local.INFO: >> Available: 10:00  
+[2025-07-28 12:53:19] local.INFO: Checking Time Slot: 10:30  
+[2025-07-28 12:53:19] local.INFO: Full Current: 2025-07-31 10:30:00  
+[2025-07-28 12:53:19] local.INFO: >> Skipped (Booked): 10:30  
+[2025-07-28 12:53:19] local.INFO: Checking Time Slot: 11:00  
+[2025-07-28 12:53:19] local.INFO: Full Current: 2025-07-31 11:00:00  
+[2025-07-28 12:53:19] local.INFO: >> Available: 11:00  
+[2025-07-28 12:53:19] local.INFO: Checking Time Slot: 11:30  
+[2025-07-28 12:53:19] local.INFO: Full Current: 2025-07-31 11:30:00  
+[2025-07-28 12:53:19] local.INFO: >> Available: 11:30  
+[2025-07-28 12:53:19] local.INFO: Checking Time Slot: 12:00  
+[2025-07-28 12:53:19] local.INFO: Full Current: 2025-07-31 12:00:00  
+[2025-07-28 12:53:19] local.INFO: >> Available: 12:00  
+[2025-07-28 12:53:19] local.INFO: Checking Time Slot: 12:30  
+[2025-07-28 12:53:19] local.INFO: Full Current: 2025-07-31 12:30:00  
+[2025-07-28 12:53:19] local.INFO: >> Available: 12:30  
+[2025-07-28 12:53:19] local.INFO: Checking Time Slot: 13:00  
+[2025-07-28 12:53:19] local.INFO: Full Current: 2025-07-31 13:00:00  
+[2025-07-28 12:53:19] local.INFO: >> Available: 13:00  
+[2025-07-28 12:53:19] local.INFO: Checking Time Slot: 13:30  
+[2025-07-28 12:53:19] local.INFO: Full Current: 2025-07-31 13:30:00  
+[2025-07-28 12:53:19] local.INFO: >> Available: 13:30  
+[2025-07-28 12:53:19] local.INFO: Checking Time Slot: 14:00  
+[2025-07-28 12:53:19] local.INFO: Full Current: 2025-07-31 14:00:00  
+[2025-07-28 12:53:19] local.INFO: >> Available: 14:00  
+[2025-07-28 12:53:19] local.INFO: Checking Time Slot: 14:30  
+[2025-07-28 12:53:19] local.INFO: Full Current: 2025-07-31 14:30:00  
+[2025-07-28 12:53:19] local.INFO: >> Available: 14:30  
+[2025-07-28 12:53:19] local.INFO: Checking Time Slot: 15:00  
+[2025-07-28 12:53:19] local.INFO: Full Current: 2025-07-31 15:00:00  
+[2025-07-28 12:53:19] local.INFO: >> Available: 15:00  
+[2025-07-28 12:53:19] local.INFO: Checking Time Slot: 15:30  
+[2025-07-28 12:53:19] local.INFO: Full Current: 2025-07-31 15:30:00  
+[2025-07-28 12:53:19] local.INFO: >> Available: 15:30  
+[2025-07-28 12:53:19] local.INFO: Checking Time Slot: 16:00  
+[2025-07-28 12:53:19] local.INFO: Full Current: 2025-07-31 16:00:00  
+[2025-07-28 12:53:19] local.INFO: >> Available: 16:00  
+[2025-07-28 12:53:19] local.INFO: Checking Time Slot: 16:30  
+[2025-07-28 12:53:19] local.INFO: Full Current: 2025-07-31 16:30:00  
+[2025-07-28 12:53:19] local.INFO: >> Available: 16:30  
+[2025-07-28 12:53:19] local.INFO: Checking Time Slot: 17:00  
+[2025-07-28 12:53:19] local.INFO: Full Current: 2025-07-31 17:00:00  
+[2025-07-28 12:53:19] local.INFO: >> Available: 17:00  
+[2025-07-28 12:53:19] local.INFO: Checking Time Slot: 17:30  
+[2025-07-28 12:53:19] local.INFO: Full Current: 2025-07-31 17:30:00  
+[2025-07-28 12:53:19] local.INFO: >> Available: 17:30  
+[2025-07-28 12:53:19] local.INFO: === Available Times After Filtering ===  
+[2025-07-28 12:53:19] local.INFO: array (
+  0 => '09:00',
+  1 => '09:30',
+  2 => '10:00',
+  3 => '11:00',
+  4 => '11:30',
+  5 => '12:00',
+  6 => '12:30',
+  7 => '13:00',
+  8 => '13:30',
+  9 => '14:00',
+  10 => '14:30',
+  11 => '15:00',
+  12 => '15:30',
+  13 => '16:00',
+  14 => '16:30',
+  15 => '17:00',
+  16 => '17:30',
+)  
+[2025-07-28 12:53:22] local.INFO: Booking data before validated {"_token":"5pXYAsK1MjHhWjZvT2jXsGS5roseSYDQi7xPY0uq","n_name":"عميل مجهول","customer_id":"1","mobile_no":"0500000000","neighborhood":"الربوة","branch":"7","gender":"women","service_group_id":"49","service_id":"1","date":"2025-07-31","time":"10:00","staff_id":"58","status":"Salon","agreed":"1","auto_change_staff":"0","selected_session_branch_id":null,"is_single_branch":false} 
+[2025-07-28 13:24:19] local.INFO: === وقت الدوام ===  
+[2025-07-28 13:24:19] local.INFO: Start Time: 09:00  
+[2025-07-28 13:24:19] local.INFO: End Time: 18:00  
+[2025-07-28 13:24:19] local.INFO: Booked Times:  ["10:30","10:00"] 
+[2025-07-28 13:24:19] local.INFO: Breaks:   
+[2025-07-28 13:24:19] local.INFO: Is Today? No  
+[2025-07-28 13:24:19] local.INFO: Current Time Now (Asia/Riyadh): 2025-07-28 16:24:00  
+[2025-07-28 13:24:19] local.INFO: Input Date: 2025-07-31  
+[2025-07-28 13:24:19] local.INFO: Checking Time Slot: 09:00  
+[2025-07-28 13:24:19] local.INFO: Full Current: 2025-07-31 09:00:00  
+[2025-07-28 13:24:19] local.INFO: >> Available: 09:00  
+[2025-07-28 13:24:19] local.INFO: Checking Time Slot: 09:30  
+[2025-07-28 13:24:19] local.INFO: Full Current: 2025-07-31 09:30:00  
+[2025-07-28 13:24:19] local.INFO: >> Available: 09:30  
+[2025-07-28 13:24:19] local.INFO: Checking Time Slot: 10:00  
+[2025-07-28 13:24:19] local.INFO: Full Current: 2025-07-31 10:00:00  
+[2025-07-28 13:24:19] local.INFO: >> Skipped (Booked): 10:00  
+[2025-07-28 13:24:19] local.INFO: Checking Time Slot: 10:30  
+[2025-07-28 13:24:19] local.INFO: Full Current: 2025-07-31 10:30:00  
+[2025-07-28 13:24:19] local.INFO: >> Skipped (Booked): 10:30  
+[2025-07-28 13:24:19] local.INFO: Checking Time Slot: 11:00  
+[2025-07-28 13:24:19] local.INFO: Full Current: 2025-07-31 11:00:00  
+[2025-07-28 13:24:19] local.INFO: >> Available: 11:00  
+[2025-07-28 13:24:19] local.INFO: Checking Time Slot: 11:30  
+[2025-07-28 13:24:19] local.INFO: Full Current: 2025-07-31 11:30:00  
+[2025-07-28 13:24:19] local.INFO: >> Available: 11:30  
+[2025-07-28 13:24:19] local.INFO: Checking Time Slot: 12:00  
+[2025-07-28 13:24:19] local.INFO: Full Current: 2025-07-31 12:00:00  
+[2025-07-28 13:24:19] local.INFO: >> Available: 12:00  
+[2025-07-28 13:24:19] local.INFO: Checking Time Slot: 12:30  
+[2025-07-28 13:24:19] local.INFO: Full Current: 2025-07-31 12:30:00  
+[2025-07-28 13:24:19] local.INFO: >> Available: 12:30  
+[2025-07-28 13:24:19] local.INFO: Checking Time Slot: 13:00  
+[2025-07-28 13:24:19] local.INFO: Full Current: 2025-07-31 13:00:00  
+[2025-07-28 13:24:19] local.INFO: >> Available: 13:00  
+[2025-07-28 13:24:19] local.INFO: Checking Time Slot: 13:30  
+[2025-07-28 13:24:19] local.INFO: Full Current: 2025-07-31 13:30:00  
+[2025-07-28 13:24:19] local.INFO: >> Available: 13:30  
+[2025-07-28 13:24:19] local.INFO: Checking Time Slot: 14:00  
+[2025-07-28 13:24:19] local.INFO: Full Current: 2025-07-31 14:00:00  
+[2025-07-28 13:24:19] local.INFO: >> Available: 14:00  
+[2025-07-28 13:24:19] local.INFO: Checking Time Slot: 14:30  
+[2025-07-28 13:24:19] local.INFO: Full Current: 2025-07-31 14:30:00  
+[2025-07-28 13:24:19] local.INFO: >> Available: 14:30  
+[2025-07-28 13:24:19] local.INFO: Checking Time Slot: 15:00  
+[2025-07-28 13:24:19] local.INFO: Full Current: 2025-07-31 15:00:00  
+[2025-07-28 13:24:19] local.INFO: >> Available: 15:00  
+[2025-07-28 13:24:19] local.INFO: Checking Time Slot: 15:30  
+[2025-07-28 13:24:19] local.INFO: Full Current: 2025-07-31 15:30:00  
+[2025-07-28 13:24:19] local.INFO: >> Available: 15:30  
+[2025-07-28 13:24:19] local.INFO: Checking Time Slot: 16:00  
+[2025-07-28 13:24:19] local.INFO: Full Current: 2025-07-31 16:00:00  
+[2025-07-28 13:24:19] local.INFO: >> Available: 16:00  
+[2025-07-28 13:24:19] local.INFO: Checking Time Slot: 16:30  
+[2025-07-28 13:24:19] local.INFO: Full Current: 2025-07-31 16:30:00  
+[2025-07-28 13:24:19] local.INFO: >> Available: 16:30  
+[2025-07-28 13:24:19] local.INFO: Checking Time Slot: 17:00  
+[2025-07-28 13:24:19] local.INFO: Full Current: 2025-07-31 17:00:00  
+[2025-07-28 13:24:19] local.INFO: >> Available: 17:00  
+[2025-07-28 13:24:19] local.INFO: Checking Time Slot: 17:30  
+[2025-07-28 13:24:19] local.INFO: Full Current: 2025-07-31 17:30:00  
+[2025-07-28 13:24:19] local.INFO: >> Available: 17:30  
+[2025-07-28 13:24:19] local.INFO: === Available Times After Filtering ===  
+[2025-07-28 13:24:19] local.INFO: array (
+  0 => '09:00',
+  1 => '09:30',
+  2 => '11:00',
+  3 => '11:30',
+  4 => '12:00',
+  5 => '12:30',
+  6 => '13:00',
+  7 => '13:30',
+  8 => '14:00',
+  9 => '14:30',
+  10 => '15:00',
+  11 => '15:30',
+  12 => '16:00',
+  13 => '16:30',
+  14 => '17:00',
+  15 => '17:30',
+)  
+[2025-07-28 13:24:23] local.INFO: Booking data before validated {"_token":"5pXYAsK1MjHhWjZvT2jXsGS5roseSYDQi7xPY0uq","n_name":"عميل مجهول","customer_id":"1","mobile_no":"0500000000","neighborhood":"الربوة","branch":"7","gender":"women","service_group_id":"49","service_id":"2","date":"2025-07-31","time":"17:30","staff_id":"58","status":"Salon","agreed":"1","auto_change_staff":"0","selected_session_branch_id":null,"is_single_branch":false} 
+[2025-07-28 13:25:13] local.INFO: === وقت الدوام ===  
+[2025-07-28 13:25:13] local.INFO: Start Time: 09:00  
+[2025-07-28 13:25:13] local.INFO: End Time: 18:00  
+[2025-07-28 13:25:13] local.INFO: Booked Times:   
+[2025-07-28 13:25:13] local.INFO: Breaks:   
+[2025-07-28 13:25:13] local.INFO: Is Today? No  
+[2025-07-28 13:25:13] local.INFO: Current Time Now (Asia/Riyadh): 2025-07-28 16:25:00  
+[2025-07-28 13:25:13] local.INFO: Input Date: 2025-07-31  
+[2025-07-28 13:25:13] local.INFO: Checking Time Slot: 09:00  
+[2025-07-28 13:25:13] local.INFO: Full Current: 2025-07-31 09:00:00  
+[2025-07-28 13:25:13] local.INFO: >> Available: 09:00  
+[2025-07-28 13:25:13] local.INFO: Checking Time Slot: 09:30  
+[2025-07-28 13:25:13] local.INFO: Full Current: 2025-07-31 09:30:00  
+[2025-07-28 13:25:13] local.INFO: >> Available: 09:30  
+[2025-07-28 13:25:13] local.INFO: Checking Time Slot: 10:00  
+[2025-07-28 13:25:13] local.INFO: Full Current: 2025-07-31 10:00:00  
+[2025-07-28 13:25:13] local.INFO: >> Available: 10:00  
+[2025-07-28 13:25:13] local.INFO: Checking Time Slot: 10:30  
+[2025-07-28 13:25:13] local.INFO: Full Current: 2025-07-31 10:30:00  
+[2025-07-28 13:25:13] local.INFO: >> Available: 10:30  
+[2025-07-28 13:25:13] local.INFO: Checking Time Slot: 11:00  
+[2025-07-28 13:25:13] local.INFO: Full Current: 2025-07-31 11:00:00  
+[2025-07-28 13:25:13] local.INFO: >> Available: 11:00  
+[2025-07-28 13:25:13] local.INFO: Checking Time Slot: 11:30  
+[2025-07-28 13:25:13] local.INFO: Full Current: 2025-07-31 11:30:00  
+[2025-07-28 13:25:13] local.INFO: >> Available: 11:30  
+[2025-07-28 13:25:13] local.INFO: Checking Time Slot: 12:00  
+[2025-07-28 13:25:13] local.INFO: Full Current: 2025-07-31 12:00:00  
+[2025-07-28 13:25:13] local.INFO: >> Available: 12:00  
+[2025-07-28 13:25:13] local.INFO: Checking Time Slot: 12:30  
+[2025-07-28 13:25:13] local.INFO: Full Current: 2025-07-31 12:30:00  
+[2025-07-28 13:25:13] local.INFO: >> Available: 12:30  
+[2025-07-28 13:25:13] local.INFO: Checking Time Slot: 13:00  
+[2025-07-28 13:25:13] local.INFO: Full Current: 2025-07-31 13:00:00  
+[2025-07-28 13:25:13] local.INFO: >> Available: 13:00  
+[2025-07-28 13:25:13] local.INFO: Checking Time Slot: 13:30  
+[2025-07-28 13:25:13] local.INFO: Full Current: 2025-07-31 13:30:00  
+[2025-07-28 13:25:13] local.INFO: >> Available: 13:30  
+[2025-07-28 13:25:13] local.INFO: Checking Time Slot: 14:00  
+[2025-07-28 13:25:13] local.INFO: Full Current: 2025-07-31 14:00:00  
+[2025-07-28 13:25:13] local.INFO: >> Available: 14:00  
+[2025-07-28 13:25:13] local.INFO: Checking Time Slot: 14:30  
+[2025-07-28 13:25:13] local.INFO: Full Current: 2025-07-31 14:30:00  
+[2025-07-28 13:25:13] local.INFO: >> Available: 14:30  
+[2025-07-28 13:25:13] local.INFO: Checking Time Slot: 15:00  
+[2025-07-28 13:25:13] local.INFO: Full Current: 2025-07-31 15:00:00  
+[2025-07-28 13:25:13] local.INFO: >> Available: 15:00  
+[2025-07-28 13:25:13] local.INFO: Checking Time Slot: 15:30  
+[2025-07-28 13:25:13] local.INFO: Full Current: 2025-07-31 15:30:00  
+[2025-07-28 13:25:13] local.INFO: >> Available: 15:30  
+[2025-07-28 13:25:13] local.INFO: Checking Time Slot: 16:00  
+[2025-07-28 13:25:13] local.INFO: Full Current: 2025-07-31 16:00:00  
+[2025-07-28 13:25:13] local.INFO: >> Available: 16:00  
+[2025-07-28 13:25:13] local.INFO: Checking Time Slot: 16:30  
+[2025-07-28 13:25:13] local.INFO: Full Current: 2025-07-31 16:30:00  
+[2025-07-28 13:25:13] local.INFO: >> Available: 16:30  
+[2025-07-28 13:25:13] local.INFO: Checking Time Slot: 17:00  
+[2025-07-28 13:25:13] local.INFO: Full Current: 2025-07-31 17:00:00  
+[2025-07-28 13:25:13] local.INFO: >> Available: 17:00  
+[2025-07-28 13:25:13] local.INFO: Checking Time Slot: 17:30  
+[2025-07-28 13:25:13] local.INFO: Full Current: 2025-07-31 17:30:00  
+[2025-07-28 13:25:13] local.INFO: >> Available: 17:30  
+[2025-07-28 13:25:13] local.INFO: === Available Times After Filtering ===  
+[2025-07-28 13:25:13] local.INFO: array (
+  0 => '09:00',
+  1 => '09:30',
+  2 => '10:00',
+  3 => '10:30',
+  4 => '11:00',
+  5 => '11:30',
+  6 => '12:00',
+  7 => '12:30',
+  8 => '13:00',
+  9 => '13:30',
+  10 => '14:00',
+  11 => '14:30',
+  12 => '15:00',
+  13 => '15:30',
+  14 => '16:00',
+  15 => '16:30',
+  16 => '17:00',
+  17 => '17:30',
+)  
+[2025-07-28 13:25:16] local.INFO: Booking data before validated {"_token":"5pXYAsK1MjHhWjZvT2jXsGS5roseSYDQi7xPY0uq","n_name":"عميل مجهول","customer_id":"1","mobile_no":"0500000000","neighborhood":"الربوة","branch":"7","gender":"women","service_group_id":"49","service_id":"2","date":"2025-07-31","time":"13:30","staff_id":"49","status":"Salon","agreed":"1","auto_change_staff":"0","selected_session_branch_id":null,"is_single_branch":false} 
+[2025-07-28 13:31:36] local.INFO: === وقت الدوام ===  
+[2025-07-28 13:31:36] local.INFO: Start Time: 09:00  
+[2025-07-28 13:31:36] local.INFO: End Time: 18:00  
+[2025-07-28 13:31:36] local.INFO: Booked Times:   
+[2025-07-28 13:31:36] local.INFO: Breaks:   
+[2025-07-28 13:31:36] local.INFO: Is Today? No  
+[2025-07-28 13:31:36] local.INFO: Current Time Now (Asia/Riyadh): 2025-07-28 16:31:00  
+[2025-07-28 13:31:36] local.INFO: Input Date: 2025-07-31  
+[2025-07-28 13:31:36] local.INFO: Checking Time Slot: 09:00  
+[2025-07-28 13:31:36] local.INFO: Full Current: 2025-07-31 09:00:00  
+[2025-07-28 13:31:36] local.INFO: >> Available: 09:00  
+[2025-07-28 13:31:36] local.INFO: Checking Time Slot: 09:30  
+[2025-07-28 13:31:36] local.INFO: Full Current: 2025-07-31 09:30:00  
+[2025-07-28 13:31:36] local.INFO: >> Available: 09:30  
+[2025-07-28 13:31:36] local.INFO: Checking Time Slot: 10:00  
+[2025-07-28 13:31:36] local.INFO: Full Current: 2025-07-31 10:00:00  
+[2025-07-28 13:31:36] local.INFO: >> Available: 10:00  
+[2025-07-28 13:31:36] local.INFO: Checking Time Slot: 10:30  
+[2025-07-28 13:31:36] local.INFO: Full Current: 2025-07-31 10:30:00  
+[2025-07-28 13:31:36] local.INFO: >> Available: 10:30  
+[2025-07-28 13:31:36] local.INFO: Checking Time Slot: 11:00  
+[2025-07-28 13:31:36] local.INFO: Full Current: 2025-07-31 11:00:00  
+[2025-07-28 13:31:36] local.INFO: >> Available: 11:00  
+[2025-07-28 13:31:36] local.INFO: Checking Time Slot: 11:30  
+[2025-07-28 13:31:36] local.INFO: Full Current: 2025-07-31 11:30:00  
+[2025-07-28 13:31:36] local.INFO: >> Available: 11:30  
+[2025-07-28 13:31:36] local.INFO: Checking Time Slot: 12:00  
+[2025-07-28 13:31:36] local.INFO: Full Current: 2025-07-31 12:00:00  
+[2025-07-28 13:31:36] local.INFO: >> Available: 12:00  
+[2025-07-28 13:31:36] local.INFO: Checking Time Slot: 12:30  
+[2025-07-28 13:31:36] local.INFO: Full Current: 2025-07-31 12:30:00  
+[2025-07-28 13:31:36] local.INFO: >> Available: 12:30  
+[2025-07-28 13:31:36] local.INFO: Checking Time Slot: 13:00  
+[2025-07-28 13:31:36] local.INFO: Full Current: 2025-07-31 13:00:00  
+[2025-07-28 13:31:36] local.INFO: >> Available: 13:00  
+[2025-07-28 13:31:36] local.INFO: Checking Time Slot: 13:30  
+[2025-07-28 13:31:36] local.INFO: Full Current: 2025-07-31 13:30:00  
+[2025-07-28 13:31:36] local.INFO: >> Available: 13:30  
+[2025-07-28 13:31:36] local.INFO: Checking Time Slot: 14:00  
+[2025-07-28 13:31:36] local.INFO: Full Current: 2025-07-31 14:00:00  
+[2025-07-28 13:31:36] local.INFO: >> Available: 14:00  
+[2025-07-28 13:31:36] local.INFO: Checking Time Slot: 14:30  
+[2025-07-28 13:31:36] local.INFO: Full Current: 2025-07-31 14:30:00  
+[2025-07-28 13:31:36] local.INFO: >> Available: 14:30  
+[2025-07-28 13:31:36] local.INFO: Checking Time Slot: 15:00  
+[2025-07-28 13:31:36] local.INFO: Full Current: 2025-07-31 15:00:00  
+[2025-07-28 13:31:36] local.INFO: >> Available: 15:00  
+[2025-07-28 13:31:36] local.INFO: Checking Time Slot: 15:30  
+[2025-07-28 13:31:36] local.INFO: Full Current: 2025-07-31 15:30:00  
+[2025-07-28 13:31:36] local.INFO: >> Available: 15:30  
+[2025-07-28 13:31:36] local.INFO: Checking Time Slot: 16:00  
+[2025-07-28 13:31:36] local.INFO: Full Current: 2025-07-31 16:00:00  
+[2025-07-28 13:31:36] local.INFO: >> Available: 16:00  
+[2025-07-28 13:31:36] local.INFO: Checking Time Slot: 16:30  
+[2025-07-28 13:31:36] local.INFO: Full Current: 2025-07-31 16:30:00  
+[2025-07-28 13:31:36] local.INFO: >> Available: 16:30  
+[2025-07-28 13:31:36] local.INFO: Checking Time Slot: 17:00  
+[2025-07-28 13:31:36] local.INFO: Full Current: 2025-07-31 17:00:00  
+[2025-07-28 13:31:36] local.INFO: >> Available: 17:00  
+[2025-07-28 13:31:36] local.INFO: Checking Time Slot: 17:30  
+[2025-07-28 13:31:36] local.INFO: Full Current: 2025-07-31 17:30:00  
+[2025-07-28 13:31:36] local.INFO: >> Available: 17:30  
+[2025-07-28 13:31:36] local.INFO: === Available Times After Filtering ===  
+[2025-07-28 13:31:36] local.INFO: array (
+  0 => '09:00',
+  1 => '09:30',
+  2 => '10:00',
+  3 => '10:30',
+  4 => '11:00',
+  5 => '11:30',
+  6 => '12:00',
+  7 => '12:30',
+  8 => '13:00',
+  9 => '13:30',
+  10 => '14:00',
+  11 => '14:30',
+  12 => '15:00',
+  13 => '15:30',
+  14 => '16:00',
+  15 => '16:30',
+  16 => '17:00',
+  17 => '17:30',
+)  
+[2025-07-28 13:31:40] local.INFO: Booking data before validated {"_token":"5pXYAsK1MjHhWjZvT2jXsGS5roseSYDQi7xPY0uq","n_name":"عميل مجهول","customer_id":"1","mobile_no":"0500000000","neighborhood":"الربوة","branch":"7","gender":"women","service_group_id":"49","service_id":"1","date":"2025-07-31","time":"11:30","staff_id":"53","status":"Salon","agreed":"1","auto_change_staff":"0","selected_session_branch_id":null,"is_single_branch":false} 
+[2025-07-28 13:57:14] local.INFO: === وقت الدوام ===  
+[2025-07-28 13:57:14] local.INFO: Start Time: 09:00  
+[2025-07-28 13:57:14] local.INFO: End Time: 18:00  
+[2025-07-28 13:57:14] local.INFO: Booked Times:   
+[2025-07-28 13:57:14] local.INFO: Breaks:   
+[2025-07-28 13:57:14] local.INFO: Is Today? No  
+[2025-07-28 13:57:14] local.INFO: Current Time Now (Asia/Riyadh): 2025-07-28 16:57:00  
+[2025-07-28 13:57:14] local.INFO: Input Date: 2025-07-31  
+[2025-07-28 13:57:14] local.INFO: Checking Time Slot: 09:00  
+[2025-07-28 13:57:14] local.INFO: Full Current: 2025-07-31 09:00:00  
+[2025-07-28 13:57:14] local.INFO: >> Available: 09:00  
+[2025-07-28 13:57:14] local.INFO: Checking Time Slot: 09:30  
+[2025-07-28 13:57:14] local.INFO: Full Current: 2025-07-31 09:30:00  
+[2025-07-28 13:57:14] local.INFO: >> Available: 09:30  
+[2025-07-28 13:57:14] local.INFO: Checking Time Slot: 10:00  
+[2025-07-28 13:57:14] local.INFO: Full Current: 2025-07-31 10:00:00  
+[2025-07-28 13:57:14] local.INFO: >> Available: 10:00  
+[2025-07-28 13:57:14] local.INFO: Checking Time Slot: 10:30  
+[2025-07-28 13:57:14] local.INFO: Full Current: 2025-07-31 10:30:00  
+[2025-07-28 13:57:14] local.INFO: >> Available: 10:30  
+[2025-07-28 13:57:14] local.INFO: Checking Time Slot: 11:00  
+[2025-07-28 13:57:14] local.INFO: Full Current: 2025-07-31 11:00:00  
+[2025-07-28 13:57:14] local.INFO: >> Available: 11:00  
+[2025-07-28 13:57:14] local.INFO: Checking Time Slot: 11:30  
+[2025-07-28 13:57:14] local.INFO: Full Current: 2025-07-31 11:30:00  
+[2025-07-28 13:57:14] local.INFO: >> Available: 11:30  
+[2025-07-28 13:57:14] local.INFO: Checking Time Slot: 12:00  
+[2025-07-28 13:57:14] local.INFO: Full Current: 2025-07-31 12:00:00  
+[2025-07-28 13:57:14] local.INFO: >> Available: 12:00  
+[2025-07-28 13:57:14] local.INFO: Checking Time Slot: 12:30  
+[2025-07-28 13:57:14] local.INFO: Full Current: 2025-07-31 12:30:00  
+[2025-07-28 13:57:14] local.INFO: >> Available: 12:30  
+[2025-07-28 13:57:14] local.INFO: Checking Time Slot: 13:00  
+[2025-07-28 13:57:14] local.INFO: Full Current: 2025-07-31 13:00:00  
+[2025-07-28 13:57:14] local.INFO: >> Available: 13:00  
+[2025-07-28 13:57:14] local.INFO: Checking Time Slot: 13:30  
+[2025-07-28 13:57:14] local.INFO: Full Current: 2025-07-31 13:30:00  
+[2025-07-28 13:57:14] local.INFO: >> Available: 13:30  
+[2025-07-28 13:57:14] local.INFO: Checking Time Slot: 14:00  
+[2025-07-28 13:57:14] local.INFO: Full Current: 2025-07-31 14:00:00  
+[2025-07-28 13:57:14] local.INFO: >> Available: 14:00  
+[2025-07-28 13:57:14] local.INFO: Checking Time Slot: 14:30  
+[2025-07-28 13:57:14] local.INFO: Full Current: 2025-07-31 14:30:00  
+[2025-07-28 13:57:14] local.INFO: >> Available: 14:30  
+[2025-07-28 13:57:14] local.INFO: Checking Time Slot: 15:00  
+[2025-07-28 13:57:14] local.INFO: Full Current: 2025-07-31 15:00:00  
+[2025-07-28 13:57:14] local.INFO: >> Available: 15:00  
+[2025-07-28 13:57:14] local.INFO: Checking Time Slot: 15:30  
+[2025-07-28 13:57:14] local.INFO: Full Current: 2025-07-31 15:30:00  
+[2025-07-28 13:57:14] local.INFO: >> Available: 15:30  
+[2025-07-28 13:57:14] local.INFO: Checking Time Slot: 16:00  
+[2025-07-28 13:57:14] local.INFO: Full Current: 2025-07-31 16:00:00  
+[2025-07-28 13:57:14] local.INFO: >> Available: 16:00  
+[2025-07-28 13:57:14] local.INFO: Checking Time Slot: 16:30  
+[2025-07-28 13:57:14] local.INFO: Full Current: 2025-07-31 16:30:00  
+[2025-07-28 13:57:14] local.INFO: >> Available: 16:30  
+[2025-07-28 13:57:14] local.INFO: Checking Time Slot: 17:00  
+[2025-07-28 13:57:14] local.INFO: Full Current: 2025-07-31 17:00:00  
+[2025-07-28 13:57:14] local.INFO: >> Available: 17:00  
+[2025-07-28 13:57:14] local.INFO: Checking Time Slot: 17:30  
+[2025-07-28 13:57:14] local.INFO: Full Current: 2025-07-31 17:30:00  
+[2025-07-28 13:57:14] local.INFO: >> Available: 17:30  
+[2025-07-28 13:57:15] local.INFO: === Available Times After Filtering ===  
+[2025-07-28 13:57:15] local.INFO: array (
+  0 => '09:00',
+  1 => '09:30',
+  2 => '10:00',
+  3 => '10:30',
+  4 => '11:00',
+  5 => '11:30',
+  6 => '12:00',
+  7 => '12:30',
+  8 => '13:00',
+  9 => '13:30',
+  10 => '14:00',
+  11 => '14:30',
+  12 => '15:00',
+  13 => '15:30',
+  14 => '16:00',
+  15 => '16:30',
+  16 => '17:00',
+  17 => '17:30',
+)  
+[2025-07-28 13:57:18] local.INFO: Booking data before validated {"_token":"5pXYAsK1MjHhWjZvT2jXsGS5roseSYDQi7xPY0uq","n_name":"عميل مجهول","customer_id":"1","mobile_no":"0500000000","neighborhood":"الربوة","branch":"7","gender":"women","service_group_id":"49","service_id":"1","date":"2025-07-31","time":"15:00","staff_id":"51","status":"Salon","agreed":"1","auto_change_staff":"0","selected_session_branch_id":null,"is_single_branch":false} 
+[2025-07-28 13:58:17] local.INFO: === وقت الدوام ===  
+[2025-07-28 13:58:17] local.INFO: Start Time: 09:00  
+[2025-07-28 13:58:17] local.INFO: End Time: 18:00  
+[2025-07-28 13:58:17] local.INFO: Booked Times:  ["13:00"] 
+[2025-07-28 13:58:17] local.INFO: Breaks:   
+[2025-07-28 13:58:17] local.INFO: Is Today? No  
+[2025-07-28 13:58:17] local.INFO: Current Time Now (Asia/Riyadh): 2025-07-28 16:58:00  
+[2025-07-28 13:58:17] local.INFO: Input Date: 2025-07-30  
+[2025-07-28 13:58:17] local.INFO: Checking Time Slot: 09:00  
+[2025-07-28 13:58:17] local.INFO: Full Current: 2025-07-30 09:00:00  
+[2025-07-28 13:58:17] local.INFO: >> Available: 09:00  
+[2025-07-28 13:58:17] local.INFO: Checking Time Slot: 09:30  
+[2025-07-28 13:58:17] local.INFO: Full Current: 2025-07-30 09:30:00  
+[2025-07-28 13:58:17] local.INFO: >> Available: 09:30  
+[2025-07-28 13:58:17] local.INFO: Checking Time Slot: 10:00  
+[2025-07-28 13:58:17] local.INFO: Full Current: 2025-07-30 10:00:00  
+[2025-07-28 13:58:17] local.INFO: >> Available: 10:00  
+[2025-07-28 13:58:17] local.INFO: Checking Time Slot: 10:30  
+[2025-07-28 13:58:17] local.INFO: Full Current: 2025-07-30 10:30:00  
+[2025-07-28 13:58:17] local.INFO: >> Available: 10:30  
+[2025-07-28 13:58:17] local.INFO: Checking Time Slot: 11:00  
+[2025-07-28 13:58:17] local.INFO: Full Current: 2025-07-30 11:00:00  
+[2025-07-28 13:58:17] local.INFO: >> Available: 11:00  
+[2025-07-28 13:58:17] local.INFO: Checking Time Slot: 11:30  
+[2025-07-28 13:58:17] local.INFO: Full Current: 2025-07-30 11:30:00  
+[2025-07-28 13:58:17] local.INFO: >> Available: 11:30  
+[2025-07-28 13:58:17] local.INFO: Checking Time Slot: 12:00  
+[2025-07-28 13:58:17] local.INFO: Full Current: 2025-07-30 12:00:00  
+[2025-07-28 13:58:17] local.INFO: >> Available: 12:00  
+[2025-07-28 13:58:17] local.INFO: Checking Time Slot: 12:30  
+[2025-07-28 13:58:17] local.INFO: Full Current: 2025-07-30 12:30:00  
+[2025-07-28 13:58:17] local.INFO: >> Available: 12:30  
+[2025-07-28 13:58:17] local.INFO: Checking Time Slot: 13:00  
+[2025-07-28 13:58:17] local.INFO: Full Current: 2025-07-30 13:00:00  
+[2025-07-28 13:58:17] local.INFO: >> Skipped (Booked): 13:00  
+[2025-07-28 13:58:17] local.INFO: Checking Time Slot: 13:30  
+[2025-07-28 13:58:17] local.INFO: Full Current: 2025-07-30 13:30:00  
+[2025-07-28 13:58:17] local.INFO: >> Available: 13:30  
+[2025-07-28 13:58:17] local.INFO: Checking Time Slot: 14:00  
+[2025-07-28 13:58:17] local.INFO: Full Current: 2025-07-30 14:00:00  
+[2025-07-28 13:58:17] local.INFO: >> Available: 14:00  
+[2025-07-28 13:58:17] local.INFO: Checking Time Slot: 14:30  
+[2025-07-28 13:58:17] local.INFO: Full Current: 2025-07-30 14:30:00  
+[2025-07-28 13:58:17] local.INFO: >> Available: 14:30  
+[2025-07-28 13:58:17] local.INFO: Checking Time Slot: 15:00  
+[2025-07-28 13:58:17] local.INFO: Full Current: 2025-07-30 15:00:00  
+[2025-07-28 13:58:17] local.INFO: >> Available: 15:00  
+[2025-07-28 13:58:17] local.INFO: Checking Time Slot: 15:30  
+[2025-07-28 13:58:17] local.INFO: Full Current: 2025-07-30 15:30:00  
+[2025-07-28 13:58:17] local.INFO: >> Available: 15:30  
+[2025-07-28 13:58:17] local.INFO: Checking Time Slot: 16:00  
+[2025-07-28 13:58:17] local.INFO: Full Current: 2025-07-30 16:00:00  
+[2025-07-28 13:58:17] local.INFO: >> Available: 16:00  
+[2025-07-28 13:58:17] local.INFO: Checking Time Slot: 16:30  
+[2025-07-28 13:58:17] local.INFO: Full Current: 2025-07-30 16:30:00  
+[2025-07-28 13:58:17] local.INFO: >> Available: 16:30  
+[2025-07-28 13:58:17] local.INFO: Checking Time Slot: 17:00  
+[2025-07-28 13:58:17] local.INFO: Full Current: 2025-07-30 17:00:00  
+[2025-07-28 13:58:17] local.INFO: >> Available: 17:00  
+[2025-07-28 13:58:17] local.INFO: Checking Time Slot: 17:30  
+[2025-07-28 13:58:17] local.INFO: Full Current: 2025-07-30 17:30:00  
+[2025-07-28 13:58:17] local.INFO: >> Available: 17:30  
+[2025-07-28 13:58:17] local.INFO: === Available Times After Filtering ===  
+[2025-07-28 13:58:17] local.INFO: array (
+  0 => '09:00',
+  1 => '09:30',
+  2 => '10:00',
+  3 => '10:30',
+  4 => '11:00',
+  5 => '11:30',
+  6 => '12:00',
+  7 => '12:30',
+  8 => '13:30',
+  9 => '14:00',
+  10 => '14:30',
+  11 => '15:00',
+  12 => '15:30',
+  13 => '16:00',
+  14 => '16:30',
+  15 => '17:00',
+  16 => '17:30',
+)  
+[2025-07-28 13:58:21] local.INFO: Booking data before validated {"_token":"5pXYAsK1MjHhWjZvT2jXsGS5roseSYDQi7xPY0uq","n_name":"عميل مجهول","customer_id":"1","mobile_no":"0500000000","neighborhood":"الربوة","branch":"7","gender":"women","service_group_id":"49","service_id":"1","date":"2025-07-30","time":"17:30","staff_id":"53","status":"Salon","agreed":"1","auto_change_staff":"0","selected_session_branch_id":null,"is_single_branch":false} 
+[2025-07-28 14:21:23] local.INFO: === وقت الدوام ===  
+[2025-07-28 14:21:23] local.INFO: Start Time: 09:00  
+[2025-07-28 14:21:23] local.INFO: End Time: 18:00  
+[2025-07-28 14:21:23] local.INFO: Booked Times:   
+[2025-07-28 14:21:23] local.INFO: Breaks:   
+[2025-07-28 14:21:23] local.INFO: Is Today? No  
+[2025-07-28 14:21:23] local.INFO: Current Time Now (Asia/Riyadh): 2025-07-28 17:21:00  
+[2025-07-28 14:21:23] local.INFO: Input Date: 2025-07-30  
+[2025-07-28 14:21:23] local.INFO: Checking Time Slot: 09:00  
+[2025-07-28 14:21:23] local.INFO: Full Current: 2025-07-30 09:00:00  
+[2025-07-28 14:21:23] local.INFO: >> Available: 09:00  
+[2025-07-28 14:21:23] local.INFO: Checking Time Slot: 09:30  
+[2025-07-28 14:21:23] local.INFO: Full Current: 2025-07-30 09:30:00  
+[2025-07-28 14:21:23] local.INFO: >> Available: 09:30  
+[2025-07-28 14:21:23] local.INFO: Checking Time Slot: 10:00  
+[2025-07-28 14:21:23] local.INFO: Full Current: 2025-07-30 10:00:00  
+[2025-07-28 14:21:23] local.INFO: >> Available: 10:00  
+[2025-07-28 14:21:23] local.INFO: Checking Time Slot: 10:30  
+[2025-07-28 14:21:23] local.INFO: Full Current: 2025-07-30 10:30:00  
+[2025-07-28 14:21:23] local.INFO: >> Available: 10:30  
+[2025-07-28 14:21:23] local.INFO: Checking Time Slot: 11:00  
+[2025-07-28 14:21:23] local.INFO: Full Current: 2025-07-30 11:00:00  
+[2025-07-28 14:21:23] local.INFO: >> Available: 11:00  
+[2025-07-28 14:21:23] local.INFO: Checking Time Slot: 11:30  
+[2025-07-28 14:21:23] local.INFO: Full Current: 2025-07-30 11:30:00  
+[2025-07-28 14:21:23] local.INFO: >> Available: 11:30  
+[2025-07-28 14:21:23] local.INFO: Checking Time Slot: 12:00  
+[2025-07-28 14:21:23] local.INFO: Full Current: 2025-07-30 12:00:00  
+[2025-07-28 14:21:23] local.INFO: >> Available: 12:00  
+[2025-07-28 14:21:23] local.INFO: Checking Time Slot: 12:30  
+[2025-07-28 14:21:23] local.INFO: Full Current: 2025-07-30 12:30:00  
+[2025-07-28 14:21:23] local.INFO: >> Available: 12:30  
+[2025-07-28 14:21:23] local.INFO: Checking Time Slot: 13:00  
+[2025-07-28 14:21:23] local.INFO: Full Current: 2025-07-30 13:00:00  
+[2025-07-28 14:21:23] local.INFO: >> Available: 13:00  
+[2025-07-28 14:21:23] local.INFO: Checking Time Slot: 13:30  
+[2025-07-28 14:21:23] local.INFO: Full Current: 2025-07-30 13:30:00  
+[2025-07-28 14:21:23] local.INFO: >> Available: 13:30  
+[2025-07-28 14:21:23] local.INFO: Checking Time Slot: 14:00  
+[2025-07-28 14:21:23] local.INFO: Full Current: 2025-07-30 14:00:00  
+[2025-07-28 14:21:23] local.INFO: >> Available: 14:00  
+[2025-07-28 14:21:23] local.INFO: Checking Time Slot: 14:30  
+[2025-07-28 14:21:23] local.INFO: Full Current: 2025-07-30 14:30:00  
+[2025-07-28 14:21:23] local.INFO: >> Available: 14:30  
+[2025-07-28 14:21:23] local.INFO: Checking Time Slot: 15:00  
+[2025-07-28 14:21:23] local.INFO: Full Current: 2025-07-30 15:00:00  
+[2025-07-28 14:21:23] local.INFO: >> Available: 15:00  
+[2025-07-28 14:21:23] local.INFO: Checking Time Slot: 15:30  
+[2025-07-28 14:21:23] local.INFO: Full Current: 2025-07-30 15:30:00  
+[2025-07-28 14:21:23] local.INFO: >> Available: 15:30  
+[2025-07-28 14:21:23] local.INFO: Checking Time Slot: 16:00  
+[2025-07-28 14:21:23] local.INFO: Full Current: 2025-07-30 16:00:00  
+[2025-07-28 14:21:23] local.INFO: >> Available: 16:00  
+[2025-07-28 14:21:23] local.INFO: Checking Time Slot: 16:30  
+[2025-07-28 14:21:23] local.INFO: Full Current: 2025-07-30 16:30:00  
+[2025-07-28 14:21:23] local.INFO: >> Available: 16:30  
+[2025-07-28 14:21:23] local.INFO: Checking Time Slot: 17:00  
+[2025-07-28 14:21:23] local.INFO: Full Current: 2025-07-30 17:00:00  
+[2025-07-28 14:21:23] local.INFO: >> Available: 17:00  
+[2025-07-28 14:21:23] local.INFO: Checking Time Slot: 17:30  
+[2025-07-28 14:21:23] local.INFO: Full Current: 2025-07-30 17:30:00  
+[2025-07-28 14:21:23] local.INFO: >> Available: 17:30  
+[2025-07-28 14:21:23] local.INFO: === Available Times After Filtering ===  
+[2025-07-28 14:21:23] local.INFO: array (
+  0 => '09:00',
+  1 => '09:30',
+  2 => '10:00',
+  3 => '10:30',
+  4 => '11:00',
+  5 => '11:30',
+  6 => '12:00',
+  7 => '12:30',
+  8 => '13:00',
+  9 => '13:30',
+  10 => '14:00',
+  11 => '14:30',
+  12 => '15:00',
+  13 => '15:30',
+  14 => '16:00',
+  15 => '16:30',
+  16 => '17:00',
+  17 => '17:30',
+)  
+[2025-07-28 14:21:41] local.INFO: === وقت الدوام ===  
+[2025-07-28 14:21:41] local.INFO: Start Time: 09:00  
+[2025-07-28 14:21:41] local.INFO: End Time: 18:00  
+[2025-07-28 14:21:41] local.INFO: Booked Times:   
+[2025-07-28 14:21:41] local.INFO: Breaks:   
+[2025-07-28 14:21:41] local.INFO: Is Today? No  
+[2025-07-28 14:21:41] local.INFO: Current Time Now (Asia/Riyadh): 2025-07-28 17:21:00  
+[2025-07-28 14:21:41] local.INFO: Input Date: 2025-07-30  
+[2025-07-28 14:21:41] local.INFO: Checking Time Slot: 09:00  
+[2025-07-28 14:21:41] local.INFO: Full Current: 2025-07-30 09:00:00  
+[2025-07-28 14:21:41] local.INFO: >> Available: 09:00  
+[2025-07-28 14:21:41] local.INFO: Checking Time Slot: 09:30  
+[2025-07-28 14:21:41] local.INFO: Full Current: 2025-07-30 09:30:00  
+[2025-07-28 14:21:41] local.INFO: >> Available: 09:30  
+[2025-07-28 14:21:41] local.INFO: Checking Time Slot: 10:00  
+[2025-07-28 14:21:41] local.INFO: Full Current: 2025-07-30 10:00:00  
+[2025-07-28 14:21:41] local.INFO: >> Available: 10:00  
+[2025-07-28 14:21:41] local.INFO: Checking Time Slot: 10:30  
+[2025-07-28 14:21:41] local.INFO: Full Current: 2025-07-30 10:30:00  
+[2025-07-28 14:21:41] local.INFO: >> Available: 10:30  
+[2025-07-28 14:21:41] local.INFO: Checking Time Slot: 11:00  
+[2025-07-28 14:21:41] local.INFO: Full Current: 2025-07-30 11:00:00  
+[2025-07-28 14:21:41] local.INFO: >> Available: 11:00  
+[2025-07-28 14:21:41] local.INFO: Checking Time Slot: 11:30  
+[2025-07-28 14:21:41] local.INFO: Full Current: 2025-07-30 11:30:00  
+[2025-07-28 14:21:41] local.INFO: >> Available: 11:30  
+[2025-07-28 14:21:41] local.INFO: Checking Time Slot: 12:00  
+[2025-07-28 14:21:41] local.INFO: Full Current: 2025-07-30 12:00:00  
+[2025-07-28 14:21:41] local.INFO: >> Available: 12:00  
+[2025-07-28 14:21:41] local.INFO: Checking Time Slot: 12:30  
+[2025-07-28 14:21:41] local.INFO: Full Current: 2025-07-30 12:30:00  
+[2025-07-28 14:21:41] local.INFO: >> Available: 12:30  
+[2025-07-28 14:21:41] local.INFO: Checking Time Slot: 13:00  
+[2025-07-28 14:21:41] local.INFO: Full Current: 2025-07-30 13:00:00  
+[2025-07-28 14:21:41] local.INFO: >> Available: 13:00  
+[2025-07-28 14:21:41] local.INFO: Checking Time Slot: 13:30  
+[2025-07-28 14:21:41] local.INFO: Full Current: 2025-07-30 13:30:00  
+[2025-07-28 14:21:41] local.INFO: >> Available: 13:30  
+[2025-07-28 14:21:41] local.INFO: Checking Time Slot: 14:00  
+[2025-07-28 14:21:41] local.INFO: Full Current: 2025-07-30 14:00:00  
+[2025-07-28 14:21:41] local.INFO: >> Available: 14:00  
+[2025-07-28 14:21:41] local.INFO: Checking Time Slot: 14:30  
+[2025-07-28 14:21:41] local.INFO: Full Current: 2025-07-30 14:30:00  
+[2025-07-28 14:21:41] local.INFO: >> Available: 14:30  
+[2025-07-28 14:21:41] local.INFO: Checking Time Slot: 15:00  
+[2025-07-28 14:21:41] local.INFO: Full Current: 2025-07-30 15:00:00  
+[2025-07-28 14:21:41] local.INFO: >> Available: 15:00  
+[2025-07-28 14:21:41] local.INFO: Checking Time Slot: 15:30  
+[2025-07-28 14:21:41] local.INFO: Full Current: 2025-07-30 15:30:00  
+[2025-07-28 14:21:41] local.INFO: >> Available: 15:30  
+[2025-07-28 14:21:41] local.INFO: Checking Time Slot: 16:00  
+[2025-07-28 14:21:41] local.INFO: Full Current: 2025-07-30 16:00:00  
+[2025-07-28 14:21:41] local.INFO: >> Available: 16:00  
+[2025-07-28 14:21:41] local.INFO: Checking Time Slot: 16:30  
+[2025-07-28 14:21:41] local.INFO: Full Current: 2025-07-30 16:30:00  
+[2025-07-28 14:21:41] local.INFO: >> Available: 16:30  
+[2025-07-28 14:21:41] local.INFO: Checking Time Slot: 17:00  
+[2025-07-28 14:21:41] local.INFO: Full Current: 2025-07-30 17:00:00  
+[2025-07-28 14:21:41] local.INFO: >> Available: 17:00  
+[2025-07-28 14:21:41] local.INFO: Checking Time Slot: 17:30  
+[2025-07-28 14:21:41] local.INFO: Full Current: 2025-07-30 17:30:00  
+[2025-07-28 14:21:41] local.INFO: >> Available: 17:30  
+[2025-07-28 14:21:41] local.INFO: === Available Times After Filtering ===  
+[2025-07-28 14:21:41] local.INFO: array (
+  0 => '09:00',
+  1 => '09:30',
+  2 => '10:00',
+  3 => '10:30',
+  4 => '11:00',
+  5 => '11:30',
+  6 => '12:00',
+  7 => '12:30',
+  8 => '13:00',
+  9 => '13:30',
+  10 => '14:00',
+  11 => '14:30',
+  12 => '15:00',
+  13 => '15:30',
+  14 => '16:00',
+  15 => '16:30',
+  16 => '17:00',
+  17 => '17:30',
+)  
+[2025-07-28 14:22:00] local.INFO: === وقت الدوام ===  
+[2025-07-28 14:22:00] local.INFO: Start Time: 09:00  
+[2025-07-28 14:22:00] local.INFO: End Time: 18:00  
+[2025-07-28 14:22:00] local.INFO: Booked Times:   
+[2025-07-28 14:22:00] local.INFO: Breaks:   
+[2025-07-28 14:22:00] local.INFO: Is Today? No  
+[2025-07-28 14:22:00] local.INFO: Current Time Now (Asia/Riyadh): 2025-07-28 17:22:00  
+[2025-07-28 14:22:00] local.INFO: Input Date: 2025-07-30  
+[2025-07-28 14:22:00] local.INFO: Checking Time Slot: 09:00  
+[2025-07-28 14:22:00] local.INFO: Full Current: 2025-07-30 09:00:00  
+[2025-07-28 14:22:00] local.INFO: >> Available: 09:00  
+[2025-07-28 14:22:00] local.INFO: Checking Time Slot: 09:30  
+[2025-07-28 14:22:00] local.INFO: Full Current: 2025-07-30 09:30:00  
+[2025-07-28 14:22:00] local.INFO: >> Available: 09:30  
+[2025-07-28 14:22:00] local.INFO: Checking Time Slot: 10:00  
+[2025-07-28 14:22:00] local.INFO: Full Current: 2025-07-30 10:00:00  
+[2025-07-28 14:22:00] local.INFO: >> Available: 10:00  
+[2025-07-28 14:22:00] local.INFO: Checking Time Slot: 10:30  
+[2025-07-28 14:22:00] local.INFO: Full Current: 2025-07-30 10:30:00  
+[2025-07-28 14:22:00] local.INFO: >> Available: 10:30  
+[2025-07-28 14:22:00] local.INFO: Checking Time Slot: 11:00  
+[2025-07-28 14:22:00] local.INFO: Full Current: 2025-07-30 11:00:00  
+[2025-07-28 14:22:00] local.INFO: >> Available: 11:00  
+[2025-07-28 14:22:00] local.INFO: Checking Time Slot: 11:30  
+[2025-07-28 14:22:00] local.INFO: Full Current: 2025-07-30 11:30:00  
+[2025-07-28 14:22:00] local.INFO: >> Available: 11:30  
+[2025-07-28 14:22:00] local.INFO: Checking Time Slot: 12:00  
+[2025-07-28 14:22:00] local.INFO: Full Current: 2025-07-30 12:00:00  
+[2025-07-28 14:22:00] local.INFO: >> Available: 12:00  
+[2025-07-28 14:22:00] local.INFO: Checking Time Slot: 12:30  
+[2025-07-28 14:22:00] local.INFO: Full Current: 2025-07-30 12:30:00  
+[2025-07-28 14:22:00] local.INFO: >> Available: 12:30  
+[2025-07-28 14:22:00] local.INFO: Checking Time Slot: 13:00  
+[2025-07-28 14:22:00] local.INFO: Full Current: 2025-07-30 13:00:00  
+[2025-07-28 14:22:00] local.INFO: >> Available: 13:00  
+[2025-07-28 14:22:00] local.INFO: Checking Time Slot: 13:30  
+[2025-07-28 14:22:00] local.INFO: Full Current: 2025-07-30 13:30:00  
+[2025-07-28 14:22:00] local.INFO: >> Available: 13:30  
+[2025-07-28 14:22:00] local.INFO: Checking Time Slot: 14:00  
+[2025-07-28 14:22:00] local.INFO: Full Current: 2025-07-30 14:00:00  
+[2025-07-28 14:22:00] local.INFO: >> Available: 14:00  
+[2025-07-28 14:22:00] local.INFO: Checking Time Slot: 14:30  
+[2025-07-28 14:22:00] local.INFO: Full Current: 2025-07-30 14:30:00  
+[2025-07-28 14:22:00] local.INFO: >> Available: 14:30  
+[2025-07-28 14:22:00] local.INFO: Checking Time Slot: 15:00  
+[2025-07-28 14:22:00] local.INFO: Full Current: 2025-07-30 15:00:00  
+[2025-07-28 14:22:00] local.INFO: >> Available: 15:00  
+[2025-07-28 14:22:00] local.INFO: Checking Time Slot: 15:30  
+[2025-07-28 14:22:00] local.INFO: Full Current: 2025-07-30 15:30:00  
+[2025-07-28 14:22:00] local.INFO: >> Available: 15:30  
+[2025-07-28 14:22:00] local.INFO: Checking Time Slot: 16:00  
+[2025-07-28 14:22:00] local.INFO: Full Current: 2025-07-30 16:00:00  
+[2025-07-28 14:22:00] local.INFO: >> Available: 16:00  
+[2025-07-28 14:22:00] local.INFO: Checking Time Slot: 16:30  
+[2025-07-28 14:22:00] local.INFO: Full Current: 2025-07-30 16:30:00  
+[2025-07-28 14:22:00] local.INFO: >> Available: 16:30  
+[2025-07-28 14:22:00] local.INFO: Checking Time Slot: 17:00  
+[2025-07-28 14:22:00] local.INFO: Full Current: 2025-07-30 17:00:00  
+[2025-07-28 14:22:00] local.INFO: >> Available: 17:00  
+[2025-07-28 14:22:00] local.INFO: Checking Time Slot: 17:30  
+[2025-07-28 14:22:00] local.INFO: Full Current: 2025-07-30 17:30:00  
+[2025-07-28 14:22:00] local.INFO: >> Available: 17:30  
+[2025-07-28 14:22:00] local.INFO: === Available Times After Filtering ===  
+[2025-07-28 14:22:00] local.INFO: array (
+  0 => '09:00',
+  1 => '09:30',
+  2 => '10:00',
+  3 => '10:30',
+  4 => '11:00',
+  5 => '11:30',
+  6 => '12:00',
+  7 => '12:30',
+  8 => '13:00',
+  9 => '13:30',
+  10 => '14:00',
+  11 => '14:30',
+  12 => '15:00',
+  13 => '15:30',
+  14 => '16:00',
+  15 => '16:30',
+  16 => '17:00',
+  17 => '17:30',
+)  
+[2025-07-28 14:22:19] local.INFO: === وقت الدوام ===  
+[2025-07-28 14:22:19] local.INFO: Start Time: 09:00  
+[2025-07-28 14:22:19] local.INFO: End Time: 18:00  
+[2025-07-28 14:22:19] local.INFO: Booked Times:  ["10:30","10:00","17:30"] 
+[2025-07-28 14:22:19] local.INFO: Breaks:   
+[2025-07-28 14:22:19] local.INFO: Is Today? No  
+[2025-07-28 14:22:19] local.INFO: Current Time Now (Asia/Riyadh): 2025-07-28 17:22:00  
+[2025-07-28 14:22:19] local.INFO: Input Date: 2025-07-31  
+[2025-07-28 14:22:19] local.INFO: Checking Time Slot: 09:00  
+[2025-07-28 14:22:19] local.INFO: Full Current: 2025-07-31 09:00:00  
+[2025-07-28 14:22:19] local.INFO: >> Available: 09:00  
+[2025-07-28 14:22:19] local.INFO: Checking Time Slot: 09:30  
+[2025-07-28 14:22:19] local.INFO: Full Current: 2025-07-31 09:30:00  
+[2025-07-28 14:22:19] local.INFO: >> Available: 09:30  
+[2025-07-28 14:22:19] local.INFO: Checking Time Slot: 10:00  
+[2025-07-28 14:22:19] local.INFO: Full Current: 2025-07-31 10:00:00  
+[2025-07-28 14:22:19] local.INFO: >> Skipped (Booked): 10:00  
+[2025-07-28 14:22:19] local.INFO: Checking Time Slot: 10:30  
+[2025-07-28 14:22:19] local.INFO: Full Current: 2025-07-31 10:30:00  
+[2025-07-28 14:22:19] local.INFO: >> Skipped (Booked): 10:30  
+[2025-07-28 14:22:19] local.INFO: Checking Time Slot: 11:00  
+[2025-07-28 14:22:19] local.INFO: Full Current: 2025-07-31 11:00:00  
+[2025-07-28 14:22:19] local.INFO: >> Available: 11:00  
+[2025-07-28 14:22:19] local.INFO: Checking Time Slot: 11:30  
+[2025-07-28 14:22:19] local.INFO: Full Current: 2025-07-31 11:30:00  
+[2025-07-28 14:22:19] local.INFO: >> Available: 11:30  
+[2025-07-28 14:22:19] local.INFO: Checking Time Slot: 12:00  
+[2025-07-28 14:22:19] local.INFO: Full Current: 2025-07-31 12:00:00  
+[2025-07-28 14:22:19] local.INFO: >> Available: 12:00  
+[2025-07-28 14:22:19] local.INFO: Checking Time Slot: 12:30  
+[2025-07-28 14:22:19] local.INFO: Full Current: 2025-07-31 12:30:00  
+[2025-07-28 14:22:19] local.INFO: >> Available: 12:30  
+[2025-07-28 14:22:19] local.INFO: Checking Time Slot: 13:00  
+[2025-07-28 14:22:19] local.INFO: Full Current: 2025-07-31 13:00:00  
+[2025-07-28 14:22:19] local.INFO: >> Available: 13:00  
+[2025-07-28 14:22:19] local.INFO: Checking Time Slot: 13:30  
+[2025-07-28 14:22:19] local.INFO: Full Current: 2025-07-31 13:30:00  
+[2025-07-28 14:22:19] local.INFO: >> Available: 13:30  
+[2025-07-28 14:22:19] local.INFO: Checking Time Slot: 14:00  
+[2025-07-28 14:22:19] local.INFO: Full Current: 2025-07-31 14:00:00  
+[2025-07-28 14:22:19] local.INFO: >> Available: 14:00  
+[2025-07-28 14:22:19] local.INFO: Checking Time Slot: 14:30  
+[2025-07-28 14:22:19] local.INFO: Full Current: 2025-07-31 14:30:00  
+[2025-07-28 14:22:19] local.INFO: >> Available: 14:30  
+[2025-07-28 14:22:19] local.INFO: Checking Time Slot: 15:00  
+[2025-07-28 14:22:19] local.INFO: Full Current: 2025-07-31 15:00:00  
+[2025-07-28 14:22:19] local.INFO: >> Available: 15:00  
+[2025-07-28 14:22:19] local.INFO: Checking Time Slot: 15:30  
+[2025-07-28 14:22:19] local.INFO: Full Current: 2025-07-31 15:30:00  
+[2025-07-28 14:22:19] local.INFO: >> Available: 15:30  
+[2025-07-28 14:22:19] local.INFO: Checking Time Slot: 16:00  
+[2025-07-28 14:22:19] local.INFO: Full Current: 2025-07-31 16:00:00  
+[2025-07-28 14:22:19] local.INFO: >> Available: 16:00  
+[2025-07-28 14:22:19] local.INFO: Checking Time Slot: 16:30  
+[2025-07-28 14:22:19] local.INFO: Full Current: 2025-07-31 16:30:00  
+[2025-07-28 14:22:19] local.INFO: >> Available: 16:30  
+[2025-07-28 14:22:19] local.INFO: Checking Time Slot: 17:00  
+[2025-07-28 14:22:19] local.INFO: Full Current: 2025-07-31 17:00:00  
+[2025-07-28 14:22:19] local.INFO: >> Available: 17:00  
+[2025-07-28 14:22:19] local.INFO: Checking Time Slot: 17:30  
+[2025-07-28 14:22:19] local.INFO: Full Current: 2025-07-31 17:30:00  
+[2025-07-28 14:22:19] local.INFO: >> Skipped (Booked): 17:30  
+[2025-07-28 14:22:19] local.INFO: === Available Times After Filtering ===  
+[2025-07-28 14:22:19] local.INFO: array (
+  0 => '09:00',
+  1 => '09:30',
+  2 => '11:00',
+  3 => '11:30',
+  4 => '12:00',
+  5 => '12:30',
+  6 => '13:00',
+  7 => '13:30',
+  8 => '14:00',
+  9 => '14:30',
+  10 => '15:00',
+  11 => '15:30',
+  12 => '16:00',
+  13 => '16:30',
+  14 => '17:00',
+)  
+[2025-07-28 14:23:08] local.INFO: === وقت الدوام ===  
+[2025-07-28 14:23:08] local.INFO: Start Time: 09:00  
+[2025-07-28 14:23:08] local.INFO: End Time: 18:00  
+[2025-07-28 14:23:08] local.INFO: Booked Times:  ["10:30","10:00","17:30"] 
+[2025-07-28 14:23:08] local.INFO: Breaks:   
+[2025-07-28 14:23:08] local.INFO: Is Today? No  
+[2025-07-28 14:23:08] local.INFO: Current Time Now (Asia/Riyadh): 2025-07-28 17:23:00  
+[2025-07-28 14:23:08] local.INFO: Input Date: 2025-07-31  
+[2025-07-28 14:23:08] local.INFO: Checking Time Slot: 09:00  
+[2025-07-28 14:23:08] local.INFO: Full Current: 2025-07-31 09:00:00  
+[2025-07-28 14:23:08] local.INFO: >> Available: 09:00  
+[2025-07-28 14:23:08] local.INFO: Checking Time Slot: 09:30  
+[2025-07-28 14:23:08] local.INFO: Full Current: 2025-07-31 09:30:00  
+[2025-07-28 14:23:08] local.INFO: >> Available: 09:30  
+[2025-07-28 14:23:08] local.INFO: Checking Time Slot: 10:00  
+[2025-07-28 14:23:08] local.INFO: Full Current: 2025-07-31 10:00:00  
+[2025-07-28 14:23:08] local.INFO: >> Skipped (Booked): 10:00  
+[2025-07-28 14:23:08] local.INFO: Checking Time Slot: 10:30  
+[2025-07-28 14:23:08] local.INFO: Full Current: 2025-07-31 10:30:00  
+[2025-07-28 14:23:08] local.INFO: >> Skipped (Booked): 10:30  
+[2025-07-28 14:23:08] local.INFO: Checking Time Slot: 11:00  
+[2025-07-28 14:23:08] local.INFO: Full Current: 2025-07-31 11:00:00  
+[2025-07-28 14:23:08] local.INFO: >> Available: 11:00  
+[2025-07-28 14:23:08] local.INFO: Checking Time Slot: 11:30  
+[2025-07-28 14:23:08] local.INFO: Full Current: 2025-07-31 11:30:00  
+[2025-07-28 14:23:08] local.INFO: >> Available: 11:30  
+[2025-07-28 14:23:08] local.INFO: Checking Time Slot: 12:00  
+[2025-07-28 14:23:08] local.INFO: Full Current: 2025-07-31 12:00:00  
+[2025-07-28 14:23:08] local.INFO: >> Available: 12:00  
+[2025-07-28 14:23:08] local.INFO: Checking Time Slot: 12:30  
+[2025-07-28 14:23:08] local.INFO: Full Current: 2025-07-31 12:30:00  
+[2025-07-28 14:23:08] local.INFO: >> Available: 12:30  
+[2025-07-28 14:23:08] local.INFO: Checking Time Slot: 13:00  
+[2025-07-28 14:23:08] local.INFO: Full Current: 2025-07-31 13:00:00  
+[2025-07-28 14:23:08] local.INFO: >> Available: 13:00  
+[2025-07-28 14:23:08] local.INFO: Checking Time Slot: 13:30  
+[2025-07-28 14:23:08] local.INFO: Full Current: 2025-07-31 13:30:00  
+[2025-07-28 14:23:08] local.INFO: >> Available: 13:30  
+[2025-07-28 14:23:08] local.INFO: Checking Time Slot: 14:00  
+[2025-07-28 14:23:08] local.INFO: Full Current: 2025-07-31 14:00:00  
+[2025-07-28 14:23:08] local.INFO: >> Available: 14:00  
+[2025-07-28 14:23:08] local.INFO: Checking Time Slot: 14:30  
+[2025-07-28 14:23:08] local.INFO: Full Current: 2025-07-31 14:30:00  
+[2025-07-28 14:23:08] local.INFO: >> Available: 14:30  
+[2025-07-28 14:23:08] local.INFO: Checking Time Slot: 15:00  
+[2025-07-28 14:23:08] local.INFO: Full Current: 2025-07-31 15:00:00  
+[2025-07-28 14:23:08] local.INFO: >> Available: 15:00  
+[2025-07-28 14:23:08] local.INFO: Checking Time Slot: 15:30  
+[2025-07-28 14:23:08] local.INFO: Full Current: 2025-07-31 15:30:00  
+[2025-07-28 14:23:08] local.INFO: >> Available: 15:30  
+[2025-07-28 14:23:08] local.INFO: Checking Time Slot: 16:00  
+[2025-07-28 14:23:08] local.INFO: Full Current: 2025-07-31 16:00:00  
+[2025-07-28 14:23:08] local.INFO: >> Available: 16:00  
+[2025-07-28 14:23:08] local.INFO: Checking Time Slot: 16:30  
+[2025-07-28 14:23:08] local.INFO: Full Current: 2025-07-31 16:30:00  
+[2025-07-28 14:23:08] local.INFO: >> Available: 16:30  
+[2025-07-28 14:23:08] local.INFO: Checking Time Slot: 17:00  
+[2025-07-28 14:23:08] local.INFO: Full Current: 2025-07-31 17:00:00  
+[2025-07-28 14:23:08] local.INFO: >> Available: 17:00  
+[2025-07-28 14:23:08] local.INFO: Checking Time Slot: 17:30  
+[2025-07-28 14:23:08] local.INFO: Full Current: 2025-07-31 17:30:00  
+[2025-07-28 14:23:08] local.INFO: >> Skipped (Booked): 17:30  
+[2025-07-28 14:23:08] local.INFO: === Available Times After Filtering ===  
+[2025-07-28 14:23:08] local.INFO: array (
+  0 => '09:00',
+  1 => '09:30',
+  2 => '11:00',
+  3 => '11:30',
+  4 => '12:00',
+  5 => '12:30',
+  6 => '13:00',
+  7 => '13:30',
+  8 => '14:00',
+  9 => '14:30',
+  10 => '15:00',
+  11 => '15:30',
+  12 => '16:00',
+  13 => '16:30',
+  14 => '17:00',
+)  
+[2025-07-28 14:24:02] local.INFO: === وقت الدوام ===  
+[2025-07-28 14:24:02] local.INFO: Start Time: 09:00  
+[2025-07-28 14:24:02] local.INFO: End Time: 18:00  
+[2025-07-28 14:24:02] local.INFO: Booked Times:   
+[2025-07-28 14:24:02] local.INFO: Breaks:   
+[2025-07-28 14:24:02] local.INFO: Is Today? No  
+[2025-07-28 14:24:02] local.INFO: Current Time Now (Asia/Riyadh): 2025-07-28 17:24:00  
+[2025-07-28 14:24:02] local.INFO: Input Date: 2025-07-29  
+[2025-07-28 14:24:02] local.INFO: Checking Time Slot: 09:00  
+[2025-07-28 14:24:02] local.INFO: Full Current: 2025-07-29 09:00:00  
+[2025-07-28 14:24:02] local.INFO: >> Available: 09:00  
+[2025-07-28 14:24:02] local.INFO: Checking Time Slot: 09:30  
+[2025-07-28 14:24:02] local.INFO: Full Current: 2025-07-29 09:30:00  
+[2025-07-28 14:24:02] local.INFO: >> Available: 09:30  
+[2025-07-28 14:24:02] local.INFO: Checking Time Slot: 10:00  
+[2025-07-28 14:24:02] local.INFO: Full Current: 2025-07-29 10:00:00  
+[2025-07-28 14:24:02] local.INFO: >> Available: 10:00  
+[2025-07-28 14:24:02] local.INFO: Checking Time Slot: 10:30  
+[2025-07-28 14:24:02] local.INFO: Full Current: 2025-07-29 10:30:00  
+[2025-07-28 14:24:02] local.INFO: >> Available: 10:30  
+[2025-07-28 14:24:02] local.INFO: Checking Time Slot: 11:00  
+[2025-07-28 14:24:02] local.INFO: Full Current: 2025-07-29 11:00:00  
+[2025-07-28 14:24:02] local.INFO: >> Available: 11:00  
+[2025-07-28 14:24:02] local.INFO: Checking Time Slot: 11:30  
+[2025-07-28 14:24:02] local.INFO: Full Current: 2025-07-29 11:30:00  
+[2025-07-28 14:24:02] local.INFO: >> Available: 11:30  
+[2025-07-28 14:24:02] local.INFO: Checking Time Slot: 12:00  
+[2025-07-28 14:24:02] local.INFO: Full Current: 2025-07-29 12:00:00  
+[2025-07-28 14:24:02] local.INFO: >> Available: 12:00  
+[2025-07-28 14:24:02] local.INFO: Checking Time Slot: 12:30  
+[2025-07-28 14:24:02] local.INFO: Full Current: 2025-07-29 12:30:00  
+[2025-07-28 14:24:02] local.INFO: >> Available: 12:30  
+[2025-07-28 14:24:02] local.INFO: Checking Time Slot: 13:00  
+[2025-07-28 14:24:02] local.INFO: Full Current: 2025-07-29 13:00:00  
+[2025-07-28 14:24:02] local.INFO: >> Available: 13:00  
+[2025-07-28 14:24:02] local.INFO: Checking Time Slot: 13:30  
+[2025-07-28 14:24:02] local.INFO: Full Current: 2025-07-29 13:30:00  
+[2025-07-28 14:24:02] local.INFO: >> Available: 13:30  
+[2025-07-28 14:24:02] local.INFO: Checking Time Slot: 14:00  
+[2025-07-28 14:24:02] local.INFO: Full Current: 2025-07-29 14:00:00  
+[2025-07-28 14:24:02] local.INFO: >> Available: 14:00  
+[2025-07-28 14:24:02] local.INFO: Checking Time Slot: 14:30  
+[2025-07-28 14:24:02] local.INFO: Full Current: 2025-07-29 14:30:00  
+[2025-07-28 14:24:02] local.INFO: >> Available: 14:30  
+[2025-07-28 14:24:02] local.INFO: Checking Time Slot: 15:00  
+[2025-07-28 14:24:02] local.INFO: Full Current: 2025-07-29 15:00:00  
+[2025-07-28 14:24:02] local.INFO: >> Available: 15:00  
+[2025-07-28 14:24:02] local.INFO: Checking Time Slot: 15:30  
+[2025-07-28 14:24:02] local.INFO: Full Current: 2025-07-29 15:30:00  
+[2025-07-28 14:24:02] local.INFO: >> Available: 15:30  
+[2025-07-28 14:24:02] local.INFO: Checking Time Slot: 16:00  
+[2025-07-28 14:24:02] local.INFO: Full Current: 2025-07-29 16:00:00  
+[2025-07-28 14:24:02] local.INFO: >> Available: 16:00  
+[2025-07-28 14:24:02] local.INFO: Checking Time Slot: 16:30  
+[2025-07-28 14:24:02] local.INFO: Full Current: 2025-07-29 16:30:00  
+[2025-07-28 14:24:02] local.INFO: >> Available: 16:30  
+[2025-07-28 14:24:02] local.INFO: Checking Time Slot: 17:00  
+[2025-07-28 14:24:02] local.INFO: Full Current: 2025-07-29 17:00:00  
+[2025-07-28 14:24:02] local.INFO: >> Available: 17:00  
+[2025-07-28 14:24:02] local.INFO: Checking Time Slot: 17:30  
+[2025-07-28 14:24:02] local.INFO: Full Current: 2025-07-29 17:30:00  
+[2025-07-28 14:24:02] local.INFO: >> Available: 17:30  
+[2025-07-28 14:24:02] local.INFO: === Available Times After Filtering ===  
+[2025-07-28 14:24:02] local.INFO: array (
+  0 => '09:00',
+  1 => '09:30',
+  2 => '10:00',
+  3 => '10:30',
+  4 => '11:00',
+  5 => '11:30',
+  6 => '12:00',
+  7 => '12:30',
+  8 => '13:00',
+  9 => '13:30',
+  10 => '14:00',
+  11 => '14:30',
+  12 => '15:00',
+  13 => '15:30',
+  14 => '16:00',
+  15 => '16:30',
+  16 => '17:00',
+  17 => '17:30',
+)  
+[2025-07-28 14:24:09] local.INFO: Booking data before validated {"_token":"5pXYAsK1MjHhWjZvT2jXsGS5roseSYDQi7xPY0uq","n_name":"عميل مجهول","customer_id":"1","mobile_no":"0500000000","neighborhood":"الربوة","branch":"7","gender":"women","service_group_id":"49","service_id":"2","date":"2025-07-29","time":"13:30","staff_id":"51","status":"Salon","agreed":"1","auto_change_staff":"0","selected_session_branch_id":null,"is_single_branch":false} 
+[2025-07-28 14:25:56] local.INFO: === وقت الدوام ===  
+[2025-07-28 14:25:56] local.INFO: Start Time: 09:00  
+[2025-07-28 14:25:56] local.INFO: End Time: 18:00  
+[2025-07-28 14:25:56] local.INFO: Booked Times:   
+[2025-07-28 14:25:56] local.INFO: Breaks:   
+[2025-07-28 14:25:56] local.INFO: Is Today? No  
+[2025-07-28 14:25:56] local.INFO: Current Time Now (Asia/Riyadh): 2025-07-28 17:25:00  
+[2025-07-28 14:25:56] local.INFO: Input Date: 2025-07-30  
+[2025-07-28 14:25:56] local.INFO: Checking Time Slot: 09:00  
+[2025-07-28 14:25:56] local.INFO: Full Current: 2025-07-30 09:00:00  
+[2025-07-28 14:25:56] local.INFO: >> Available: 09:00  
+[2025-07-28 14:25:56] local.INFO: Checking Time Slot: 09:30  
+[2025-07-28 14:25:56] local.INFO: Full Current: 2025-07-30 09:30:00  
+[2025-07-28 14:25:56] local.INFO: >> Available: 09:30  
+[2025-07-28 14:25:56] local.INFO: Checking Time Slot: 10:00  
+[2025-07-28 14:25:56] local.INFO: Full Current: 2025-07-30 10:00:00  
+[2025-07-28 14:25:56] local.INFO: >> Available: 10:00  
+[2025-07-28 14:25:56] local.INFO: Checking Time Slot: 10:30  
+[2025-07-28 14:25:56] local.INFO: Full Current: 2025-07-30 10:30:00  
+[2025-07-28 14:25:56] local.INFO: >> Available: 10:30  
+[2025-07-28 14:25:56] local.INFO: Checking Time Slot: 11:00  
+[2025-07-28 14:25:56] local.INFO: Full Current: 2025-07-30 11:00:00  
+[2025-07-28 14:25:56] local.INFO: >> Available: 11:00  
+[2025-07-28 14:25:56] local.INFO: Checking Time Slot: 11:30  
+[2025-07-28 14:25:56] local.INFO: Full Current: 2025-07-30 11:30:00  
+[2025-07-28 14:25:56] local.INFO: >> Available: 11:30  
+[2025-07-28 14:25:56] local.INFO: Checking Time Slot: 12:00  
+[2025-07-28 14:25:56] local.INFO: Full Current: 2025-07-30 12:00:00  
+[2025-07-28 14:25:56] local.INFO: >> Available: 12:00  
+[2025-07-28 14:25:56] local.INFO: Checking Time Slot: 12:30  
+[2025-07-28 14:25:56] local.INFO: Full Current: 2025-07-30 12:30:00  
+[2025-07-28 14:25:56] local.INFO: >> Available: 12:30  
+[2025-07-28 14:25:56] local.INFO: Checking Time Slot: 13:00  
+[2025-07-28 14:25:56] local.INFO: Full Current: 2025-07-30 13:00:00  
+[2025-07-28 14:25:56] local.INFO: >> Available: 13:00  
+[2025-07-28 14:25:56] local.INFO: Checking Time Slot: 13:30  
+[2025-07-28 14:25:56] local.INFO: Full Current: 2025-07-30 13:30:00  
+[2025-07-28 14:25:56] local.INFO: >> Available: 13:30  
+[2025-07-28 14:25:56] local.INFO: Checking Time Slot: 14:00  
+[2025-07-28 14:25:56] local.INFO: Full Current: 2025-07-30 14:00:00  
+[2025-07-28 14:25:56] local.INFO: >> Available: 14:00  
+[2025-07-28 14:25:56] local.INFO: Checking Time Slot: 14:30  
+[2025-07-28 14:25:56] local.INFO: Full Current: 2025-07-30 14:30:00  
+[2025-07-28 14:25:56] local.INFO: >> Available: 14:30  
+[2025-07-28 14:25:56] local.INFO: Checking Time Slot: 15:00  
+[2025-07-28 14:25:56] local.INFO: Full Current: 2025-07-30 15:00:00  
+[2025-07-28 14:25:56] local.INFO: >> Available: 15:00  
+[2025-07-28 14:25:56] local.INFO: Checking Time Slot: 15:30  
+[2025-07-28 14:25:56] local.INFO: Full Current: 2025-07-30 15:30:00  
+[2025-07-28 14:25:56] local.INFO: >> Available: 15:30  
+[2025-07-28 14:25:56] local.INFO: Checking Time Slot: 16:00  
+[2025-07-28 14:25:56] local.INFO: Full Current: 2025-07-30 16:00:00  
+[2025-07-28 14:25:56] local.INFO: >> Available: 16:00  
+[2025-07-28 14:25:56] local.INFO: Checking Time Slot: 16:30  
+[2025-07-28 14:25:56] local.INFO: Full Current: 2025-07-30 16:30:00  
+[2025-07-28 14:25:56] local.INFO: >> Available: 16:30  
+[2025-07-28 14:25:56] local.INFO: Checking Time Slot: 17:00  
+[2025-07-28 14:25:56] local.INFO: Full Current: 2025-07-30 17:00:00  
+[2025-07-28 14:25:56] local.INFO: >> Available: 17:00  
+[2025-07-28 14:25:56] local.INFO: Checking Time Slot: 17:30  
+[2025-07-28 14:25:56] local.INFO: Full Current: 2025-07-30 17:30:00  
+[2025-07-28 14:25:56] local.INFO: >> Available: 17:30  
+[2025-07-28 14:25:56] local.INFO: === Available Times After Filtering ===  
+[2025-07-28 14:25:56] local.INFO: array (
+  0 => '09:00',
+  1 => '09:30',
+  2 => '10:00',
+  3 => '10:30',
+  4 => '11:00',
+  5 => '11:30',
+  6 => '12:00',
+  7 => '12:30',
+  8 => '13:00',
+  9 => '13:30',
+  10 => '14:00',
+  11 => '14:30',
+  12 => '15:00',
+  13 => '15:30',
+  14 => '16:00',
+  15 => '16:30',
+  16 => '17:00',
+  17 => '17:30',
+)  
+[2025-07-28 17:26:15] local.INFO: === وقت الدوام ===  
+[2025-07-28 17:26:15] local.INFO: Start Time: 09:00  
+[2025-07-28 17:26:15] local.INFO: End Time: 18:00  
+[2025-07-28 17:26:15] local.INFO: Booked Times:   
+[2025-07-28 17:26:15] local.INFO: Breaks:   
+[2025-07-28 17:26:15] local.INFO: Is Today? Yes  
+[2025-07-28 17:26:15] local.INFO: Current Time Now (Asia/Riyadh): 2025-07-28 20:26:00  
+[2025-07-28 17:26:15] local.INFO: Input Date: 2025-07-28  
+[2025-07-28 17:26:15] local.INFO: Checking Time Slot: 09:00  
+[2025-07-28 17:26:15] local.INFO: Full Current: 2025-07-28 09:00:00  
+[2025-07-28 17:26:15] local.INFO: >> Skipped (Past Time): 09:00  
+[2025-07-28 17:26:15] local.INFO: Checking Time Slot: 09:30  
+[2025-07-28 17:26:15] local.INFO: Full Current: 2025-07-28 09:30:00  
+[2025-07-28 17:26:15] local.INFO: >> Skipped (Past Time): 09:30  
+[2025-07-28 17:26:15] local.INFO: Checking Time Slot: 10:00  
+[2025-07-28 17:26:15] local.INFO: Full Current: 2025-07-28 10:00:00  
+[2025-07-28 17:26:15] local.INFO: >> Skipped (Past Time): 10:00  
+[2025-07-28 17:26:15] local.INFO: Checking Time Slot: 10:30  
+[2025-07-28 17:26:15] local.INFO: Full Current: 2025-07-28 10:30:00  
+[2025-07-28 17:26:15] local.INFO: >> Skipped (Past Time): 10:30  
+[2025-07-28 17:26:15] local.INFO: Checking Time Slot: 11:00  
+[2025-07-28 17:26:15] local.INFO: Full Current: 2025-07-28 11:00:00  
+[2025-07-28 17:26:15] local.INFO: >> Skipped (Past Time): 11:00  
+[2025-07-28 17:26:15] local.INFO: Checking Time Slot: 11:30  
+[2025-07-28 17:26:15] local.INFO: Full Current: 2025-07-28 11:30:00  
+[2025-07-28 17:26:15] local.INFO: >> Skipped (Past Time): 11:30  
+[2025-07-28 17:26:15] local.INFO: Checking Time Slot: 12:00  
+[2025-07-28 17:26:15] local.INFO: Full Current: 2025-07-28 12:00:00  
+[2025-07-28 17:26:15] local.INFO: >> Skipped (Past Time): 12:00  
+[2025-07-28 17:26:15] local.INFO: Checking Time Slot: 12:30  
+[2025-07-28 17:26:15] local.INFO: Full Current: 2025-07-28 12:30:00  
+[2025-07-28 17:26:15] local.INFO: >> Skipped (Past Time): 12:30  
+[2025-07-28 17:26:15] local.INFO: Checking Time Slot: 13:00  
+[2025-07-28 17:26:15] local.INFO: Full Current: 2025-07-28 13:00:00  
+[2025-07-28 17:26:15] local.INFO: >> Skipped (Past Time): 13:00  
+[2025-07-28 17:26:15] local.INFO: Checking Time Slot: 13:30  
+[2025-07-28 17:26:15] local.INFO: Full Current: 2025-07-28 13:30:00  
+[2025-07-28 17:26:15] local.INFO: >> Skipped (Past Time): 13:30  
+[2025-07-28 17:26:15] local.INFO: Checking Time Slot: 14:00  
+[2025-07-28 17:26:15] local.INFO: Full Current: 2025-07-28 14:00:00  
+[2025-07-28 17:26:15] local.INFO: >> Skipped (Past Time): 14:00  
+[2025-07-28 17:26:15] local.INFO: Checking Time Slot: 14:30  
+[2025-07-28 17:26:15] local.INFO: Full Current: 2025-07-28 14:30:00  
+[2025-07-28 17:26:15] local.INFO: >> Skipped (Past Time): 14:30  
+[2025-07-28 17:26:15] local.INFO: Checking Time Slot: 15:00  
+[2025-07-28 17:26:15] local.INFO: Full Current: 2025-07-28 15:00:00  
+[2025-07-28 17:26:15] local.INFO: >> Skipped (Past Time): 15:00  
+[2025-07-28 17:26:15] local.INFO: Checking Time Slot: 15:30  
+[2025-07-28 17:26:15] local.INFO: Full Current: 2025-07-28 15:30:00  
+[2025-07-28 17:26:15] local.INFO: >> Skipped (Past Time): 15:30  
+[2025-07-28 17:26:15] local.INFO: Checking Time Slot: 16:00  
+[2025-07-28 17:26:15] local.INFO: Full Current: 2025-07-28 16:00:00  
+[2025-07-28 17:26:15] local.INFO: >> Skipped (Past Time): 16:00  
+[2025-07-28 17:26:15] local.INFO: Checking Time Slot: 16:30  
+[2025-07-28 17:26:15] local.INFO: Full Current: 2025-07-28 16:30:00  
+[2025-07-28 17:26:15] local.INFO: >> Skipped (Past Time): 16:30  
+[2025-07-28 17:26:15] local.INFO: Checking Time Slot: 17:00  
+[2025-07-28 17:26:15] local.INFO: Full Current: 2025-07-28 17:00:00  
+[2025-07-28 17:26:15] local.INFO: >> Skipped (Past Time): 17:00  
+[2025-07-28 17:26:15] local.INFO: Checking Time Slot: 17:30  
+[2025-07-28 17:26:15] local.INFO: Full Current: 2025-07-28 17:30:00  
+[2025-07-28 17:26:15] local.INFO: >> Skipped (Past Time): 17:30  
+[2025-07-28 17:26:15] local.INFO: === Available Times After Filtering ===  
+[2025-07-28 17:26:15] local.INFO: array (
+)  
+[2025-07-28 17:26:21] local.INFO: === وقت الدوام ===  
+[2025-07-28 17:26:21] local.INFO: Start Time: 09:00  
+[2025-07-28 17:26:21] local.INFO: End Time: 12:00  
+[2025-07-28 17:26:21] local.INFO: Booked Times:   
+[2025-07-28 17:26:21] local.INFO: Breaks:   
+[2025-07-28 17:26:21] local.INFO: Is Today? Yes  
+[2025-07-28 17:26:21] local.INFO: Current Time Now (Asia/Riyadh): 2025-07-28 20:26:00  
+[2025-07-28 17:26:21] local.INFO: Input Date: 2025-07-28  
+[2025-07-28 17:26:21] local.INFO: Checking Time Slot: 09:00  
+[2025-07-28 17:26:21] local.INFO: Full Current: 2025-07-28 09:00:00  
+[2025-07-28 17:26:21] local.INFO: >> Skipped (Past Time): 09:00  
+[2025-07-28 17:26:21] local.INFO: Checking Time Slot: 09:30  
+[2025-07-28 17:26:21] local.INFO: Full Current: 2025-07-28 09:30:00  
+[2025-07-28 17:26:21] local.INFO: >> Skipped (Past Time): 09:30  
+[2025-07-28 17:26:21] local.INFO: Checking Time Slot: 10:00  
+[2025-07-28 17:26:21] local.INFO: Full Current: 2025-07-28 10:00:00  
+[2025-07-28 17:26:21] local.INFO: >> Skipped (Past Time): 10:00  
+[2025-07-28 17:26:21] local.INFO: Checking Time Slot: 10:30  
+[2025-07-28 17:26:21] local.INFO: Full Current: 2025-07-28 10:30:00  
+[2025-07-28 17:26:21] local.INFO: >> Skipped (Past Time): 10:30  
+[2025-07-28 17:26:21] local.INFO: Checking Time Slot: 11:00  
+[2025-07-28 17:26:21] local.INFO: Full Current: 2025-07-28 11:00:00  
+[2025-07-28 17:26:21] local.INFO: >> Skipped (Past Time): 11:00  
+[2025-07-28 17:26:21] local.INFO: Checking Time Slot: 11:30  
+[2025-07-28 17:26:21] local.INFO: Full Current: 2025-07-28 11:30:00  
+[2025-07-28 17:26:21] local.INFO: >> Skipped (Past Time): 11:30  
+[2025-07-28 17:26:21] local.INFO: === Available Times After Filtering ===  
+[2025-07-28 17:26:21] local.INFO: array (
+)  
+[2025-07-28 17:26:24] local.INFO: === وقت الدوام ===  
+[2025-07-28 17:26:24] local.INFO: Start Time: 09:00  
+[2025-07-28 17:26:24] local.INFO: End Time: 18:00  
+[2025-07-28 17:26:24] local.INFO: Booked Times:   
+[2025-07-28 17:26:24] local.INFO: Breaks:   
+[2025-07-28 17:26:24] local.INFO: Is Today? Yes  
+[2025-07-28 17:26:24] local.INFO: Current Time Now (Asia/Riyadh): 2025-07-28 20:26:00  
+[2025-07-28 17:26:24] local.INFO: Input Date: 2025-07-28  
+[2025-07-28 17:26:24] local.INFO: Checking Time Slot: 09:00  
+[2025-07-28 17:26:24] local.INFO: Full Current: 2025-07-28 09:00:00  
+[2025-07-28 17:26:24] local.INFO: >> Skipped (Past Time): 09:00  
+[2025-07-28 17:26:24] local.INFO: Checking Time Slot: 09:30  
+[2025-07-28 17:26:24] local.INFO: Full Current: 2025-07-28 09:30:00  
+[2025-07-28 17:26:24] local.INFO: >> Skipped (Past Time): 09:30  
+[2025-07-28 17:26:24] local.INFO: Checking Time Slot: 10:00  
+[2025-07-28 17:26:24] local.INFO: Full Current: 2025-07-28 10:00:00  
+[2025-07-28 17:26:24] local.INFO: >> Skipped (Past Time): 10:00  
+[2025-07-28 17:26:24] local.INFO: Checking Time Slot: 10:30  
+[2025-07-28 17:26:24] local.INFO: Full Current: 2025-07-28 10:30:00  
+[2025-07-28 17:26:24] local.INFO: >> Skipped (Past Time): 10:30  
+[2025-07-28 17:26:24] local.INFO: Checking Time Slot: 11:00  
+[2025-07-28 17:26:24] local.INFO: Full Current: 2025-07-28 11:00:00  
+[2025-07-28 17:26:24] local.INFO: >> Skipped (Past Time): 11:00  
+[2025-07-28 17:26:24] local.INFO: Checking Time Slot: 11:30  
+[2025-07-28 17:26:24] local.INFO: Full Current: 2025-07-28 11:30:00  
+[2025-07-28 17:26:24] local.INFO: >> Skipped (Past Time): 11:30  
+[2025-07-28 17:26:24] local.INFO: Checking Time Slot: 12:00  
+[2025-07-28 17:26:24] local.INFO: Full Current: 2025-07-28 12:00:00  
+[2025-07-28 17:26:24] local.INFO: >> Skipped (Past Time): 12:00  
+[2025-07-28 17:26:24] local.INFO: Checking Time Slot: 12:30  
+[2025-07-28 17:26:24] local.INFO: Full Current: 2025-07-28 12:30:00  
+[2025-07-28 17:26:24] local.INFO: >> Skipped (Past Time): 12:30  
+[2025-07-28 17:26:24] local.INFO: Checking Time Slot: 13:00  
+[2025-07-28 17:26:24] local.INFO: Full Current: 2025-07-28 13:00:00  
+[2025-07-28 17:26:24] local.INFO: >> Skipped (Past Time): 13:00  
+[2025-07-28 17:26:24] local.INFO: Checking Time Slot: 13:30  
+[2025-07-28 17:26:24] local.INFO: Full Current: 2025-07-28 13:30:00  
+[2025-07-28 17:26:24] local.INFO: >> Skipped (Past Time): 13:30  
+[2025-07-28 17:26:24] local.INFO: Checking Time Slot: 14:00  
+[2025-07-28 17:26:24] local.INFO: Full Current: 2025-07-28 14:00:00  
+[2025-07-28 17:26:24] local.INFO: >> Skipped (Past Time): 14:00  
+[2025-07-28 17:26:24] local.INFO: Checking Time Slot: 14:30  
+[2025-07-28 17:26:24] local.INFO: Full Current: 2025-07-28 14:30:00  
+[2025-07-28 17:26:24] local.INFO: >> Skipped (Past Time): 14:30  
+[2025-07-28 17:26:24] local.INFO: Checking Time Slot: 15:00  
+[2025-07-28 17:26:24] local.INFO: Full Current: 2025-07-28 15:00:00  
+[2025-07-28 17:26:24] local.INFO: >> Skipped (Past Time): 15:00  
+[2025-07-28 17:26:24] local.INFO: Checking Time Slot: 15:30  
+[2025-07-28 17:26:24] local.INFO: Full Current: 2025-07-28 15:30:00  
+[2025-07-28 17:26:24] local.INFO: >> Skipped (Past Time): 15:30  
+[2025-07-28 17:26:24] local.INFO: Checking Time Slot: 16:00  
+[2025-07-28 17:26:24] local.INFO: Full Current: 2025-07-28 16:00:00  
+[2025-07-28 17:26:24] local.INFO: >> Skipped (Past Time): 16:00  
+[2025-07-28 17:26:24] local.INFO: Checking Time Slot: 16:30  
+[2025-07-28 17:26:24] local.INFO: Full Current: 2025-07-28 16:30:00  
+[2025-07-28 17:26:24] local.INFO: >> Skipped (Past Time): 16:30  
+[2025-07-28 17:26:24] local.INFO: Checking Time Slot: 17:00  
+[2025-07-28 17:26:24] local.INFO: Full Current: 2025-07-28 17:00:00  
+[2025-07-28 17:26:24] local.INFO: >> Skipped (Past Time): 17:00  
+[2025-07-28 17:26:24] local.INFO: Checking Time Slot: 17:30  
+[2025-07-28 17:26:24] local.INFO: Full Current: 2025-07-28 17:30:00  
+[2025-07-28 17:26:24] local.INFO: >> Skipped (Past Time): 17:30  
+[2025-07-28 17:26:24] local.INFO: === Available Times After Filtering ===  
+[2025-07-28 17:26:24] local.INFO: array (
+)  
+[2025-07-28 17:26:27] local.INFO: === وقت الدوام ===  
+[2025-07-28 17:26:27] local.INFO: Start Time: 09:00  
+[2025-07-28 17:26:27] local.INFO: End Time: 18:00  
+[2025-07-28 17:26:27] local.INFO: Booked Times:  ["09:00"] 
+[2025-07-28 17:26:27] local.INFO: Breaks:   
+[2025-07-28 17:26:27] local.INFO: Is Today? Yes  
+[2025-07-28 17:26:27] local.INFO: Current Time Now (Asia/Riyadh): 2025-07-28 20:26:00  
+[2025-07-28 17:26:27] local.INFO: Input Date: 2025-07-28  
+[2025-07-28 17:26:27] local.INFO: Checking Time Slot: 09:00  
+[2025-07-28 17:26:27] local.INFO: Full Current: 2025-07-28 09:00:00  
+[2025-07-28 17:26:27] local.INFO: >> Skipped (Past Time): 09:00  
+[2025-07-28 17:26:27] local.INFO: Checking Time Slot: 09:30  
+[2025-07-28 17:26:27] local.INFO: Full Current: 2025-07-28 09:30:00  
+[2025-07-28 17:26:27] local.INFO: >> Skipped (Past Time): 09:30  
+[2025-07-28 17:26:27] local.INFO: Checking Time Slot: 10:00  
+[2025-07-28 17:26:27] local.INFO: Full Current: 2025-07-28 10:00:00  
+[2025-07-28 17:26:27] local.INFO: >> Skipped (Past Time): 10:00  
+[2025-07-28 17:26:27] local.INFO: Checking Time Slot: 10:30  
+[2025-07-28 17:26:27] local.INFO: Full Current: 2025-07-28 10:30:00  
+[2025-07-28 17:26:27] local.INFO: >> Skipped (Past Time): 10:30  
+[2025-07-28 17:26:27] local.INFO: Checking Time Slot: 11:00  
+[2025-07-28 17:26:27] local.INFO: Full Current: 2025-07-28 11:00:00  
+[2025-07-28 17:26:27] local.INFO: >> Skipped (Past Time): 11:00  
+[2025-07-28 17:26:27] local.INFO: Checking Time Slot: 11:30  
+[2025-07-28 17:26:27] local.INFO: Full Current: 2025-07-28 11:30:00  
+[2025-07-28 17:26:27] local.INFO: >> Skipped (Past Time): 11:30  
+[2025-07-28 17:26:27] local.INFO: Checking Time Slot: 12:00  
+[2025-07-28 17:26:27] local.INFO: Full Current: 2025-07-28 12:00:00  
+[2025-07-28 17:26:27] local.INFO: >> Skipped (Past Time): 12:00  
+[2025-07-28 17:26:27] local.INFO: Checking Time Slot: 12:30  
+[2025-07-28 17:26:27] local.INFO: Full Current: 2025-07-28 12:30:00  
+[2025-07-28 17:26:27] local.INFO: >> Skipped (Past Time): 12:30  
+[2025-07-28 17:26:27] local.INFO: Checking Time Slot: 13:00  
+[2025-07-28 17:26:27] local.INFO: Full Current: 2025-07-28 13:00:00  
+[2025-07-28 17:26:27] local.INFO: >> Skipped (Past Time): 13:00  
+[2025-07-28 17:26:27] local.INFO: Checking Time Slot: 13:30  
+[2025-07-28 17:26:27] local.INFO: Full Current: 2025-07-28 13:30:00  
+[2025-07-28 17:26:27] local.INFO: >> Skipped (Past Time): 13:30  
+[2025-07-28 17:26:27] local.INFO: Checking Time Slot: 14:00  
+[2025-07-28 17:26:27] local.INFO: Full Current: 2025-07-28 14:00:00  
+[2025-07-28 17:26:27] local.INFO: >> Skipped (Past Time): 14:00  
+[2025-07-28 17:26:27] local.INFO: Checking Time Slot: 14:30  
+[2025-07-28 17:26:27] local.INFO: Full Current: 2025-07-28 14:30:00  
+[2025-07-28 17:26:27] local.INFO: >> Skipped (Past Time): 14:30  
+[2025-07-28 17:26:27] local.INFO: Checking Time Slot: 15:00  
+[2025-07-28 17:26:27] local.INFO: Full Current: 2025-07-28 15:00:00  
+[2025-07-28 17:26:27] local.INFO: >> Skipped (Past Time): 15:00  
+[2025-07-28 17:26:27] local.INFO: Checking Time Slot: 15:30  
+[2025-07-28 17:26:27] local.INFO: Full Current: 2025-07-28 15:30:00  
+[2025-07-28 17:26:27] local.INFO: >> Skipped (Past Time): 15:30  
+[2025-07-28 17:26:27] local.INFO: Checking Time Slot: 16:00  
+[2025-07-28 17:26:27] local.INFO: Full Current: 2025-07-28 16:00:00  
+[2025-07-28 17:26:27] local.INFO: >> Skipped (Past Time): 16:00  
+[2025-07-28 17:26:27] local.INFO: Checking Time Slot: 16:30  
+[2025-07-28 17:26:27] local.INFO: Full Current: 2025-07-28 16:30:00  
+[2025-07-28 17:26:27] local.INFO: >> Skipped (Past Time): 16:30  
+[2025-07-28 17:26:27] local.INFO: Checking Time Slot: 17:00  
+[2025-07-28 17:26:27] local.INFO: Full Current: 2025-07-28 17:00:00  
+[2025-07-28 17:26:27] local.INFO: >> Skipped (Past Time): 17:00  
+[2025-07-28 17:26:27] local.INFO: Checking Time Slot: 17:30  
+[2025-07-28 17:26:27] local.INFO: Full Current: 2025-07-28 17:30:00  
+[2025-07-28 17:26:27] local.INFO: >> Skipped (Past Time): 17:30  
+[2025-07-28 17:26:27] local.INFO: === Available Times After Filtering ===  
+[2025-07-28 17:26:27] local.INFO: array (
+)  
+[2025-07-28 18:41:19] local.INFO: New User Registered as   
+[2025-07-28 18:41:19] local.ERROR: UserRegisteredListener: Email Send Failed.  
+[2025-07-28 18:41:19] local.ERROR: Symfony\Component\Mailer\Exception\TransportException: Connection could not be established with host "mailhog:1025": stream_socket_client(): php_network_getaddresses: getaddrinfo for mailhog failed: Name or service not known in /home/tayasmart/jospa.tayasmart.com/vendor/symfony/mailer/Transport/Smtp/Stream/SocketStream.php:154
+Stack trace:
+#0 [internal function]: Symfony\Component\Mailer\Transport\Smtp\Stream\SocketStream->Symfony\Component\Mailer\Transport\Smtp\Stream\{closure}()
+#1 /home/tayasmart/jospa.tayasmart.com/vendor/symfony/mailer/Transport/Smtp/Stream/SocketStream.php(157): stream_socket_client()
+#2 /home/tayasmart/jospa.tayasmart.com/vendor/symfony/mailer/Transport/Smtp/SmtpTransport.php(275): Symfony\Component\Mailer\Transport\Smtp\Stream\SocketStream->initialize()
+#3 /home/tayasmart/jospa.tayasmart.com/vendor/symfony/mailer/Transport/Smtp/SmtpTransport.php(210): Symfony\Component\Mailer\Transport\Smtp\SmtpTransport->start()
+#4 /home/tayasmart/jospa.tayasmart.com/vendor/symfony/mailer/Transport/AbstractTransport.php(69): Symfony\Component\Mailer\Transport\Smtp\SmtpTransport->doSend()
+#5 /home/tayasmart/jospa.tayasmart.com/vendor/symfony/mailer/Transport/Smtp/SmtpTransport.php(137): Symfony\Component\Mailer\Transport\AbstractTransport->send()
+#6 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(573): Symfony\Component\Mailer\Transport\Smtp\SmtpTransport->send()
+#7 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(335): Illuminate\Mail\Mailer->sendSymfonyMessage()
+#8 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Notifications/Channels/MailChannel.php(66): Illuminate\Mail\Mailer->send()
+#9 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Notifications/NotificationSender.php(148): Illuminate\Notifications\Channels\MailChannel->send()
+#10 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Notifications/NotificationSender.php(106): Illuminate\Notifications\NotificationSender->sendToNotifiable()
+#11 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Support/Traits/Localizable.php(19): Illuminate\Notifications\NotificationSender->Illuminate\Notifications\{closure}()
+#12 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Notifications/NotificationSender.php(101): Illuminate\Notifications\NotificationSender->withLocale()
+#13 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Notifications/NotificationSender.php(79): Illuminate\Notifications\NotificationSender->sendNow()
+#14 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Notifications/ChannelManager.php(39): Illuminate\Notifications\NotificationSender->send()
+#15 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Notifications/RoutesNotifications.php(18): Illuminate\Notifications\ChannelManager->send()
+#16 /home/tayasmart/jospa.tayasmart.com/app/Listeners/Frontend/UserRegistered/UserRegisteredListener.php(46): App\Models\User->notify()
+#17 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Events/CallQueuedListener.php(114): App\Listeners\Frontend\UserRegistered\UserRegisteredListener->handle()
+#18 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\Events\CallQueuedListener->handle()
+#19 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#20 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\Container\Util::unwrapIfClosure()
+#21 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\Container\BoundMethod::callBoundMethod()
+#22 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(662): Illuminate\Container\BoundMethod::call()
+#23 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Bus/Dispatcher.php(128): Illuminate\Container\Container->call()
+#24 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\Bus\Dispatcher->Illuminate\Bus\{closure}()
+#25 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#26 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Bus/Dispatcher.php(132): Illuminate\Pipeline\Pipeline->then()
+#27 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Queue/CallQueuedHandler.php(123): Illuminate\Bus\Dispatcher->dispatchNow()
+#28 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\Queue\CallQueuedHandler->Illuminate\Queue\{closure}()
+#29 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#30 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Queue/CallQueuedHandler.php(122): Illuminate\Pipeline\Pipeline->then()
+#31 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Queue/CallQueuedHandler.php(70): Illuminate\Queue\CallQueuedHandler->dispatchThroughMiddleware()
+#32 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/Job.php(102): Illuminate\Queue\CallQueuedHandler->call()
+#33 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Queue/SyncQueue.php(43): Illuminate\Queue\Jobs\Job->fire()
+#34 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Queue/Queue.php(59): Illuminate\Queue\SyncQueue->push()
+#35 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php(633): Illuminate\Queue\Queue->pushOn()
+#36 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php(552): Illuminate\Events\Dispatcher->queueHandler()
+#37 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php(478): Illuminate\Events\Dispatcher->Illuminate\Events\{closure}()
+#38 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php(286): Illuminate\Events\Dispatcher->Illuminate\Events\{closure}()
+#39 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php(266): Illuminate\Events\Dispatcher->invokeListeners()
+#40 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(433): Illuminate\Events\Dispatcher->dispatch()
+#41 /home/tayasmart/jospa.tayasmart.com/app/Http/Controllers/Auth/Trait/AuthTrait.php(59): event()
+#42 /home/tayasmart/jospa.tayasmart.com/app/Http/Controllers/Auth/API/AuthController.php(23): App\Http\Controllers\Auth\API\AuthController->registerTrait()
+#43 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\Http\Controllers\Auth\API\AuthController->register()
+#44 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(43): Illuminate\Routing\Controller->callAction()
+#45 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/Route.php(259): Illuminate\Routing\ControllerDispatcher->dispatch()
+#46 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/Route.php(205): Illuminate\Routing\Route->runController()
+#47 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/Router.php(806): Illuminate\Routing\Route->run()
+#48 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#49 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#50 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\Routing\Middleware\SubstituteBindings->handle()
+#51 /home/tayasmart/jospa.tayasmart.com/app/Http/Middleware/localization.php(26): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#52 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): App\Http\Middleware\localization->handle()
+#53 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(159): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#54 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(125): Illuminate\Routing\Middleware\ThrottleRequests->handleRequest()
+#55 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(87): Illuminate\Routing\Middleware\ThrottleRequests->handleRequestUsingNamedLimiter()
+#56 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\Routing\Middleware\ThrottleRequests->handle()
+#57 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/sanctum/src/Http/Middleware/EnsureFrontendRequestsAreStateful.php(25): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#58 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful->Laravel\Sanctum\Http\Middleware\{closure}()
+#59 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#60 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/sanctum/src/Http/Middleware/EnsureFrontendRequestsAreStateful.php(24): Illuminate\Pipeline\Pipeline->then()
+#61 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful->handle()
+#62 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#63 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/Router.php(805): Illuminate\Pipeline\Pipeline->then()
+#64 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/Router.php(784): Illuminate\Routing\Router->runRouteWithinStack()
+#65 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/Router.php(748): Illuminate\Routing\Router->runRoute()
+#66 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/Router.php(737): Illuminate\Routing\Router->dispatchToRoute()
+#67 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\Routing\Router->dispatch()
+#68 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}()
+#69 /home/tayasmart/jospa.tayasmart.com/vendor/livewire/livewire/src/Features/SupportDisablingBackButtonCache/DisableBackButtonCacheMiddleware.php(19): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#70 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Livewire\Features\SupportDisablingBackButtonCache\DisableBackButtonCacheMiddleware->handle()
+#71 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#72 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle()
+#73 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull->handle()
+#74 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#75 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle()
+#76 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\Foundation\Http\Middleware\TrimStrings->handle()
+#77 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#78 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\Foundation\Http\Middleware\ValidatePostSize->handle()
+#79 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(99): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#80 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance->handle()
+#81 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(62): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#82 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\Http\Middleware\HandleCors->handle()
+#83 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(39): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#84 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\Http\Middleware\TrustProxies->handle()
+#85 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#86 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\Pipeline\Pipeline->then()
+#87 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#88 /home/tayasmart/jospa.tayasmart.com/public/index.php(54): Illuminate\Foundation\Http\Kernel->handle()
+#89 {main}  
+[2025-07-28 18:42:50] local.INFO: New User Registered as   
+[2025-07-28 18:42:50] local.ERROR: UserRegisteredListener: Email Send Failed.  
+[2025-07-28 18:42:50] local.ERROR: Symfony\Component\Mailer\Exception\TransportException: Connection could not be established with host "mailhog:1025": stream_socket_client(): php_network_getaddresses: getaddrinfo for mailhog failed: Name or service not known in /home/tayasmart/jospa.tayasmart.com/vendor/symfony/mailer/Transport/Smtp/Stream/SocketStream.php:154
+Stack trace:
+#0 [internal function]: Symfony\Component\Mailer\Transport\Smtp\Stream\SocketStream->Symfony\Component\Mailer\Transport\Smtp\Stream\{closure}()
+#1 /home/tayasmart/jospa.tayasmart.com/vendor/symfony/mailer/Transport/Smtp/Stream/SocketStream.php(157): stream_socket_client()
+#2 /home/tayasmart/jospa.tayasmart.com/vendor/symfony/mailer/Transport/Smtp/SmtpTransport.php(275): Symfony\Component\Mailer\Transport\Smtp\Stream\SocketStream->initialize()
+#3 /home/tayasmart/jospa.tayasmart.com/vendor/symfony/mailer/Transport/Smtp/SmtpTransport.php(210): Symfony\Component\Mailer\Transport\Smtp\SmtpTransport->start()
+#4 /home/tayasmart/jospa.tayasmart.com/vendor/symfony/mailer/Transport/AbstractTransport.php(69): Symfony\Component\Mailer\Transport\Smtp\SmtpTransport->doSend()
+#5 /home/tayasmart/jospa.tayasmart.com/vendor/symfony/mailer/Transport/Smtp/SmtpTransport.php(137): Symfony\Component\Mailer\Transport\AbstractTransport->send()
+#6 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(573): Symfony\Component\Mailer\Transport\Smtp\SmtpTransport->send()
+#7 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(335): Illuminate\Mail\Mailer->sendSymfonyMessage()
+#8 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Notifications/Channels/MailChannel.php(66): Illuminate\Mail\Mailer->send()
+#9 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Notifications/NotificationSender.php(148): Illuminate\Notifications\Channels\MailChannel->send()
+#10 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Notifications/NotificationSender.php(106): Illuminate\Notifications\NotificationSender->sendToNotifiable()
+#11 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Support/Traits/Localizable.php(19): Illuminate\Notifications\NotificationSender->Illuminate\Notifications\{closure}()
+#12 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Notifications/NotificationSender.php(101): Illuminate\Notifications\NotificationSender->withLocale()
+#13 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Notifications/NotificationSender.php(79): Illuminate\Notifications\NotificationSender->sendNow()
+#14 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Notifications/ChannelManager.php(39): Illuminate\Notifications\NotificationSender->send()
+#15 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Notifications/RoutesNotifications.php(18): Illuminate\Notifications\ChannelManager->send()
+#16 /home/tayasmart/jospa.tayasmart.com/app/Listeners/Frontend/UserRegistered/UserRegisteredListener.php(46): App\Models\User->notify()
+#17 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Events/CallQueuedListener.php(114): App\Listeners\Frontend\UserRegistered\UserRegisteredListener->handle()
+#18 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\Events\CallQueuedListener->handle()
+#19 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#20 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\Container\Util::unwrapIfClosure()
+#21 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\Container\BoundMethod::callBoundMethod()
+#22 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(662): Illuminate\Container\BoundMethod::call()
+#23 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Bus/Dispatcher.php(128): Illuminate\Container\Container->call()
+#24 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\Bus\Dispatcher->Illuminate\Bus\{closure}()
+#25 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#26 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Bus/Dispatcher.php(132): Illuminate\Pipeline\Pipeline->then()
+#27 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Queue/CallQueuedHandler.php(123): Illuminate\Bus\Dispatcher->dispatchNow()
+#28 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\Queue\CallQueuedHandler->Illuminate\Queue\{closure}()
+#29 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#30 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Queue/CallQueuedHandler.php(122): Illuminate\Pipeline\Pipeline->then()
+#31 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Queue/CallQueuedHandler.php(70): Illuminate\Queue\CallQueuedHandler->dispatchThroughMiddleware()
+#32 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/Job.php(102): Illuminate\Queue\CallQueuedHandler->call()
+#33 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Queue/SyncQueue.php(43): Illuminate\Queue\Jobs\Job->fire()
+#34 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Queue/Queue.php(59): Illuminate\Queue\SyncQueue->push()
+#35 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php(633): Illuminate\Queue\Queue->pushOn()
+#36 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php(552): Illuminate\Events\Dispatcher->queueHandler()
+#37 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php(478): Illuminate\Events\Dispatcher->Illuminate\Events\{closure}()
+#38 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php(286): Illuminate\Events\Dispatcher->Illuminate\Events\{closure}()
+#39 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php(266): Illuminate\Events\Dispatcher->invokeListeners()
+#40 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(433): Illuminate\Events\Dispatcher->dispatch()
+#41 /home/tayasmart/jospa.tayasmart.com/app/Http/Controllers/Auth/Trait/AuthTrait.php(59): event()
+#42 /home/tayasmart/jospa.tayasmart.com/app/Http/Controllers/Auth/API/AuthController.php(23): App\Http\Controllers\Auth\API\AuthController->registerTrait()
+#43 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\Http\Controllers\Auth\API\AuthController->register()
+#44 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(43): Illuminate\Routing\Controller->callAction()
+#45 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/Route.php(259): Illuminate\Routing\ControllerDispatcher->dispatch()
+#46 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/Route.php(205): Illuminate\Routing\Route->runController()
+#47 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/Router.php(806): Illuminate\Routing\Route->run()
+#48 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#49 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#50 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\Routing\Middleware\SubstituteBindings->handle()
+#51 /home/tayasmart/jospa.tayasmart.com/app/Http/Middleware/localization.php(26): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#52 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): App\Http\Middleware\localization->handle()
+#53 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(159): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#54 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(125): Illuminate\Routing\Middleware\ThrottleRequests->handleRequest()
+#55 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(87): Illuminate\Routing\Middleware\ThrottleRequests->handleRequestUsingNamedLimiter()
+#56 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\Routing\Middleware\ThrottleRequests->handle()
+#57 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/sanctum/src/Http/Middleware/EnsureFrontendRequestsAreStateful.php(25): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#58 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful->Laravel\Sanctum\Http\Middleware\{closure}()
+#59 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#60 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/sanctum/src/Http/Middleware/EnsureFrontendRequestsAreStateful.php(24): Illuminate\Pipeline\Pipeline->then()
+#61 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful->handle()
+#62 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#63 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/Router.php(805): Illuminate\Pipeline\Pipeline->then()
+#64 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/Router.php(784): Illuminate\Routing\Router->runRouteWithinStack()
+#65 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/Router.php(748): Illuminate\Routing\Router->runRoute()
+#66 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/Router.php(737): Illuminate\Routing\Router->dispatchToRoute()
+#67 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\Routing\Router->dispatch()
+#68 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}()
+#69 /home/tayasmart/jospa.tayasmart.com/vendor/livewire/livewire/src/Features/SupportDisablingBackButtonCache/DisableBackButtonCacheMiddleware.php(19): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#70 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Livewire\Features\SupportDisablingBackButtonCache\DisableBackButtonCacheMiddleware->handle()
+#71 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#72 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle()
+#73 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull->handle()
+#74 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#75 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle()
+#76 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\Foundation\Http\Middleware\TrimStrings->handle()
+#77 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#78 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\Foundation\Http\Middleware\ValidatePostSize->handle()
+#79 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(99): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#80 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance->handle()
+#81 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(62): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#82 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\Http\Middleware\HandleCors->handle()
+#83 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(39): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#84 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\Http\Middleware\TrustProxies->handle()
+#85 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#86 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\Pipeline\Pipeline->then()
+#87 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#88 /home/tayasmart/jospa.tayasmart.com/public/index.php(54): Illuminate\Foundation\Http\Kernel->handle()
+#89 {main}  
+[2025-07-28 18:44:04] local.INFO: New User Registered as   
+[2025-07-28 18:44:04] local.ERROR: UserRegisteredListener: Email Send Failed.  
+[2025-07-28 18:44:04] local.ERROR: Symfony\Component\Mailer\Exception\TransportException: Connection could not be established with host "mailhog:1025": stream_socket_client(): php_network_getaddresses: getaddrinfo for mailhog failed: Name or service not known in /home/tayasmart/jospa.tayasmart.com/vendor/symfony/mailer/Transport/Smtp/Stream/SocketStream.php:154
+Stack trace:
+#0 [internal function]: Symfony\Component\Mailer\Transport\Smtp\Stream\SocketStream->Symfony\Component\Mailer\Transport\Smtp\Stream\{closure}()
+#1 /home/tayasmart/jospa.tayasmart.com/vendor/symfony/mailer/Transport/Smtp/Stream/SocketStream.php(157): stream_socket_client()
+#2 /home/tayasmart/jospa.tayasmart.com/vendor/symfony/mailer/Transport/Smtp/SmtpTransport.php(275): Symfony\Component\Mailer\Transport\Smtp\Stream\SocketStream->initialize()
+#3 /home/tayasmart/jospa.tayasmart.com/vendor/symfony/mailer/Transport/Smtp/SmtpTransport.php(210): Symfony\Component\Mailer\Transport\Smtp\SmtpTransport->start()
+#4 /home/tayasmart/jospa.tayasmart.com/vendor/symfony/mailer/Transport/AbstractTransport.php(69): Symfony\Component\Mailer\Transport\Smtp\SmtpTransport->doSend()
+#5 /home/tayasmart/jospa.tayasmart.com/vendor/symfony/mailer/Transport/Smtp/SmtpTransport.php(137): Symfony\Component\Mailer\Transport\AbstractTransport->send()
+#6 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(573): Symfony\Component\Mailer\Transport\Smtp\SmtpTransport->send()
+#7 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Mail/Mailer.php(335): Illuminate\Mail\Mailer->sendSymfonyMessage()
+#8 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Notifications/Channels/MailChannel.php(66): Illuminate\Mail\Mailer->send()
+#9 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Notifications/NotificationSender.php(148): Illuminate\Notifications\Channels\MailChannel->send()
+#10 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Notifications/NotificationSender.php(106): Illuminate\Notifications\NotificationSender->sendToNotifiable()
+#11 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Support/Traits/Localizable.php(19): Illuminate\Notifications\NotificationSender->Illuminate\Notifications\{closure}()
+#12 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Notifications/NotificationSender.php(101): Illuminate\Notifications\NotificationSender->withLocale()
+#13 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Notifications/NotificationSender.php(79): Illuminate\Notifications\NotificationSender->sendNow()
+#14 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Notifications/ChannelManager.php(39): Illuminate\Notifications\NotificationSender->send()
+#15 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Notifications/RoutesNotifications.php(18): Illuminate\Notifications\ChannelManager->send()
+#16 /home/tayasmart/jospa.tayasmart.com/app/Listeners/Frontend/UserRegistered/UserRegisteredListener.php(46): App\Models\User->notify()
+#17 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Events/CallQueuedListener.php(114): App\Listeners\Frontend\UserRegistered\UserRegisteredListener->handle()
+#18 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\Events\CallQueuedListener->handle()
+#19 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#20 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\Container\Util::unwrapIfClosure()
+#21 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\Container\BoundMethod::callBoundMethod()
+#22 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(662): Illuminate\Container\BoundMethod::call()
+#23 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Bus/Dispatcher.php(128): Illuminate\Container\Container->call()
+#24 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\Bus\Dispatcher->Illuminate\Bus\{closure}()
+#25 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#26 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Bus/Dispatcher.php(132): Illuminate\Pipeline\Pipeline->then()
+#27 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Queue/CallQueuedHandler.php(123): Illuminate\Bus\Dispatcher->dispatchNow()
+#28 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\Queue\CallQueuedHandler->Illuminate\Queue\{closure}()
+#29 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#30 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Queue/CallQueuedHandler.php(122): Illuminate\Pipeline\Pipeline->then()
+#31 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Queue/CallQueuedHandler.php(70): Illuminate\Queue\CallQueuedHandler->dispatchThroughMiddleware()
+#32 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Queue/Jobs/Job.php(102): Illuminate\Queue\CallQueuedHandler->call()
+#33 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Queue/SyncQueue.php(43): Illuminate\Queue\Jobs\Job->fire()
+#34 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Queue/Queue.php(59): Illuminate\Queue\SyncQueue->push()
+#35 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php(633): Illuminate\Queue\Queue->pushOn()
+#36 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php(552): Illuminate\Events\Dispatcher->queueHandler()
+#37 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php(478): Illuminate\Events\Dispatcher->Illuminate\Events\{closure}()
+#38 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php(286): Illuminate\Events\Dispatcher->Illuminate\Events\{closure}()
+#39 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Events/Dispatcher.php(266): Illuminate\Events\Dispatcher->invokeListeners()
+#40 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(433): Illuminate\Events\Dispatcher->dispatch()
+#41 /home/tayasmart/jospa.tayasmart.com/app/Http/Controllers/Auth/Trait/AuthTrait.php(59): event()
+#42 /home/tayasmart/jospa.tayasmart.com/app/Http/Controllers/Auth/API/AuthController.php(23): App\Http\Controllers\Auth\API\AuthController->registerTrait()
+#43 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App\Http\Controllers\Auth\API\AuthController->register()
+#44 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(43): Illuminate\Routing\Controller->callAction()
+#45 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/Route.php(259): Illuminate\Routing\ControllerDispatcher->dispatch()
+#46 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/Route.php(205): Illuminate\Routing\Route->runController()
+#47 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/Router.php(806): Illuminate\Routing\Route->run()
+#48 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#49 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#50 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\Routing\Middleware\SubstituteBindings->handle()
+#51 /home/tayasmart/jospa.tayasmart.com/app/Http/Middleware/localization.php(26): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#52 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): App\Http\Middleware\localization->handle()
+#53 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(159): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#54 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(125): Illuminate\Routing\Middleware\ThrottleRequests->handleRequest()
+#55 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(87): Illuminate\Routing\Middleware\ThrottleRequests->handleRequestUsingNamedLimiter()
+#56 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\Routing\Middleware\ThrottleRequests->handle()
+#57 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/sanctum/src/Http/Middleware/EnsureFrontendRequestsAreStateful.php(25): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#58 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful->Laravel\Sanctum\Http\Middleware\{closure}()
+#59 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#60 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/sanctum/src/Http/Middleware/EnsureFrontendRequestsAreStateful.php(24): Illuminate\Pipeline\Pipeline->then()
+#61 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful->handle()
+#62 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#63 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/Router.php(805): Illuminate\Pipeline\Pipeline->then()
+#64 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/Router.php(784): Illuminate\Routing\Router->runRouteWithinStack()
+#65 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/Router.php(748): Illuminate\Routing\Router->runRoute()
+#66 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Routing/Router.php(737): Illuminate\Routing\Router->dispatchToRoute()
+#67 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate\Routing\Router->dispatch()
+#68 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(144): Illuminate\Foundation\Http\Kernel->Illuminate\Foundation\Http\{closure}()
+#69 /home/tayasmart/jospa.tayasmart.com/vendor/livewire/livewire/src/Features/SupportDisablingBackButtonCache/DisableBackButtonCacheMiddleware.php(19): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#70 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Livewire\Features\SupportDisablingBackButtonCache\DisableBackButtonCacheMiddleware->handle()
+#71 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#72 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle()
+#73 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull->handle()
+#74 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#75 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle()
+#76 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\Foundation\Http\Middleware\TrimStrings->handle()
+#77 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#78 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\Foundation\Http\Middleware\ValidatePostSize->handle()
+#79 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(99): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#80 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance->handle()
+#81 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(62): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#82 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\Http\Middleware\HandleCors->handle()
+#83 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(39): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#84 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(183): Illuminate\Http\Middleware\TrustProxies->handle()
+#85 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(119): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#86 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate\Pipeline\Pipeline->then()
+#87 /home/tayasmart/jospa.tayasmart.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#88 /home/tayasmart/jospa.tayasmart.com/public/index.php(54): Illuminate\Foundation\Http\Kernel->handle()
+#89 {main}  

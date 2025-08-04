@@ -1,13 +1,15 @@
-    <?php
+<?php
 
     use App\Http\Controllers\Backend\BackendController;
     use App\Http\Controllers\Backend\BackupController;
     use App\Http\Controllers\Backend\BranchController;
+        use App\Http\Controllers\Backend\CouponController;
     use App\Http\Controllers\Backend\NotificationsController;
     use App\Http\Controllers\Backend\SettingController;
     use App\Http\Controllers\Backend\UserController;
     use App\Http\Controllers\LanguageController;
     use App\Http\Controllers\ModuleController;
+    use App\Http\Controllers\InvoiceController;
     use App\Http\Controllers\PermissionController;
     use App\Http\Controllers\ReportsController;
     use App\Http\Controllers\RoleController;
@@ -25,6 +27,9 @@
     use Modules\Category\Models\Category;
     use App\Models\Branch;
     use App\Http\Controllers\GiftController;
+    use App\Http\Controllers\ServiceController;
+    use App\Http\Controllers\ContactMessageController;
+
     /*
     |--------------------------------------------------------------------------
     | Web Routes
@@ -41,7 +46,7 @@
 
     Route::get('/pay-now', [HomeBookingController::class, 'createPayment']);
     Route::get('/payment-success', [HomeBookingController::class, 'handlePaymentResult']);
-
+    Route::post('/contact', [ContactMessageController::class, 'store'])->name('contact.store');
 
     //    SMS API
     Route::post('/send-sms', [HomeBookingController::class, 'send']);
@@ -51,8 +56,13 @@
     Route::post('/signup', [SignController::class, 'store'])->name('signup.store');
     Route::get('/signin', [SignController::class, 'login'])->name('signin');
     Route::post('/signin', [SignController::class, 'verify'])->name('signin.verify');
+Route::post('/signin/verify', [SignController::class, 'verify'])->name('signin.verify');
+    Route::post('/import-services', [ServiceController::class, 'import'])->name('import.services');// uploude <= موقت هنا 
 
+    // Cobon
+    Route::post('/cobon', [CouponController::class, 'store'])->name('cobon.store');
 
+    
     Route::middleware('user.auth')->group(function () {
 
         Route::get('/homeService', function () {
@@ -62,6 +72,8 @@
         Route::get('/homeService', function () {
             return view('home.create');
         })->name('home.create');
+ Route::get('/admin/contact-messages', [ContactMessageController::class, 'index'])->name('contact.index');
+    Route::post('/admin/contact-messages/{id}/reply', [ContactMessageController::class, 'reply'])->name('admin.contact-messages.reply');
 
 
         Route::get('/booking-calander', function () {
@@ -82,6 +94,7 @@
     Route::post('/gift-cards', [GiftCardController::class, 'store'])->name('gift.create');
 
     Route::get('/success-py-gift', [GiftCardController::class, 'handlePaymentResult']);
+    Route::get('/success-py-invoice', [BookingCartController::class, 'handlePaymentResult']);
 
     // ADS page
     Route::get('/ads', function () {return view('components.frontend.ads');})->name('ads.page');
@@ -91,6 +104,10 @@
     Route::post('/cart', [BookingCartController::class, 'store'])->name('cart.store');
 
     Route::delete('/cart/{id}', [BookingCartController::class, 'destroy'])->name('cart.destroy');
+
+    Route::post('/cart-pay', [BookingCartController::class, 'cartPay'])->name('cart.payment');
+    
+    Route::get('/loyalty-points/check', [BookingCartController::class, 'checkLoyaltyPoints'])->name('loyalty.check');
 
     // Profile
     Route::get('/profile', [SignController::class, 'profile'])->name('profile');
@@ -102,7 +119,7 @@
     Route::get('/success-py', [SignController::class, 'handlePaymentResult']);
 
 
-    });
+    }); 
 
 
     Route::get('/service-groups', [HomeBookingController::class, 'getServiceGroups']);
@@ -334,6 +351,11 @@
 
     Route::middleware(['auth'])->group(function () {
         Route::get('/app/gift', [GiftController::class, 'index'])->name('app.gift');
-        Route::get('/gift/delete/{id}', [GiftController::class, 'destroy'])->name('gift.delete');
+        
+        Route::get('/app/invoice', [InvoiceController::class, 'index'])->name('app.invoice');
+        Route::get('/validate-coupon', [InvoiceController::class, 'validateCoupon']);// about serves 
+        Route::get('/validate-invoice-coupon', [InvoiceController::class, 'validateInvoiceCoupon']);
 
+        
+        Route::get('/gift/delete/{id}', [GiftController::class, 'destroy'])->name('gift.delete');
     });

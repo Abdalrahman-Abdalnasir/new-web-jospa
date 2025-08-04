@@ -8,6 +8,12 @@ use App\Http\Controllers\Backend\API\NotificationsController;
 use App\Http\Controllers\Backend\API\SettingController;
 use App\Http\Controllers\Backend\API\UserApiController;
 use App\Http\Controllers\CalanderBookingController;
+use App\Http\Controllers\GiftCardController;
+use App\Http\Controllers\HomeBookingController;
+use App\Http\Controllers\BookingCartController;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SaloneBookController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -18,8 +24,7 @@ use App\Http\Controllers\CalanderBookingController;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Route;
+
 
 Route::get('branch-list', [BranchController::class, 'branchList']);
 Route::get('user-detail', [AuthController::class, 'userDetails']);
@@ -32,6 +37,11 @@ Route::delete('/booking-carts/{id}', [CalanderBookingController::class, 'destroy
 Route::get('/booking-carts/by-time', [CalanderBookingController::class, 'getAllByTime']);
 Route::get('/booking-carts/by-day', [CalanderBookingController::class, 'getAllByDay']);
 
+
+
+
+Route::get('/payment-success', [HomeBookingController::class, 'handlePaymentResult']);
+
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
@@ -39,6 +49,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::controller(AuthController::class)->group(function () {
     Route::post('register', 'register');
     Route::post('login', 'login');
+    Route::post('signup', 'signup');
     Route::post('social-login', 'socialLogin');
     Route::post('forgot-password', 'forgotPassword');
     Route::get('logout', 'logout');
@@ -51,6 +62,16 @@ Route::get('branch-service', [BranchController::class, 'branchService']);
 Route::get('branch-review', [BranchController::class, 'branchReviews']);
 Route::get('branch-employee', [BranchController::class, 'branchEmployee']);
 Route::get('branch-gallery', [BranchController::class, 'branchGallery']);
+
+Route::get('/available/{date}/{staffId}', [HomeBookingController::class, 'getAvailableTimes']);
+
+
+Route::prefix('gift-cards')->group(function () {
+    Route::get('/', [GiftCardController::class, 'index']);
+    Route::post('/', [GiftCardController::class, 'store']);
+    Route::get('/payment-result', [GiftCardController::class, 'handlePaymentResult']);
+});
+
 Route::group(['middleware' => 'auth:sanctum'], function () {
     Route::post('branch/assign/{id}', [BranchController::class, 'assign_update']);
     Route::apiResource('branch', BranchController::class);
@@ -71,5 +92,13 @@ Route::group(['middleware' => 'auth:sanctum'], function () {
     Route::post('edit-address', [AddressController::class, 'EditAddress']);
 
     Route::post('verify-slot', [BranchController::class, 'verifySlot']);
+
+    Route::get('/cart', [BookingCartController::class, 'index']);
+    Route::post('/cart', [BookingCartController::class, 'store']);
+    Route::delete('/cart/{id}', [BookingCartController::class, 'destroy']);
+    Route::post('/cart-pay', [BookingCartController::class, 'cartPay']);
+    Route::post('/bookings', [HomeBookingController::class, 'store']);
+    Route::get('/details/{id}', [SaloneBookController::class, 'show']);
+    Route::get('/pay-now', [HomeBookingController::class, 'createPayment']);
 });
 Route::post('app-configuration', [SettingController::class, 'appConfiguraton']);

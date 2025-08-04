@@ -9,6 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ __('messagess.giftcard') }} - JOSPA</title>
     <link rel="stylesheet" href="jospa-gift-card.css">
+    
+    <!--Font Family-->
+    <link href="https://fonts.cdnfonts.com/css/lama-sans" rel="stylesheet">
 
     {{-- toastr.css --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
@@ -17,7 +20,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     
     <style>
-        /* إصلاح ألوان Toastr */
         #toast-container > .toast {
           background-color: #333 !important;
           color: #fff !important;
@@ -61,14 +63,10 @@
     </style>
 
     {{-- font-family --}}
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap"
-        rel="stylesheet">
     <style>
         body {
-            font-family: 'IBM Plex Sans Arabic', sans-serif !important;
+            font-family: 'Lama Sans', sans-serif !important;
+            font-style: {{ app()->getLocale() == 'ar' ? 'italic !important' : 'normal !important' }};
             background: #f8f6f1;
             color: #333;
             margin: 0;

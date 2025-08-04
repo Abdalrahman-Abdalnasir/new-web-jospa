@@ -11,7 +11,7 @@ class BookingService extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['sequance', 'booking_id', 'service_id', 'employee_id', 'service_price', 'duration_min', 'status', 'start_date_time'];
+    protected $fillable = ['sequance', 'booking_id', 'service_id', 'employee_id', 'service_price', 'duration_min', 'status', 'start_date_time' , 'coupon_code' , 'discount_amount'];
 
     protected $casts = [
 

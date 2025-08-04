@@ -19,13 +19,13 @@
       <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet"/>
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">  
+    <link href="https://fonts.cdnfonts.com/css/lama-sans" rel="stylesheet">
+ 
     <style>
       body {
         background: #f7f7f7;
-        font-family: 'IBM Plex Sans Arabic', sans-serif !important;
+        font-family: 'Lama Sans', sans-serif !important;
+        font-style: {{ app()->getLocale() == 'ar' ? 'italic !important' : 'normal !important' }};
       }
       .profile-hero {
         background: linear-gradient(90deg, #fff 60%, #f7f7f7 100%);
@@ -48,7 +48,6 @@
       }
       .profile-balance-corner {
         position: absolute;
-        display: flex;
         top: 0;
         align-items: center;
         padding: 10px;
@@ -347,11 +346,6 @@
     <!-- Hero Section -->
     <div class="profile-hero text-center">
       <div class="profile-hero text-center position-relative">
-
-
-
-
-
         <!-- رصيد المستخدم في الزاوية -->
         <div class="profile-balance-corner"style="{{ app()->getLocale() == 'ar' ? 'right:19%;' : 'left:19%;' }}">
             <div>
@@ -366,15 +360,14 @@
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" /></svg>
             </button>
           </div>
-
-
+          
         </div>
 
         <div class="profile-balance-corner "style="{{ app()->getLocale() == 'ar' ? 'left:19%;' : 'right:19%;' }}">
           <a href="{{route('profile.my_bookings')}}" style="margin: 17px;text-decoration-line: none;background-color: #bc9a69;color: #fff;border-radius: 35px;padding: 10px;font-size: 16px;font-weight: bold;" >{{ __('messagess.my_bookings') }}</a>
           <form method="POST" action="{{ route('logout') }}">
               @csrf
-              <button style="text-decoration-line: none;background-color: #bc2c2c;color: #fff;border-radius: 35px;padding: 10px;font-size: 16px;font-weight: bold;border: none;position: relative;" type="submit">{{__('profile.logout')}}</button>
+              <button style="margin-top: 30px;text-decoration-line: none;background-color: #bc2c2c;color: #fff;border-radius: 35px;padding: 10px;font-size: 16px;font-weight: bold;border: none;position: relative;" type="submit">{{__('profile.logout')}}</button>
           </form>
         </div>
 
@@ -386,10 +379,14 @@
       <h2 class="fw-bold mt-2 mb-1">{{ $user->first_name }} {{ $user->last_name }}</h2>
       <div class="text-muted mb-2">{{ $user->email }}</div>
       
-
-
-
-
+    <div class="d-flex align-items-center justify-content-center mb-3" style="gap: 10px;">
+        <div class="balance-box">
+            {{ $points }}
+            <span class="text-muted ms-1" style="font-size: 0.98rem;">
+                {{ __('profile.loyalty_points') }}
+            </span>
+        </div>
+    </div>
 
     <!-- معلومات المستخدم -->
     <div class="profile-info-wide mt-0 mb-5 position-relative">
@@ -426,13 +423,6 @@
           <div class="info-label">{{ __('profile.registration_date') }}</div>
           <div class="info-value">{{ $user->created_at->format('Y-m-d') }}</div>
         </div>
-        <div class="col-md-4 col-12 mb-3">
-          <div class="info-label">{{ __('profile.last_login') }}</div>
-          <div class="info-value">
-            {{ auth()->user()->last_login_at?->format('Y-m-d H:i') ?? __('profile.no_data') }}
-          </div>
-        </div>
-
       </div>
       
     </div>

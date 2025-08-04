@@ -26,7 +26,6 @@ class DashboardController extends Controller
         $branchId = $request->input('branch_id'); // Assuming the branch ID is passed in the request
         $user_id = $request->input('user_id');
         $branch = Branch::find($branchId);
-
         if (! $branch) {
             return response()->json(['status' => false, 'message' => __('branch.branch_notfound')], 404);
         }

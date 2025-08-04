@@ -114,12 +114,13 @@ class BussinessHoursController extends Controller
         $data = $request->all();
 
         $branch_id = $data['branch_id'];
+        $shift_id = $data['shift_id'] ?? null;
 
         $weekdays = $data['weekdays'];
-
         foreach ($weekdays as $key => $value) {
             $value['branch_id'] = $branch_id;
-            BussinessHour::updateOrCreate(['branch_id' => $branch_id, 'id' => $value['id'] ?? -1], $value);
+            $value['shift_id']  = $shift_id;
+            BussinessHour::updateOrCreate(['branch_id' => $branch_id,'id' => $value['id'] ?? -1], $value);
         }
 
         $data = BussinessHour::where('branch_id', $branch_id)->get();

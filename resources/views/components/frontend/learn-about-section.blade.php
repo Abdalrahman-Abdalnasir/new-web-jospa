@@ -1,12 +1,11 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/lama-sans" rel="stylesheet">
+
 <section class="py-5" style="margin-top: 100px;">
     <div class="container" style="padding:0 5rem">
         <div class="row align-items-center g-5">
             <!-- Left: Text -->
             <div class="col-12 col-lg-6" data-aos="fade-right" data-aos-delay="100">
-                <h2 class="fw-bold mb-4" style="font-size: 44.8px;margin-bottom: 15px;font-family: 'IBM Plex Sans Arabic', sans-serif !important;">
+                <h2 class="fw-bold mb-4" style="font-size: 44.8px;margin-bottom: 15px;font-family: 'Lama Sans', sans-serif !important;font-style: {{ app()->getLocale() == 'ar' ? 'italic !important' : 'normal !important' }};">
                     <span style="color: var(--primary-color);">
                         {{ __('messagess.title_part1') }}
                     </span>
@@ -19,7 +18,7 @@
         </div>
         <div style="height: 2px; width: 50px; background: #bc9a69; border-radius: 2px;"></div>
       </div>
-                <p class="mb-4" style="margin-top: 47px;color: #000;font-size: 17.6px;line-height: 1.8;margin-bottom: 30px !important;font-weight: 400;font-family: 'IBM Plex Sans Arabic', sans-serif !important;">
+                <p class="mb-4" style="margin-top: 47px;color: #000;font-size: 17.6px;line-height: 1.8;margin-bottom: 30px !important;font-weight: 400;font-family: 'Lama Sans', sans-serif !important;font-style: {{ app()->getLocale() == 'ar' ? 'italic !important' : 'normal !important' }};">
   {{ __('messagess.description2') }}                </p>
                 @include('components.frontend.gift-button', [
                     'text' => __('messagess.read_more'),

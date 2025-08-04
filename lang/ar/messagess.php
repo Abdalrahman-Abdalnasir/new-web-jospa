@@ -1,6 +1,26 @@
 <?php   
 
-return [  
+return [ 
+    'wallet_insufficient_balance' => 'رصيد المحفظة غير كافٍ لإتمام العملية',
+    'invalid_coupon' => 'كود الكوبون غير صالح',
+    'discount' => 'قيمة الخصم',
+    'coupon' => 'كود الكوبون',
+    'apply_coupon' => 'تطبيق الكوبون',
+    'enter_coupon' => 'أدخل كود الكوبون',
+    'enter_coupon_code' => 'من فضلك أدخل كود الكوبون.',
+    'coupon_applied' => 'تم تطبيق الكوبون بنجاح',
+    'invalid_coupon_for_service' => 'الكوبون غير صالح لهذه الخدمة.',
+    'error_occurred' => 'حدث خطأ، حاول مرة أخرى.',
+    'invoice'     => 'الفواتير', 
+    'coupondes'     => 'القسائم', 
+    'available' => 'القسائم المتاحة',
+    'owned'     => 'القسائم المملوك',
+    'cart_item_deleted' => 'تم حذف العنصر من السلة',
+    'wallet_payment_success' => 'تم الدفع بنجاح من المحفظة.',
+    'wallet_insufficient_balance' => 'الرصيد غير كافٍ في المحفظة.',
+    "branch_tamkeen_description" => "خدمات تجميلية متكاملة في فرع تمكين بأجواء راقية واحترافية",
+    "branch_hospitality_description" => "استمتعي بتجربة فريدة في فرع الضيافة مع أفضل خدمات العناية والجمال",
+    "home_services_description" => "راحة ورفاهية في بيتك مع خدماتنا المنزلية المتنوعة من خبراء التجميل",
     'gifts' => 'الهدايا',
     'al_wasila'   => 'الوسيلة',
     'ad_doubiya'  => 'الدوبية',
@@ -301,7 +321,7 @@ return [
     'no_description_available' => 'لا يوجد وصف متاح.',
     'price' => 'السعر',
     'services_included' => 'عدد الخدمات',
-    'services' => 'خدمات',
+    'services' => 'الخدمات الفرعية',
     'book_now' => 'احجز الآن',
     'details' => 'التفاصيل',
     'learn_about' => 'تعرف على',
@@ -317,7 +337,7 @@ return [
     'choose_your_gift' => 'اختر هديتك',
     'tamkeen_description' => 'خدمات تمكين وتوظيف شاملة.',
     'hospitality_description' => 'أفضل خدمات ضيافة عالية الجودة.',
-    'home_services_description' => 'أيدي عاملة منزلية مدربة وموثوقة.',
+    'home_services_description' => 'راحة ورفاهية في بيتك مع خدماتنا المنزلية المتنوعة من خبراء التجميل',
 
     'book_now' => 'احجز الآن',
     'phone' => 'الهاتف',
@@ -347,4 +367,5 @@ return [
     'contact' => 'تواصل',
     'follow' => 'تابعنا',
     'error_loading_package_details' => 'حدث خطأ أثناء تحميل تفاصيل الباقة. حاول مجددًا.',
+    'SAR' => 'ريال ',
 ];

@@ -1,7 +1,6 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-<div style="position: fixed; top: 0; left: 0; width: 100%; background-color: #2e2e2e;height: 36px;color: #bc9a69; text-align: center; padding: 10px 0; z-index: 9999;font-size: 14px;font-family: 'IBM Plex Sans Arabic', sans-serif !important;font-weight: bold;line-height: 1.25rem;">
+<link href="https://fonts.cdnfonts.com/css/lama-sans" rel="stylesheet">
+
+<div style="position: fixed; top: 0; left: 0; width: 100%; background-color: #2e2e2e;height: 36px;color: #bc9a69; text-align: center; padding: 10px 0; z-index: 9999;font-size: 14px;font-family: 'Lama Sans', sans-serif !important;font-style: {{ app()->getLocale() == 'ar' ? 'italic !important' : 'normal !important' }};font-weight: bold;line-height: 1.25rem;">
     {{ __('messagess.hero_banar') }}
     <button onclick="this.parentElement.style.display='none'" style="position: absolute; right: 10px; top: 5px; background-color: rgba(255,255,255,0.05); border: none; border-radius: 6px; padding: 4px 6px; cursor: pointer;">
         <svg style="width: 12px; height: 12px;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
@@ -34,7 +33,7 @@
                     <svg data-v-49efcba9="" style="width: 18px; height: 18px" class="svg-inline--fa fa-x-twitter" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="x-twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path class="" fill="currentColor" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg>
                 </a>
 
-                <a href="https://www.instagram.com/jospa_sa/" class="rounded-circle p-2 d-flex align-items-center justify-content-center nav-social-icons"
+                <a href="https://www.facebook.com/share/1B4KWYRGZC/" class="rounded-circle p-2 d-flex align-items-center justify-content-center nav-social-icons"
                     style="background-color:#ffffff1a; cursor: pointer; width: 40px;border-radius: 50%; height: 40px">
                     <svg data-v-49efcba9="" style="width: 18px; height: 18px" class="svg-inline--fa fa-facebook-f" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path class="" fill="currentColor" d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"></path></svg>
                 </a>
@@ -50,7 +49,7 @@
                     <span class="rounded-circle p-2 d-flex align-items-center justify-content-center">
                         <svg data-v-49efcba9="" style="width: 16px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path class="" fill="white" d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.1 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"></path></svg>
                     </span>
-                        <a style="color: white;font-family: 'IBM Plex Sans Arabic', sans-serif !important;font-size: 14.4px;" href="tel:920012924">920012924</a>
+                                  <a style="color: white;font-family: 'Lama Sans', sans-serif !important;font-style: {{ app()->getLocale() == 'ar' ? 'italic !important' : 'normal !important' }};font-size: 14.4px;" href="tel:920012924">920012924</a>
                 </div>
             </div>
         </div>

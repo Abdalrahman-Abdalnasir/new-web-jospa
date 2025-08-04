@@ -1,12 +1,11 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-<div class="position-relative rounded-4 overflow-hidden shadow" style="height: 260px;font-family: 'IBM Plex Sans Arabic', sans-serif !important;">
+<link href="https://fonts.cdnfonts.com/css/lama-sans" rel="stylesheet">
+
+<div class="position-relative rounded-4 overflow-hidden shadow" style="height: 260px;font-family: 'Lama Sans', sans-serif !important;font-style: {{ app()->getLocale() == 'ar' ? 'italic' : 'normal' }};">
     <img src="{{ $image ?? asset('images/frontend/slider1.webp') }}" alt="{{ $name ?? 'Package' }}" class="w-100 h-100" style="object-fit: cover;">
     <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to top, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0.0) 100%);"></div>
     <!-- View Package badge -->
     <div class="position-absolute top-0 start-0 m-3 px-3 py-1 rounded-pill text-white"
-         style="background: black;cursor: pointer;height: 36px;width: 86px;text-align: center;line-height: 2.4;font-weight: bold;"
+         style="width: 20% !important;background: black;cursor: pointer;height: 36px;width: 86px;text-align: center;line-height: 2.4;font-weight: bold;"
          data-bs-toggle="modal"
          data-bs-target="#packageModal"
          @if(isset($package_id)) onclick="showPackageDetails({{ $package_id }})" @endif>

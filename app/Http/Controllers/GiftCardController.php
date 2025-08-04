@@ -12,18 +12,26 @@ use Modules\Service\Models\Service as ServiceModel;
 class GiftCardController extends Controller
 {
 
-    public function index(){
-        
-    $subCategories = Category::with(['Services' => function ($q) {$q->select('id', 'name', 'default_price','category_id', 'sub_category_id')->where('status', 1);}])
-    ->whereNull('parent_id')
-    ->where('status', 1)
-    ->get();
+public function index(Request $request)
+{
+    $subCategories = Category::with(['Services' => function ($q) {
+        $q->select('id', 'name', 'default_price','category_id', 'sub_category_id')->where('status', 1);
+    }])->whereNull('parent_id')->where('status', 1)->get();
 
-    return view('salon.gift' , compact('subCategories'));
+    // لو الطلب من API (طلب JSON)
+    if ($request->wantsJson()) {
+        return response()->json([
+            'success' => true,
+            'data' => $subCategories
+        ]);
     }
 
+    // لو الطلب عادي من متصفح
+    return view('salon.gift', compact('subCategories'));
+}
 
- public function store(Request $request)
+
+public function store(Request $request)
 {
     $data = $request->validate([
         'delivery_method'     => 'required|string',
@@ -43,24 +51,18 @@ class GiftCardController extends Controller
     ]);
 
     try {
-        // 2. التأكد من أن الخدمات مصفوفة صحيحة وتحويلها لأرقام
         $selectedServices = array_map('intval', $data['requested_services']);
-
-        // 3. جلب الخدمات من قاعدة البيانات
         $services = ServiceModel::whereIn('id', $selectedServices)->get();
-
-        // 4. حساب المجموع الإجمالي
         $total = $services->sum('default_price');
 
-        // 5. تخزين البيانات في السيشن
+        // حفظ الداتا في السيشن لو حابب (أو ممكن تستغنى عنها للـ API)
         session([
             'gift_card_data' => array_merge($data, [
-                'requested_services' => $selectedServices, // تأكد إنها array مش string
+                'requested_services' => $selectedServices,
             ]),
             'gift_card_total' => $total,
         ]);
 
-        // 6. إرسال طلب الدفع إلى TAP
         $apiKey = env('TAP_SECRET_KEY');
         $response = \Illuminate\Support\Facades\Http::withHeaders([
             'Authorization' => "Bearer $apiKey",
@@ -73,8 +75,8 @@ class GiftCardController extends Controller
             "description" => "طلب دفع",
             "statement_descriptor" => "Jospa Store",
             "customer" => [
-                "first_name" => auth()->user()->first_name,
-                "email" => auth()->user()->email,
+                "first_name" => auth()->user()->first_name ?? $data['sender_name'],
+                "email" => auth()->user()->email ?? 'guest@example.com',
             ],
             "source" => [
                 "id" => "src_all"
@@ -86,18 +88,30 @@ class GiftCardController extends Controller
 
         $res = $response->json();
 
-        // 7. التحقق من وجود رابط الدفع
         if (isset($res['transaction']['url'])) {
-            return redirect()->to($res['transaction']['url']);
+            return response()->json([
+                'status' => true,
+                'message' => 'رابط الدفع تم إنشاؤه بنجاح',
+                'payment_url' => $res['transaction']['url'],
+                'amount' => $total,
+            ]);
         }
 
-        // 8. فشل إنشاء الدفع
-        return view('components.frontend.status.ERPAY');
+        return response()->json([
+            'status' => false,
+            'message' => 'فشل في إنشاء رابط الدفع',
+            'tap_response' => $res,
+        ], 422);
 
     } catch (\Exception $e) {
-        return redirect()->back()->with('error', __('messages.payment_failed'))->withInput();
+        return response()->json([
+            'status' => false,
+            'message' => 'حدث خطأ أثناء تنفيذ العملية',
+            'error' => $e->getMessage(),
+        ], 500);
     }
 }
+
 
 
     public function handlePaymentResult(Request $request)

@@ -1,11 +1,10 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/lama-sans" rel="stylesheet">
+
 <section class="py-5" style="margin-top: 100px;">
     <div class="container" style="padding:0 5rem">
         <div class="row g-5 justify-content-center" style="margin-bottom: 120px;">
             <!-- Our Goal Card -->
-            <div class="col-12 col-md-6" style="font-family: 'IBM Plex Sans Arabic', sans-serif !important;">
+            <div class="col-12 col-md-6" style="font-family: 'Lama Sans', sans-serif !important;font-style: {{ app()->getLocale() == 'ar' ? 'italic !important' : 'normal !important' }};">
                 <div class="card h-100 shadow goal-vision-card rounded-4" style="padding: 3.8rem">
                     <div class="d-flex align-items-center mb-3">
                         <span class="me-3" style="font-size: 2.2rem; color: var(--primary-color);">

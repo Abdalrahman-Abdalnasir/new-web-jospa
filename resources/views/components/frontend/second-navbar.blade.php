@@ -1,16 +1,17 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/lama-sans" rel="stylesheet">
+
 <!-- Desktop Navbar --> 
 <style>
     body{
-            font-family: 'IBM Plex Sans Arabic', sans-serif !important;
-
+font-family: 'Lama Sans', sans-serif !important;
+font-style: {{ app()->getLocale() == 'ar' ? 'italic' : 'normal' }};
     }
 </style>
-<div class="position-absolute top-0 start-0 w-100" style="z-index: 6; margin-top: 65px;font-family: 'IBM Plex Sans Arabic', sans-serif !important">
+
+
+<div class="position-absolute top-0 start-0 w-100" style="z-index: 6; margin-top: 65px;font-family: 'Lama Sans', sans-serif !important;font-style: {{ app()->getLocale() == 'ar' ? 'italic' : 'normal' }};">
     <nav class="navbar navbar-expand-lg bg-transparent py-3 d-none d-lg-flex"
-        style=" margin-top: 43px;padding-right: 45px;font-family: 'IBM Plex Sans Arabic', sans-serif !important">
+        style=" margin-top: 43px;padding-right: 45px;font-family: 'Lama Sans', sans-serif !important;font-style: {{ app()->getLocale() == 'ar' ? 'italic' : 'normal' }};">
 
         <div class="container" style="padding: 0 20px">
             <div>

@@ -1,24 +1,14 @@
-{{-- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> --}}
-<link rel="preconnect" href="https://fonts.bunny.net">
-<link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet">
-<style>
-    @font-face {
-        font-family: 'Greta Arabic Bold Italic';
-        src: url('https://alazhar-talbinah.com/fonts/Greta-Arabic-Bold-Italic.ttf') format('truetype');
-        font-weight: bold;
-        font-style: italic;
-        font-display: swap;
-    }
-  </style>
+<link href="https://fonts.cdnfonts.com/css/lama-sans" rel="stylesheet">
+
+
 <style>
 .hero-btn:hover {
     background: black !important;
     transform: translateY(-5px);
 }
       body {
-        font-family: 'Greta Arabic Bold Italic';
+font-family: 'Lama Sans', sans-serif !important;
+font-style: {{ app()->getLocale() == 'ar' ? 'italic' : 'normal' }};
 }
 
 </style>
@@ -38,7 +28,7 @@
                 </svg>
             @endfor
         </div>
-        <a href="#bookNaw" class="hero-btn btn text-white d-flex align-items-center justify-content-center gap-2" style="white-space: nowrap;width: 225px;height: 63.6px;font-weight: bold;background-color: var(--primary-color);border-right: 3px solid white;border-left: 3px solid white;font-size: 1.8rem;border-radius: 30px;padding: 15px 45px;color: white;display: flex;align-items: center;justify-content: center;gap: 10px;transition: background-color 0.3s ease, transform 0.3s ease;font-family: 'IBM Plex Sans Arabic', sans-serif !important;">
+        <a href="#bookNaw" class="hero-btn btn text-white d-flex align-items-center justify-content-center gap-2" style="white-space: nowrap;width: 225px;height: 63.6px;font-weight: bold;background-color: var(--primary-color);border-right: 3px solid white;border-left: 3px solid white;font-size: 1.8rem;border-radius: 30px;padding: 15px 45px;color: white;display: flex;align-items: center;justify-content: center;gap: 10px;transition: background-color 0.3s ease, transform 0.3s ease;font-family: 'Lama Sans', sans-serif !important;font-style: {{ app()->getLocale() == 'ar' ? 'italic' : 'normal' }};">
 
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                  class="bi bi-calendar-check me-2" viewBox="0 0 16 16">

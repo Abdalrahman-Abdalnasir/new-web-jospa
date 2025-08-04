@@ -1,0 +1,2 @@
+<img src="<?php echo e(asset('images/JOSPA.webp')); ?>" class="img-fluid h-4 mb-4" alt="JOSPA Logo">
+<?php /**PATH /home/tayasmart/jospa.tayasmart.com/resources/views/components/application-logo.blade.php ENDPATH**/ ?>

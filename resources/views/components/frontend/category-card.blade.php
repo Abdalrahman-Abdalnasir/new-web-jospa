@@ -1,9 +1,8 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-<div class="position-relative rounded-4 overflow-hidden shadow" style="font-family: 'IBM Plex Sans Arabic', sans-serif !important;height: 350px;">
+<link href="https://fonts.cdnfonts.com/css/lama-sans" rel="stylesheet">
+
+<div class="position-relative rounded-4 overflow-hidden shadow" style="font-family: 'Lama Sans', sans-serif !important;font-family: 'Lama Sans', sans-serif !important;font-style: {{ app()->getLocale() == 'ar' ? 'italic !important' : 'normal !important' }};height: 350px;">
     <img src="{{ $image ?? asset('images/frontend/slider1.webp') }}" alt="{{ $name ?? 'Category' }}" class="w-100 h-100" style="object-fit: cover;">
-    <div class="position-absolute top-0 start-0 w-100 h-100" style="font-family: 'IBM Plex Sans Arabic', sans-serif !important;background: linear-gradient(to top, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0.0) 100%);"></div>       
+    <div class="position-absolute top-0 start-0 w-100 h-100" style="font-family: 'Lama Sans', sans-serif !important;font-family: 'Lama Sans', sans-serif !important;font-style: {{ app()->getLocale() == 'ar' ? 'italic !important' : 'normal !important' }};background: linear-gradient(to top, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0.0) 100%);"></div>       
 
     <!-- Pricing badge -->
     <div class="position-absolute top-0 m-3 px-3 py-1 rounded-pill text-white"
@@ -44,14 +43,14 @@
     <!-- Buttons -->
     <div class="position-absolute start-50 translate-middle-x w-100 d-flex justify-content-center px-5" style="bottom: 25px;" id="te">
         <div class="d-flex gap-3 text-white w-100 justify-content-center">
-            <a href="{{route('salon.create')}}" class="btn rounded-pill d-flex align-items-center justify-content-center gap-2 px-4 py-3 text-white col-6" style="font-family: 'IBM Plex Sans Arabic', sans-serif !important;font-size: 15.2px;font-weight: bold;width: 159px;height: 42.8px;background-color: var(--primary-color);">
-                <svg data-v-eec84f9e="" style="width: 15.2px;font-family: 'IBM Plex Sans Arabic', sans-serif !important;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="paper-plane" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path class="" fill="currentColor" d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480l0-83.6c0-4 1.5-7.8 4.2-10.8L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"></path></svg>
+            <a href="{{route('salon.create')}}" class="btn rounded-pill d-flex align-items-center justify-content-center gap-2 px-4 py-3 text-white col-6" style="font-family: 'Lama Sans', sans-serif !important;font-style: {{ app()->getLocale() == 'ar' ? 'italic !important' : 'normal !important' }};font-size: 15.2px;font-weight: bold;width: 159px;height: 42.8px;background-color: var(--primary-color);">
+                <svg data-v-eec84f9e="" style="width: 15.2px;font-family: 'Lama Sans', sans-serif !important;font-style: {{ app()->getLocale() == 'ar' ? 'italic !important' : 'normal !important' }};" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="paper-plane" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path class="" fill="currentColor" d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480l0-83.6c0-4 1.5-7.8 4.2-10.8L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"></path></svg>
                 {{ __('messagess.book_now') }}
             </a>
             @if(isset($category_id))
-                <a href="{{ route('frontend.category.details', $category_id) }}" class="btn btn-light rounded-pill px-4 py-2 col-6 text-center m-0 d-flex align-items-center justify-content-center" style="font-family: 'IBM Plex Sans Arabic', sans-serif !important;font-size: 15.2px;font-weight: bold;width: 159px;background-color:white;height: 42.8px;">{{ __('messagess.details') }}</a>
+                <a href="{{ route('frontend.category.details', $category_id) }}" class="btn btn-light rounded-pill px-4 py-2 col-6 text-center m-0 d-flex align-items-center justify-content-center" style="font-family: 'Lama Sans', sans-serif !important;font-style: {{ app()->getLocale() == 'ar' ? 'italic !important' : 'normal !important' }};font-size: 15.2px;font-weight: bold;width: 159px;background-color:white;height: 42.8px;">{{ __('messagess.details') }}</a>
             @else
-                <a href="#" class="btn btn-light rounded-pill px-4 py-2 col-6 text-center m-0 d-flex align-items-center justify-content-center" style="font-family: 'IBM Plex Sans Arabic', sans-serif !important;font-size: 15.2px;font-weight: bold;width: 159px;background-color: var(--primary-color);height: 42.8px;">{{ __('messagess.details') }}</a>
+                <a href="#" class="btn btn-light rounded-pill px-4 py-2 col-6 text-center m-0 d-flex align-items-center justify-content-center" style="font-family: 'Lama Sans', sans-serif !important;font-style: {{ app()->getLocale() == 'ar' ? 'italic !important' : 'normal !important' }};font-size: 15.2px;font-weight: bold;width: 159px;background-color: var(--primary-color);height: 42.8px;">{{ __('messagess.details') }}</a>
             @endif
         </div>
     </div>

@@ -1,6 +1,7 @@
 <?php
 
 namespace Modules\Promotion\Http\Controllers\Backend;
+use Modules\Service\Models\Service;
 
 use App\Authorizable;
 use App\Http\Controllers\Controller;
@@ -50,6 +51,7 @@ class PromotionsController extends Controller
         $module_action = 'List';
         $columns = CustomFieldGroup::columnJsonValues(new Promotion());
         $customefield = CustomField::exportCustomFields(new Promotion());
+        $services = Service::select('id', 'name')->get();
 
         $export_import = true;
         $export_columns = [
@@ -70,7 +72,7 @@ class PromotionsController extends Controller
 
         $export_url = route('backend.promotions.export');
 
-        return view('promotion::backend.promotions.index_datatable', compact('module_action', 'filter', 'columns', 'customefield', 'export_import', 'export_columns', 'export_url'));
+        return view('promotion::backend.promotions.index_datatable', compact('module_action', 'filter', 'columns', 'services' , 'customefield', 'export_import', 'export_columns', 'export_url'));
     }
 
     /**
@@ -261,6 +263,9 @@ class PromotionsController extends Controller
 
         $couponData = $data;
         $couponData['promotion_id'] = $promotion->id;
+        $couponData['services'] = json_encode([
+            'services' => $request->services, // مثلاً [1, 2, 3]
+        ]);
 
         if ($request->coupon_type == 'custom') {
             $couponData['coupon_type'] = $request->coupon_type;

@@ -29,67 +29,104 @@ class HomeBookingController extends Controller
 
 public function getAvailableTimes($date, $staffId)
 {
+    
+
     $user = User::find($staffId);
     if (!$user) {
         return response()->json([]);
     }
 
     $branchId = $user->branch->branch_id;
-    $shift = $user->shift?->shift_id ;
-    $dayName = strtolower(Carbon::parse($date)->format('l'));
-    
+    $shift = $user->shift?->shift_id;
+    $dayName = strtolower(Carbon::createFromFormat('Y-m-d', $date)->format('l'));
+
     $workingHours = BussinessHour::where('branch_id', $branchId)
-    ->where('day', $dayName)
-    ->where('is_holiday', 0)
-    ->where('shift_id', $shift)
-    ->orderBy('id', 'desc')
-    ->first();
-    
+        ->where('day', $dayName)
+        ->where('is_holiday', 0)
+        ->where('shift_id', $shift)
+        ->orderBy('id', 'desc')
+        ->first();
+
     if (!$workingHours) {
         return response()->json([]);
     }
-    
-$start = Carbon::createFromFormat('H:i:s', $workingHours->start_time);
-$end   = Carbon::createFromFormat('H:i:s', $workingHours->end_time);
-    // الأوقات المحجوزة
+
+    $start = Carbon::createFromFormat('H:i', $workingHours->start_time);
+    $end = Carbon::createFromFormat('H:i', $workingHours->end_time);
+
+    Log::info("=== وقت الدوام ===");
+    Log::info("Start Time: " . $start->format('H:i'));
+    Log::info("End Time: " . $end->format('H:i'));
+
     $bookedTimes = BookingService::where('employee_id', $staffId)
         ->whereDate('start_date_time', $date)
         ->pluck('start_date_time')
         ->map(fn($time) => Carbon::parse($time)->format('H:i'))
-        ->toArray(); // ["21:00"]
+        ->toArray();
 
-    // أوقات الراحة (من الـ JSON في قاعدة البيانات)
+    Log::info("Booked Times: ", $bookedTimes);
+
     $breaks = $workingHours->breaks;
+    Log::info("Breaks: ", $breaks);
+
     $availableTimes = [];
-    $current = $start->copy();
+
+    // ربط بداية الشيفت مع التاريخ المحدد لتكون المقارنة دقيقة
+    $current = Carbon::parse($date . ' ' . $start->format('H:i'), 'Asia/Riyadh');
+    $end = Carbon::parse($date . ' ' . $end->format('H:i'), 'Asia/Riyadh');
+
+    $isToday = Carbon::createFromFormat('Y-m-d', $date)->isToday();
+    $now = Carbon::now('Asia/Riyadh')->startOfMinute();
+
+    Log::info("Is Today? " . ($isToday ? 'Yes' : 'No'));
+    Log::info("Current Time Now (Asia/Riyadh): " . $now->toDateTimeString());
+    Log::info("Input Date: " . $date);
 
     while ($current->lt($end)) {
         $timeStr = $current->format('H:i');
+        Log::info("Checking Time Slot: $timeStr");
+        Log::info("Full Current: " . $current->toDateTimeString());
 
-        $isInBreak = false;
-
-    foreach ($breaks as $break) {
-        $breakStart = Carbon::parse($break['start_break']);
-        $breakEnd = Carbon::parse($break['end_break']);
-
-        if ($current->between($breakStart, $breakEnd)) {
-            $isInBreak = true;
-            break;
+        // تخطي الأوقات الماضية إذا كان التاريخ اليوم
+        if ($isToday && $current->lt($now)) {
+            Log::info(">> Skipped (Past Time): $timeStr");
+            $current->addMinutes(30);
+            continue;
         }
-    }
 
+        // التحقق من أوقات الراحة
+        $isInBreak = false;
+        foreach ($breaks as $break) {
+            $breakStart = Carbon::parse($date . ' ' . $break['start_break'], 'Asia/Riyadh');
+            $breakEnd = Carbon::parse($date . ' ' . $break['end_break'], 'Asia/Riyadh');
 
-        // لو مش في وقت راحة ولا محجوز
+            if ($current->between($breakStart, $breakEnd)) {
+                $isInBreak = true;
+                Log::info(">> Skipped (Break Time): $timeStr");
+                break;
+            }
+        }
+
+        // إذا ما كان في راحة ولا وقت محجوز
         if (!$isInBreak && !in_array($timeStr, $bookedTimes)) {
             $availableTimes[] = $timeStr;
+            Log::info(">> Available: $timeStr");
+        } else {
+            if (in_array($timeStr, $bookedTimes)) {
+                Log::info(">> Skipped (Booked): $timeStr");
+            }
         }
 
         $current->addMinutes(30);
-
     }
+
+    Log::info("=== Available Times After Filtering ===");
+    Log::info($availableTimes);
 
     return response()->json($availableTimes);
 }
+
+
 
 
 
@@ -207,75 +244,100 @@ public function index(Request $request)
 
     //        Payment Methods
 
-    public function createPayment(Request $request)
-    {
+public function createPayment(Request $request)
+{
+    $amount = $request->query('am');
 
-        $amount = $request->query('am');
+    if (!$amount || !is_numeric($amount)) {
+        if ($request->wantsJson()) {
+            return response()->json([
+                'status' => false,
+                'message' => 'Invalid amount'
+            ], 400);
+        }
+        return redirect()->back()->with('error', 'Invalid amount');
+    }
 
-        if (!$amount || !is_numeric($amount)) {
-            return redirect()->back()->with('error', 'Invalid amount');
+    $apiKey1 = env('TAP_SECRET_KEY');
+
+    $response = Http::withHeaders([
+        'Authorization' => "Bearer $apiKey1",
+        'Content-Type' => 'application/json',
+    ])->post('https://api.tap.company/v2/charges', [
+        "amount" => $amount,
+        "currency" => "SAR",
+        "threeDSecure" => true,
+        "save_card" => false,
+        "description" => "طلب دفع",
+        "statement_descriptor" => "Jospa Store",
+        "customer" => [
+            "first_name" => auth()->user()->first_name,
+            "email" => auth()->user()->email,
+        ],
+        "source" => [
+            "id" => "src_all"
+        ],
+        "redirect" => [
+            "url" => url('/payment-success')
+        ]
+    ]);
+
+    $data = $response->json();
+
+    if (isset($data['transaction']['url'])) {
+        if ($request->wantsJson()) {
+            return response()->json([
+                'status' => true,
+                'redirect_url' => $data['transaction']['url']
+            ]);
         }
 
-        $apiKey1 = env('TAP_SECRET_KEY');
-        // 1. بيانات الطلب
-        $response = Http::withHeaders([
-            'Authorization' => "Bearer $apiKey1",
-            'Content-Type' => 'application/json',
-        ])->post('https://api.tap.company/v2/charges', [
-            "amount" => $amount, // المبلغ   changed
-            "currency" => "SAR",
-            "threeDSecure" => true,
-            "save_card" => false,
-            "description" => "طلب دفع",
-            "statement_descriptor" => "Jospa Store",
-            "customer" => [
-                "first_name" => auth()->user()->first_name,
-                "email" => auth()->user()->email ,
-            ],
-            "source" => [
-                "id" => "src_all"
-            ],
-            "redirect" => [
-                "url" => url('/payment-success') // لينك الرجوع بعد الدفع
-            ]
+        return redirect()->to($data['transaction']['url']);
+    }
+
+    // لو فيه خطأ
+    if ($request->wantsJson()) {
+        return response()->json([
+            'status' => false,
+            'message' => 'فشل إنشاء عملية الدفع',
+            'tap_response' => $data
+        ], 500);
+    }
+
+    return view('components.frontend.status.ERPAY');
+}
+
+public function handlePaymentResult(Request $request)
+{
+    $tapId = $request->get('tap_id');
+
+    if (!$tapId) {
+        return response()->json([
+            'status' => false,
+            'message' => 'No tap_id provided.'
+        ], 400);
+    }
+
+    $response = Http::withHeaders([
+        'Authorization' => 'Bearer ' . env('TAP_SECRET_KEY'),
+    ])->get("https://api.tap.company/v2/charges/{$tapId}");
+
+    $charge = $response->json();
+
+    if (isset($charge['status']) && $charge['status'] === 'CAPTURED') {
+        return response()->json([
+            'status' => true,
+            'message' => 'Payment captured successfully.',
+            'data' => $charge,
         ]);
-
-        // 2. استقبل بيانات العملية
-        $data = $response->json();
-
-        // 3. لو فيه لينك للبوابة
-        if (isset($data['transaction']['url'])) {
-            return redirect()->to($data['transaction']['url']);
-        }
-
-        // 4. في حالة فشل
-        return view('components.frontend.status.ERPAY');
+    } else {
+        return response()->json([
+            'status' => false,
+            'message' => 'Payment failed or was declined.',
+            'data' => $charge,
+        ], 402);
     }
-
-
-    public function handlePaymentResult(Request $request)
-    {
-        $tapId = $request->get('tap_id');
-
-        if (!$tapId) {
-            return view('components.frontend.status.ERPAY')->with('error', 'No tap_id provided.');
-        }
-
-        $response = Http::withHeaders([
-            'Authorization' => 'Bearer ' . env('TAP_SECRET_KEY'),
-        ])->get("https://api.tap.company/v2/charges/{$tapId}");
-
-        $charge = $response->json();
-
-        if (isset($charge['status']) && $charge['status'] === 'CAPTURED') {
-            //  الدفع تم بنجاح، سجل البيانات في قاعدة البيانات أو فعل الاشتراك
-            return view('components.frontend.status.CAPTURED');
-        } else {
-            //  الدفع فشل أو تم رفضه
-            return view('components.frontend.status.FAILED');
-        }
-    }
-
+}
 
 
 

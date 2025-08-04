@@ -1,6 +1,17 @@
 <?php
 
 return [
+    "points_converted_successfully" => "Points have been successfully converted to wallet balance",
+    "minimum_points_required" => "The minimum required to convert is 100 points",
+    "convert_points_to_wallet" => "Convert Points To Wallet",
+    "id"=> "ID",
+    "service"=> "Service",
+    "price"=> "Price",
+    "date"=> "Date",
+    "time"=> "Time",
+    "employee"=> "Employee",
+    "branch"=> "Branch",
+    'loyalty_points' => ' Points',
     'logout' => 'Logout',
     'type' => 'Type',
     'birth_date' => 'Birth Date',
@@ -48,6 +59,7 @@ return [
     'enter_first_name' => 'Enter First Name',
     'enter_last_name' => 'Enter Last Name',
     'enter_email' => 'Enter Email',
+    'no_bookings' => 'No bookings yet',
     
     // New translations for profile page
     'user_profile' => 'User Profile',
@@ -73,6 +85,7 @@ return [
     'service' => 'Service',
     'booking_date' => 'Date',
     'booking_time' => 'Time',
+    'no_bookings' => 'No bookings yet',
     'staff' => 'Staff',
     'my_bookings' => 'My Bookings',
     'edit_profile' => 'Edit Profile',

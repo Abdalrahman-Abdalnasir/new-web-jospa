@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-    
+
         body{
             font-family: 'IBM Plex Sans Arabic', sans-serif !important;
         }
@@ -141,8 +141,8 @@
         .container {
             width: 1008px;
         }
-        
-        
+
+
         .header-section {
             text-align: center;
             margin: 90px;
@@ -205,7 +205,7 @@
 </head>
 <body dir="{{ $currentLocale === 'ar' ? 'rtl' : 'ltr' }}" lang="{{ $currentLocale }}">
     <!-- Lightning Progress Bar -->
-    @include('components.frontend.progress-bar')   
+    @include('components.frontend.progress-bar')
 
     <!-- Hero/Header Section (like About page) -->
     <div class="position-relative" style="height: 35vh; min-height: 220px;">
@@ -250,7 +250,8 @@
                 </div>
                 <!-- الصورة -->
                 <div class="col-lg-6 d-flex justify-content-center" data-aos="fade-right" data-aos-duration="1200">
-                    <img src="{{ $category->feature_image}}" alt="خدمات العناية بالبشرة" style="max-width: 90%; border-radius: 24px; box-shadow: 0 4px 24px #00000015;" class="img-zoom-hover">
+                    <img src="{{ asset($category->av2) }}" alt="خدمات العناية بالبشرة" style="max-width: 90%; border-radius: 24px; box-shadow: 0 4px 24px #00000015;" class="img-zoom-hover">
+
                 </div>
             </div>
         </div>
@@ -269,7 +270,7 @@
                 </div>
             </div>
         </div>
-        
+
         <h1 style="text-align:center;margin:50px 0">{{ __('messagess.prices_and_services') }}</h1>
         <!-- Services Section -->
         @if($category->services && $category->services->count() > 0)
@@ -277,7 +278,7 @@
                 @foreach($category->services as $service)
                     <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="{{ $loop->index * 100 }}">
                         <div class="service-card">
-                            <img src="{{ $service->feature_image ?? asset('images/frontend/slider1.webp') }}"
+                            <img src="{{ $service->av2 ?? asset('img/default.png') }}"
                                  alt="{{ $service->name }}"
                                  class="service-image">
 
@@ -288,7 +289,7 @@
                             @endif
 
                             <div class="price-badge" data-bs-toggle="modal" data-bs-target="#pricingModal">
-                                SR {{ number_format($service->default_price ?? 0, 2) }}
+                                {{ __('messagess.SAR') }} {{ number_format($service->default_price ?? 0, 2) }}
                             </div>
 
                             <div class="service-info">
@@ -303,12 +304,12 @@
                                 </div>
                             @endif
 
-                            @if($service->branches && $service->branches->count() > 0)
+                            {{-- @if($service->branches && $service->branches->count() > 0)
                                 <div class="service-info">
                                     <i class="fas fa-map-marker-alt"></i>
                                     <span class="small">{{ $service->branches->pluck('name')->implode(', ') }}</span>
                                 </div>
-                            @endif
+                            @endif --}}
 
                             <div class="mt-3">
                             </div>
@@ -322,7 +323,7 @@
             </div>
         @endif
     </main>
- 
+
     <!-- Pricing Modal -->
     <div class="modal fade" id="pricingModal" tabindex="-1" aria-labelledby="pricingModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -337,7 +338,7 @@
                   <thead>
                     <tr>
                         <th>{{ __('messagess.service') }}</th>
-                        <th>{{ __('messagess.sub_category') }}</th>
+                        {{-- <th>{{ __('messagess.sub_category') }}</th> --}}
                         <th>{{ __('messagess.price_sr') }}</th>
                         <th>{{ __('messagess.duration_minutes') }}</th>
                     </tr>
@@ -346,7 +347,7 @@
                     @foreach($category->services as $service)
                         <tr>
                           <td>{{ $service->name }}</td>
-                          <td>{{ $service->sub_category ? $service->sub_category->name : 'N/A' }}</td>
+                          {{-- <td>{{ $service->sub_category ? $service->sub_category->name : 'N/A' }}</td> --}}
                           <td>{{ number_format($service->default_price, 2) }}</td>
                           <td>{{ $service->duration_min }}</td>
                         </tr>
@@ -357,12 +358,12 @@
                 <div class="text-center text-muted">
                     <p>{{ __('messagess.no_services_in_category') }}</p>
                 </div>
-            @endif   
+            @endif
           </div>
         </div>
       </div>
     </div>
-    
+
     <div class="container my-5" style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
     <div class="why-jo-box p-5" style="background: #fafbfc; border-radius: 18px; box-shadow: 0 8px 32px #00000010;font-size:18px !important">
         <h2 class="text-center mb-5" style="font-weight: bold;font-size: 2.7rem !important;color: #181d29;">

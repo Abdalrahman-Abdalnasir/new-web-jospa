@@ -51,7 +51,9 @@ class PackageResource extends JsonResource
             'package_image' => $this->media->pluck('original_url')->first(),
             'description' => $this->description,
             'branch_id' => $this->branch_id,
-            'branch_name'=>$this->branch->name,
+'branch_name' => $this->branch && $this->branch->name
+    ? (json_decode($this->branch->name, true)['ar'] ?? '')
+    : '',
             'package_price' => $this->package_price,
             'status' => $this->status,
             'start_date'=>$this->start_date??'',

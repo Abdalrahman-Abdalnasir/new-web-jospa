@@ -5,6 +5,13 @@
 
 
 @section('content')
+
+<script>
+    if (window.location.hash === '' || window.location.hash === '#/') {
+        window.location.href = '/app/settings#/commission';
+    }
+</script>
+
 <meta name="setting_local" content="none">
 <input type="hidden" name="admin-profile" value="{{asset('images/JOSPA.webp')}}">
 <input type="hidden" name="logo" value="{{asset('images/JOSPA.webp')}}">

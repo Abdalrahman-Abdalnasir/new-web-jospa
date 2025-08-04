@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ __('messagess.booking_system') }}</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/lama-sans" rel="stylesheet">
+
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <style>
@@ -19,14 +18,15 @@
         }
 
         body {
-            font-family: 'IBM Plex Sans Arabic', sans-serif !important;
+            font-family: 'Lama Sans', sans-serif !important;
+                font-style: {{ app()->getLocale() == 'ar' ? 'italic' : 'normal' }};
             background-color: #f8f6f1;
             color: #333;
         }
         .calendar-day.disabled {
             color: #ccc;
             pointer-events: none;
-            background-color: #f4f4f4;
+            background-color: #ceb18f;
             cursor: not-allowed;
         }
 
@@ -452,7 +452,8 @@
             border-radius: 8px;
             cursor: pointer;
             transition: all 0.3s ease;
-            background: rgba(255,255,255,0.1);
+            background: #ffffff;
+            color: #0000008f;
         }
 
         .calendar-day:hover {
@@ -460,9 +461,8 @@
         }
 
         .calendar-day.selected {
-            background: white;
-            color: #C8A882;
-            font-weight: bold;
+                background: #ceb18f;
+                font-weight: bold;
         }
 
         .calendar-day.other-month {
@@ -1218,13 +1218,13 @@
         
                     {{-- قبل الظهر --}}
                     <div class="time-section" id="morning-section">
-                        <h4>{{ __('messagess.morning') }}</h4>
+                        <h4 style="margin: 10px;">{{ __('messagess.morning') }}</h4>
                         <div class="time-grid" id="morning-grid"></div>
                     </div>
         
                     {{-- بعد الظهر --}}
                     <div class="time-section mt-4" id="afternoon-section">
-                        <h4>{{ __('messagess.afternoon') }}</h4>
+                        <h4 style="margin: 10px;">{{ __('messagess.afternoon') }}</h4>
                         <div class="time-grid" id="afternoon-grid"></div>
                     </div>
         
@@ -1515,11 +1515,11 @@
 
                     card.innerHTML = `
                     ${service.mostWanted ? `<div class="most-wanted">MOST WANTED</div>` : ''}
-                    <div class="massage-duration">${service.duration_min} Minutes</div>
+                    <div class="massage-duration">${service.duration_min} ${lang === 'ar' ? 'دقائق' : 'Minutes'}</div>
                     <div class="massage-name">${serviceName}</div>
-                    <div class="massage-location">${service.description}</div>
-                    <div class="massage-price">${service.default_price} SAR</div>
-                    <button class="massage-book-btn">Book Now</button>
+                    <div class="massage-location">${service.description ? service.description : (lang === 'ar' ? 'لا يوجد وصف' : 'No description available')}</div>
+                    <div class="massage-price">${service.default_price} ${lang === 'ar' ? 'ريال سعودي' : 'SAR'}</div>
+                    <button class="massage-book-btn">${lang === 'ar' ? 'احجز الآن' : 'Book Now'}</button>
                 `;
                     card.addEventListener('click', (e) => {
                         if (e.target.classList.contains('massage-book-btn')) return;
@@ -1719,17 +1719,17 @@ data.forEach(time => {
         summaryCard.innerHTML = `
         <div class="summary-details" style="margin-bottom: 12px;padding: 20px; background-color: #f7f7f7; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
             <h3 style="color: #a8834b;">{{__('messagess.booking_summary') }}:</h3>
-            <p><strong>{{__('messagess.name') }}:</strong> ${bookingData.n_name}</p>
-            <p><strong>{{__('messagess.mobile_no') }}:</strong> ${bookingData.mobile_no}</p>
-            <p><strong>{{__('messagess.neighbor') }}:</strong> ${bookingData.neighborhood}</p>
-            <p><strong>{{__('messagess.service_group') }}:</strong> ${bookingData.service_group_id}</p>
-            <p><strong>{{__('messagess.service') }}:</strong> ${bookingData.service_id}</p>
-            <p><strong>{{__('messagess.staff') }}:</strong> ${bookingData.staff_id}</p>
-            <p><strong>{{__('messagess.date') }}:</strong> ${bookingData.date}</p>
-            <p><strong>{{__('messagess.time') }}:</strong> ${bookingData.time}</p>
+            <p style="margin: 10px;"><strong>{{__('messagess.name') }}:</strong> ${bookingData.n_name}</p>
+            <p style="margin: 10px;"><strong>{{__('messagess.mobile_no') }}:</strong> ${bookingData.mobile_no}</p>
+            <p style="margin: 10px;"><strong>{{__('messagess.neighbor') }}:</strong> ${bookingData.neighborhood}</p>
+            <p style="margin: 10px;"><strong>{{__('messagess.service_group') }}:</strong> ${bookingData.service_group_id}</p>
+            <p style="margin: 10px;"><strong>{{__('messagess.service') }}:</strong> ${bookingData.service_id}</p>
+            <p style="margin: 10px;"><strong>{{__('messagess.staff') }}:</strong> ${bookingData.staff_id}</p>
+            <p style="margin: 10px;"><strong>{{__('messagess.date') }}:</strong> ${bookingData.date}</p>
+            <p style="margin: 10px;"><strong>{{__('messagess.time') }}:</strong> ${bookingData.time}</p>
         </div>
                 <div class="form-check mt-3">
-            <input class="form-check-input" type="checkbox" id="termsCheck">
+            <input  checked disabled class="form-check-input" type="checkbox" id="termsCheck">
             <label class="form-check-label" for="termsCheck">
                 {{ __('messagess.agree_terms') }}
         </label>

@@ -38,6 +38,7 @@ class FrontendController extends Controller
             ->whereDate('end_date', '>=', now())
             ->take(6)
             ->get();
+            
 
         return view('frontend::index', compact('services', 'categories', 'packages'));
     }
@@ -85,12 +86,14 @@ class FrontendController extends Controller
      */
     public function categoryDetails($id)
     {
+        
+        // return 0;
         $category = Category::with(['services' => function($query) {
                 $query->where('status', 1);
             }, 'services.category', 'services.sub_category', 'services.media', 'services.branches'])
             ->where('status', 1)
             ->findOrFail($id);
-
+        // return $category;
         // Get related categories
         $relatedCategories = Category::where('status', 1)
             ->where('id', '!=', $id)

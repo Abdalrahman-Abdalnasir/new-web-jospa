@@ -1,9 +1,9 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/lama-sans" rel="stylesheet">
+
 <style>
   body {
-font-family: 'IBM Plex Sans Arabic', sans-serif !important;
+font-family: 'Lama Sans', sans-serif !important;
+font-style: {{ app()->getLocale() == 'ar' ? 'italic !important' : 'normal !important' }};
 }
 
 @media (max-width: 767.98px) {
@@ -12,7 +12,7 @@ font-family: 'IBM Plex Sans Arabic', sans-serif !important;
     }
     .gift-desc-responsive {
         font-size: 1rem !important;
-        max-width: 95% !important;
+        max-width: 95% !important; 
     }
     .gift-card-img-responsive {
         width: 48px !important;

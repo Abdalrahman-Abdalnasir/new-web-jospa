@@ -12,9 +12,8 @@
     <link rel="stylesheet" href="{{ asset('custom-css/frontend.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/lama-sans" rel="stylesheet">
+
      <meta charset="UTF-8">
     <title>Spa Booking - حجز السبا</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -606,8 +605,10 @@ window.spaBookingApp = {
     --radius: 0.5rem;
 }
 
+
 body {
-            font-family: 'IBM Plex Sans Arabic', sans-serif !important;
+    font-family: 'Lama Sans', sans-serif !important;
+    font-style: {{ app()->getLocale() == 'ar' ? 'italic !important' : 'normal !important' }};
     background-color: hsl(var(--background));
     color: hsl(var(--foreground));
     line-height: 1.6;
@@ -615,7 +616,8 @@ body {
 
 /* Arabic font support */
 [dir="rtl"] {
-            font-family: 'IBM Plex Sans Arabic', sans-serif !important;
+font-family: 'Lama Sans', sans-serif !important;
+    font-style: {{ app()->getLocale() == 'ar' ? 'italic !important' : 'normal !important' }};
 }
 
 /* Container */
@@ -876,7 +878,9 @@ body {
 [dir="rtl"] .form-select,
 [dir="rtl"] .form-textarea {
     text-align: right;
-            font-family: 'IBM Plex Sans Arabic', sans-serif !important;
+            font-family: 'Lama Sans', sans-serif !important;
+                font-style: {{ app()->getLocale() == 'ar' ? 'italic !important' : 'normal !important' }};
+
 }
 
 .form-input:focus,
@@ -906,7 +910,9 @@ body {
 }
 
 [dir="rtl"] .submit-button {
-            font-family: 'IBM Plex Sans Arabic', sans-serif !important;
+            font-family: 'Lama Sans', sans-serif !important;
+                font-style: {{ app()->getLocale() == 'ar' ? 'italic !important' : 'normal !important' }};
+
 }
 
 .submit-button:hover {
@@ -972,7 +978,9 @@ body {
 
 [dir="rtl"] .toast-text h4,
 [dir="rtl"] .toast-text p {
-            font-family: 'IBM Plex Sans Arabic', sans-serif !important;
+            font-family: 'Lama Sans', sans-serif !important;
+                font-style: {{ app()->getLocale() == 'ar' ? 'italic !important' : 'normal !important' }};
+
 }
 
 /* Loading state */

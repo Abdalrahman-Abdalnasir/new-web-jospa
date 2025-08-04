@@ -27,7 +27,7 @@
     <!-- Lightning Progress Bar -->
     <x-frontend.progress-bar />
 
-    <header class="bg-white shadow">
+    <header class="shadow">
         <x-frontend.slider>
             <x-frontend.navbar />
             <x-frontend.second-navbar />

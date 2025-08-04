@@ -1,6 +1,16 @@
 <?php
 
 return [
+    'points_converted_successfully' => 'تم تحويل النقاط إلى رصيد بنجاح',
+    'minimum_points_required' => 'الحد الأدنى للتحويل هو 100 نقطة',
+    "convert_points_to_wallet" => "تحويل النقاط إلى رصيد",
+    "id"=> "التسلسل",
+    "service"=> "الخدمة",
+    "price"=> "السعر",
+    "date"=> "التاريخ",
+    "time"=> "الوقت",
+    "employee"=> "الموظف",
+    "branch"=> "الفرع",
     'logout' => 'تسجيل الخروج',
     'type' => 'النوع',
     'title' => 'ملفي الشخصي',
@@ -23,6 +33,10 @@ return [
     'lbl_postal_code' => 'الرمز البريدي',
     'lbl_country' => 'الدولة',
     'lbl_state' => 'الولاية',
+    
+    'loyalty_points' => 'النقاط',
+    
+    
     'lbl_city' => 'المدينة',
     'lbl_confirm_password' => 'تأكيد كلمة المرور',
     'lbl_gender' => 'الجنس',
@@ -74,7 +88,7 @@ return [
     'booking_date' => 'التاريخ',
     'booking_time' => 'الوقت',
     'status' => 'الحالة',
-    'no_bookings' => 'لا توجد حجوزات حتى الآن.',
+    'no_bookings' => 'لا توجد حجوزات حتى الآن',
     'neighborhood' => 'الحي',
     'branch' => 'الفرع',
     'staff' => 'الموظف',

@@ -1,28 +1,30 @@
-    {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> --}}
-    {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"> --}}
+{{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"> --}}
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}" dir="{{ language_direction() }}" class="theme-fs-sm">
-
 <head>
+    <!-- CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet"/>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-
     <title>@yield('title') | {{ app_name() }}</title>
-
     <link rel="stylesheet" href="{{ mix('css/libs.min.css') }}">
     <link rel="stylesheet" href="{{ mix('css/backend.css') }}">
     @if (language_direction() == 'rtl')
         <link rel="stylesheet" href="{{ asset('css/rtl.css') }}">
     @endif
     <link rel="stylesheet" href="{{ asset('custom-css/frontend.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
     @stack('after-styles')
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
+    <link href="https://fonts.cdnfonts.com/css/lama-sans" rel="stylesheet">
 <style>
+    body{
+        font-family: 'Lama Sans', sans-serif !important;
+        font-style: {{ app()->getLocale() == 'ar' ? 'italic !important' : 'normal !important' }};
+    }
+    *{
+        font-family: 'Lama Sans', sans-serif !important;
+        font-style: {{ app()->getLocale() == 'ar' ? 'italic !important' : 'normal !important' }};
+    }
     .cart-table th, .cart-table td { text-align: center; vertical-align: middle; }
     .cart-empty { color: #888; font-size: 1.3rem; margin: 3rem 0; text-align: center; }
     .cart-actions { display: flex; gap: 1rem; justify-content: center; }
@@ -38,7 +40,8 @@
         border-radius: 30px;
         padding: 0.6rem 2.2rem 0.6rem 1.2rem;
         font-size: 1rem;
-        font-family: 'IBM Plex Sans Arabic', sans-serif !important;
+    font-family: 'Lama Sans', sans-serif !important;
+    font-style: {{ app()->getLocale() == 'ar' ? 'italic !important' : 'normal !important' }};
         cursor: pointer;
         transition: background 0.3s, box-shadow 0.3s;
         box-shadow: 0 4px 14px rgba(0,123,255,0.15);
@@ -112,7 +115,8 @@
         background: linear-gradient(90deg, #bc9a69 60%, #e2c89c 100%);
         color: #fff;
         border: none;
-        font-family: 'IBM Plex Sans Arabic', sans-serif !important;
+    font-family: 'Lama Sans', sans-serif !important;
+    font-style: {{ app()->getLocale() == 'ar' ? 'italic !important' : 'normal !important' }};
         font-weight: bold;
         letter-spacing: 1px;
         box-shadow: 0 2px 10px rgba(0,123,255,0.10);
@@ -239,7 +243,8 @@
         background: linear-gradient(90deg, #bc9a69 0%, #00c6ff 100%);
         color: #fff;
         border: none;
-        font-family: 'IBM Plex Sans Arabic', sans-serif !important;
+    font-family: 'Lama Sans', sans-serif !important;
+    font-style: {{ app()->getLocale() == 'ar' ? 'italic !important' : 'normal !important' }};
         font-weight: bold;
         letter-spacing: 1px;
         box-shadow: 0 2px 10px rgba(0,123,255,0.10);
@@ -333,7 +338,8 @@
     margin: 0 auto;
     width: 100%;
     margin-bottom: 2rem;
-    font-family: 'IBM Plex Sans Arabic', sans-serif !important;
+    font-family: 'Lama Sans', sans-serif !important;
+    font-style: {{ app()->getLocale() == 'ar' ? 'italic !important' : 'normal !important' }};
     }
     .cart-total-label {
         display: flex;
@@ -358,8 +364,9 @@
         border-radius: 25px;
         padding: 0.7rem 2.2rem;
         font-size: 1.1rem;
-    font-family: 'IBM Plex Sans Arabic', sans-serif !important;
-    font-weight: bold;
+        font-family: 'Lama Sans', sans-serif !important;
+        font-style: {{ app()->getLocale() == 'ar' ? 'italic !important' : 'normal !important' }};
+        font-weight: bold;
         letter-spacing: 1px;
         background: linear-gradient(90deg, #bc9a69 60%, #e2c89c 100%);
         transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
@@ -512,6 +519,7 @@
         display: flex;
         align-items: center;
         gap: 0;
+        margin: 0 21px 33px 0;
     }
     .summary-coupon input {
         border: 1.5px solid #222;
@@ -730,117 +738,346 @@
     }
     a:hover {
         color:white;
-    }
+    } 
     .btn:hover {
     background-color: #956e48;
     }
+    i{
+            font-family: "Font Awesome 6 Free" !important;
+            font-style: normal !important;
+    }
+    .disabled {
+        opacity: 0.6;
+        pointer-events: none;
+    }
+    .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 28px;
+    }
+
+    .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    }
+
+    .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0;
+    right: 0; bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 28px;
+    }
+
+    .slider::before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+    }
+
+    .label-yes, .label-no {
+    position: absolute;
+    top: 4px;
+    width: 50%;
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    color: white;
+    pointer-events: none;
+    transition: 0.4s;
+    }
+
+    .label-yes {
+    left: 0;
+    opacity: 1;
+    }
+
+    .label-no {
+    right: 0;
+    opacity: 0;
+    }
+
+    input:checked + .slider {
+    background-color: #c7a16b;
+    }
+
+    input:checked + .slider::before {
+    transform: translateX(32px);
+    }
+
+    input:checked ~ .label-yes {
+    opacity: 1;
+    }
+
+    input:checked ~ .label-no {
+    opacity: 0;
+    }
+
+    input:not(:checked) + .slider {
+    background-color: #ccc;
+    }
+
+    input:not(:checked) ~ .label-yes {
+    opacity: 0;
+    }
+
+    input:not(:checked) ~ .label-no {
+    opacity: 1;
+    }
 </style>
+</head>
 <body class="bg-white">
     <!-- Lightning Progress Bar -->
     @include('components.frontend.progress-bar')
-
     <!-- Hero Section (30% of screen) -->
     <div class="position-relative" style="height: 290.79px;">
-        <img src="{{ asset('images/frontend/slider1.webp') }}" alt="Contact Hero" class="w-100 h-100" style="object-fit: cover;">
+        <img src="{{ asset('images/spa/Hero_2.png') }}" alt="Contact Hero" class="w-100 h-100" style="object-fit: cover;">
         <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0,0,0,0.35);"></div>
-
         <!-- First Navbar -->
         @include('components.frontend.navbar')
-
         <!-- Second Navbar -->
         @include('components.frontend.second-navbar')
     </div>
 
     <!-- Page Content -->
-    <div class="container py-5" style="min-height: 60vh;">
-        @if($cartItems->count())
-             <div class="main-container">
-            <div class="cart-title">{{ __('messagess.cart') }}</div>
-                 @foreach($cartItems as $item)
-                     @foreach($item->services as $service)
-                         <div class="service-card">
-                             <div class="service-details">
-                                 <div class="service-name">{{ $service->service_name ?? '-' }}</div>
-                                 <div class="service-info">{{ __('messagess.employee') }}: {{ $service->employee->full_name ?? '-' }}</div>
-                                 <div class="service-info">{{ __('messagess.branch') }}: {{ $item->branch->name ?? '-' }}</div>
-                                 <div class="service-date">{{ __('messagess.date') }}:
-                                     {{ \Carbon\Carbon::parse($item->start_date_time)->format('Y-m-d') }} -
-                                     {{ \Carbon\Carbon::parse($item->start_date_time)->format('H:i') }}
-                                 </div>
-                                 <div class="service-price"> {{ __('messagess.price') }}:  {{ $service->service->default_price ?? 0 }} SR</div>
-                             </div>
-                             <div class="service-coupon">
-                                 <button>{{ __('messagess.apply_coupon') }}</button>
-                                 <input type="text" placeholder="{{ __('messagess.enter_coupon') }}">
-                             </div>
-                             <form action="{{ route('cart.destroy', $item->id) }}" method="post">
-                                 @csrf
-                                 @method('DELETE')
-                                 <button class="service-delete" title="{{ __('messagess.delete_service') }}">
-                                     <i class="fas fa-trash"></i>
-                                 </button>
-                             </form>
-                         </div>
-                     @endforeach
-                 @endforeach
-
-
-                 <div class="summary-section">
-                <div class="summary-coupon">
-                    <button>{{ __('messagess.add_invoice_coupon') }}</button>
-                    <input type="text" placeholder="{{ __('messagess.enter_invoice_coupon') }}">
+        <div class="container py-5" style="min-height: 60vh;">
+            @if($cartItems->count())
+                <div class="main-container">
+                <div class="cart-title">{{ __('messagess.cart') }}</div>
+                    @foreach($cartItems as $item)
+                        @foreach($item->services as $service)
+                            <div class="service-card">
+                                <div class="service-details">
+                                    <div class="service-name">{{ $service->service_name ?? '-' }}</div>
+                                    <div class="service-info">{{ __('messagess.employee') }}: {{ $service->employee->full_name ?? '-' }}</div>
+                                    <div class="service-info">{{ __('messagess.branch') }}: {{ $item->branch->name ?? '-' }}</div>
+                                    <div class="service-date">{{ __('messagess.date') }}:{{ \Carbon\Carbon::parse($item->start_date_time)->format('Y-m-d') }} - {{ \Carbon\Carbon::parse($item->start_date_time)->format('H:i') }}</div>
+                                    <div class="service-price">
+                                        @if($service->discount_amount && $service->discount_amount > 0)
+                                            <div>
+                                                <span class="original-price text-muted" style="text-decoration: line-through;">
+                                                    {{ $service->service_price }} SR
+                                                </span>
+                                                <span class="discounted-price text-success fw-bold">
+                                                    {{ $service->service_price - $service->discount_amount }} SR
+                                                </span>
+                                            </div>
+                                            <div class="discount-info text-primary small">
+                                                {{ __('messagess.discount') }}: - {{ $service->discount_amount }} SR
+                                            </div>
+                                            @if ($service->coupon_code)
+                                                <div class="coupon-code small text-secondary">
+                                                    {{ __('messagess.coupon') }}: {{ $service->coupon_code }}
+                                                </div>
+                                            @endif
+                                        @else
+                                            <span class="original-price fw-bold">{{ $service->service_price }} SR</span>
+                                        @endif
+                                    </div>
+                                </div>
+                                @if ($service->coupon_code)
+                                    <div class="service-coupon">
+                                        <button class="disabled" disabled>{{ __('messagess.apply_coupon') }}</button>
+                                        <input type="text" value="{{ $service->coupon_code }}" placeholder="{{ __('messagess.enter_coupon') }}"data-service-id="{{ $service->service_id }}"data-booking-id="{{ $item->id }}"disabled>
+                                    </div>
+                                @else
+                                    <div class="service-coupon">
+                                        <button onclick="checkCoupon(this)">{{ __('messagess.apply_coupon') }}</button>
+                                        <input type="text" placeholder="{{ __('messagess.enter_coupon') }}"data-service-id="{{ $service->service_id }}"data-booking-id="{{ $item->id }}">
+                                    </div>
+                                @endif
+                                <form action="{{ route('cart.destroy', $item->id) }}" method="post">
+                                @csrf
+                                @method('DELETE')
+                                    <button class="service-delete" title="{{ __('messagess.delete_service') }}">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        @endforeach
+                    @endforeach
+                <div class="summary-section">
+                    <div class="summary-coupon">
+                        <button onclick="checkInvoiceCoupon(this)">{{ __('messagess.add_invoice_coupon') }}</button>
+                        <input type="text" id="invoiceCouponInput" placeholder="{{ __('messagess.enter_invoice_coupon') }}">
+                    </div>
                 </div>
+                    <div style="display: flex;gap: 14px;align-items: center;">
+                        {{ __('messages.apply_loyalty_points') }}
+                        <label class="switch">
+                          <input type="checkbox" id="toggleBtn">
+                          <span class="slider"></span>
+                          <span class="label-yes">{{ __('messages.yes') }}   </span>
+                          <span class="label-no">{{ __('messages.no') }}</span>
+                        </label>
+                    </div>
+                <form action="{{route('cart.payment')}}" method="post">
+                @csrf
+                <input type="hidden" name="discount_amount" id="discount_amount" value="{{ $discountTotal }}">
+                <input type="hidden" name="loyalty_discount" id="loyalty_discount" value="0">
+                <input type="hidden" name="final_total" id="final_total" value="{{ $finalPrice }}"> <!-- Done -->
+                
+                <div class="summary-info">
+                    <span class="summary-label">{{ __('messagess.total') }} :</span>
+                    <span class="summary-value">SR <span id="tl">{{$finalPrice}}</span></span>
+                </div>
+                <div class="wallet-label">
+                    {{ __('messagess.wallet_balance') }} : <span class="wallet-value">SR {{$balance}}</span>
+                </div>
+                <div class="pay-options">
+                    <label class="pay-label">
+                        <input type="radio" class="pay-radio" name="pay" value="card" checked>{{ __('messagess.pay_by_card') }}
+                    </label>
+                
+                    <label class="pay-label">
+                        <input type="radio" class="pay-radio" name="pay" value="wallet">{{ __('messagess.pay_by_wallet') }}
+                    </label>
+                </div>
+                <button class="pay-btn">{{ __('messagess.continue_to_pay') }} <i class="fas fa-credit-card"></i> </button>
             </div>
-            <div class="summary-info">
-                <span class="summary-label">{{ __('messagess.total') }} :</span>
-                <span class="summary-value">SR <span id="tl">{{$totalPrice}}</span></span>
-            </div>
-            <div class="wallet-label">
-                {{ __('messagess.wallet_balance') }} : <span class="wallet-value">SR 0.00</span>
-            </div>
-            <div class="pay-options">
-                <label class="pay-label"><input type="radio" class="pay-radio" name="pay" checked>{{ __('messagess.pay_by_card') }}</label>
-                <label class="pay-label"><input type="radio" class="pay-radio" name="pay">{{ __('messagess.pay_by_wallet') }}</label>
-            </div>
-            <button onclick="proceedToPayment()" class="pay-btn">{{ __('messagess.continue_to_pay') }} <i class="fas fa-credit-card"></i> </button>
+            @else
+                    <div id="emptyCart" class="cart-empty">
+                        <i class="fas fa-shopping-cart fa-3x mb-3"></i>
+                        <p>{{ __('messagess.cart_empty_message') }}</p>
+                        <a href="{{ route('frontend.services') }}" class="btn btn-primary mt-3">
+                            <i class="fas fa-arrow-right"></i> {{ __('messagess.browse_services') }}
+                        </a>
+                    </div>
+            @endif
         </div>
-        @else
-            <!-- لو لم يكن هناك بيانات -->
-                <div id="emptyCart" class="cart-empty">
-                    <i class="fas fa-shopping-cart fa-3x mb-3"></i>
-                    <p>{{ __('messagess.cart_empty_message') }}</p>
-                    <a href="{{ route('frontend.services') }}" class="btn btn-primary mt-3">
-                        <i class="fas fa-arrow-right"></i> {{ __('messagess.browse_services') }}
-                    </a>
-                </div>
-        @endif
-    </div>
-
+    </form>
     <!-- Footer -->
     @include('components.frontend.footer')
-<!-- Modal & دفع -->
-<script>
-    function showModal(id) {
-        document.getElementById(`modal-${id}`).style.display = 'block';
-    }
-
-    function proceedToPayment() {
-        let total = document.getElementById('tl').textContent.trim();
-        window.location.href = '/pay-now?am=' + total;
-    }
-
-        function calculateTotal() {
-        let total = 0;
-        document.querySelectorAll('[data-price]').forEach(card => {
-            const price = parseFloat(card.dataset.price);
-            if (!isNaN(price)) total += price;
-        });
-        document.getElementById('total').innerText = `${total.toFixed(2)}`;
-    }
-
-    // شغّل الحساب أول ما الصفحة تجهز
-    document.addEventListener('DOMContentLoaded', calculateTotal);
-</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script>
+        @if (session('success'))
+            toastr.success("{{ session('success') }}");
+        @endif
+        
+        @if (session('error'))
+            toastr.error("{{ session('error') }}");
+        @endif
+    </script>
+    
+    
+<script>
+    function checkCoupon(button) {
+        const input = button.nextElementSibling;
+        const couponCode = input.value.trim();
+        const serviceId = input.dataset.serviceId;
+        const bookingId = input.dataset.bookingId;
+        
+        if (!couponCode) {
+            toastr.error("{{ __('messagess.enter_coupon_code') }}");
+            return;
+        }
+        
+        const url = `/validate-coupon?coupon_code=${encodeURIComponent(couponCode)}&service_id=${serviceId}&booking_id=${bookingId}`;
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                if (data.valid) {  toastr.success("{{ __('messagess.coupon_applied') }}: " + " " + couponCode);  } else {  toastr.error("{{ __('messagess.invalid_coupon_for_service') }}");  }
+            })
+            .catch(() => { toastr.error("{{ __('messagess.error_occurred') }}");  });
+    }
+
+    function checkInvoiceCoupon(button) {
+        const input = document.getElementById('invoiceCouponInput');
+        const couponCode = input.value.trim();
+        
+        if (!couponCode) {
+            toastr.error("{{ __('messagess.enter_coupon_code') }}");
+            return;
+        }
+        
+        const url = `/validate-invoice-coupon?coupon_code=${encodeURIComponent(couponCode)}`;
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                if (data.valid) {
+                    toastr.success("{{ __('messagess.coupon_applied') }}: " + couponCode);
+                    const discountInput = document.getElementById('discount_amount');
+                    let currentDiscount = parseFloat(discountInput.value) || 0;
+                    let newDiscount = parseFloat(data.discount_amount) || 0;
+                    
+                    discountInput.value = (currentDiscount + newDiscount).toFixed(2);    
+                    const totalEl = document.getElementById('tl');
+                    let total = parseFloat(totalEl.innerText);
+                    let discount = parseFloat(data.discount_amount);
+                    let newTotal = total - discount;
+                    if (newTotal < 0) newTotal = 0;
+                    totalEl.innerText = newTotal.toFixed(2);
+                    document.getElementById('final_total').value = newTotal.toFixed(2);
+        
+                    input.disabled = true;
+                    button.disabled = true;
+                    button.classList.add('disabled');
+                    const summary = document.querySelector('.summary-section');
+                    const discountInfo = document.createElement('div');
+                    discountInfo.className = 'invoice-discount mt-2 text-success fw-bold';
+                    discountInfo.innerText = `- ${discount} SR {{ __('messagess.discount') }}`;
+                    summary.appendChild(discountInfo);
+                } else {
+                    toastr.error("{{ __('messagess.invalid_coupon') }}");
+                }
+            })
+            .catch(() => { toastr.error("{{ __('messagess.error_occurred') }}"); });
+    }
+
+    let originalTotal = parseFloat(document.getElementById('tl').innerText);
+
+    document.getElementById('toggleBtn').addEventListener('change', function() {
+        const isChecked = this.checked; // T & F
+        const totalEl = document.getElementById('tl'); 
+        const hiddenTotalInput = document.getElementById('final_total');
+        if (isChecked) {
+            fetch(`{{ route('loyalty.check') }}`)
+            .then(response => response.json())
+            .then(data => {
+                let loyaltyAmount = parseFloat(data.points);
+                
+                if (loyaltyAmount <= 0) {
+                    toastr.error("{{ __('messages.insufficient_loyalty_balance') }}"); // الرصيد غير كافي
+                    document.getElementById('toggleBtn').checked = false;
+                    return;
+                }
+            // 🟢 خد أقل من (loyaltyAmount , originalTotal)
+            let appliedLoyalty = Math.min(loyaltyAmount, originalTotal); // 500 , 1000 => 500
+
+            document.getElementById('loyalty_discount').value = appliedLoyalty.toFixed(2);
+
+            let newTotal = originalTotal - appliedLoyalty;
+            if (newTotal < 0) newTotal = 0;
+
+            document.getElementById('tl').innerText = newTotal.toFixed(2);
+            document.getElementById('final_total').value = newTotal.toFixed(2);
+
+            toastr.success("{{ __('messages.loyalty_points_applied') }}: -" + appliedLoyalty + " SR");
+        })
+        .catch(() => {
+            toastr.error("{{ __('messagess.error_occurred') }}");
+        });
+}
+ else {
+            totalEl.innerText = originalTotal.toFixed(2);
+            hiddenTotalInput.value = originalTotal.toFixed(2);
+            document.getElementById('loyalty_discount').value = '0';
+            toastr.info("{{ __('messages.loyalty_points_removed') }}");
+        }
+    });
+</script>
+
 </body>
 </html>

@@ -32,6 +32,14 @@
                   $menu = $menu->handle('menu', 'vertical', 'ARRAY_MENU');
               @endphp
                 @include(config('laravel-menu.views.bootstrap-items'), ['items' => $menu->roots()])
+                                
+                <!-- عنصر ثابت مخصص -->
+                <li class="nav-item {{ request()->routeIs('app.invoice') ? 'active' : '' }}">
+                    <a href="{{ route('app.invoice') }}" class="nav-link {{ request()->routeIs('app.invoice') ? 'active' : '' }}">
+                        <i class="fa fa-file-invoice"></i>
+                        <span class="item-name">{{ __('messagess.invoice') }}</span>
+                    </a>
+                </li>
                 <!-- عنصر ثابت مخصص -->
                 <li class="nav-item {{ request()->routeIs('app.gift') ? 'active' : '' }}">
                     <a href="{{ route('app.gift') }}" class="nav-link {{ request()->routeIs('app.gift') ? 'active' : '' }}">
@@ -39,6 +47,7 @@
                         <span class="item-name">{{ __('messagess.gifts') }}</span>
                     </a>
                 </li>
+                
             </ul>
         </div>
     </div>

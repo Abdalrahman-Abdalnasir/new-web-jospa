@@ -42,29 +42,35 @@ class BranchController extends Controller
         ], 200);
     }
 
-    public function branchDetails(Request $request)
-    {
-        $branchId = $request->branch_id;
-        $branch = Branch::with('businessHours', 'media', 'gallerys')->find($branchId);
+  public function branchDetails(Request $request)
+{
+    $branchId = $request->branch_id;
+    $branch = Branch::with('businessHours', 'media', 'gallerys')->find($branchId);
 
-        $employeeIds = BranchEmployee::where('branch_id', $branchId)
-            ->distinct()
-            ->pluck('employee_id');
-
-        $averageRating = EmployeeRating::whereIn('employee_id', $employeeIds)->avg('rating');
-
-        $branch['average_rating'] = $averageRating;
-
-        $branch['total_review'] = EmployeeRating::whereIn('employee_id', $employeeIds)->count();
-
-        if ($branch) {
-            $branchDetails = new BranchDetailResource($branch);
-
-            return response()->json(['status' => true, 'data' => $branchDetails, 'message' => __('branch.branch_details')]);
-        } else {
-            return response()->json(['status' => false, 'message' => __('branch.branch_notfound')]);
-        }
+    if (!$branch) {
+        return response()->json(['status' => false, 'message' => __('branch.branch_notfound')]);
     }
+
+    $employeeIds = BranchEmployee::where('branch_id', $branchId)
+        ->distinct()
+        ->pluck('employee_id');
+
+    $averageRating = EmployeeRating::whereIn('employee_id', $employeeIds)->avg('rating');
+    $totalReview = EmployeeRating::whereIn('employee_id', $employeeIds)->count();
+
+    // Add dynamic attributes (won't affect internal structure)
+    $branch->average_rating = $averageRating;
+    $branch->total_review = $totalReview;
+
+    $branchDetails = new BranchDetailResource($branch);
+
+    return response()->json([
+        'status' => true,
+        'data' => $branchDetails,
+        'message' => __('branch.branch_details')
+    ]);
+}
+
 
     public function branchService(Request $request)
     {

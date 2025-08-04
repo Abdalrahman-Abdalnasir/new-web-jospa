@@ -34,47 +34,42 @@ class AuthController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function login(LoginRequest $request)
-    {
-        $user = User::withTrashed()->where('email', $request->input('email'))->first();
-        if ($user == null) {
-            return response()->json(['status' => false, 'message' => __('messages.register_before_login')]);
-        }
-        if (Auth::attempt(['email' => request('email'), 'password' => request('password')])) {
-            $user = Auth::user();
+public function login(LoginRequest $request)
+{
+    $user = User::withTrashed()->where('email', $request->input('email'))->first();
 
-            if ($user->is_banned == 1 || $user->status == 0) {
-                return response()->json(['status' => false, 'message' => __('messages.login_error')]);
-            }
-
-            // Save the user
-            $user->save();
-
-            if (! $user->hasRole('user')) {
-                return $this->sendError(__('messages.role_not_matched'), ['error' => __('messages.unauthorised')], 200);
-            }
-            $user['api_token'] = $user->createToken(setting('app_name'))->plainTextToken;
-
-            $loginResource = new LoginResource($user);
-            $message = __('messages.user_login');
-
-            return $this->sendResponse($loginResource, $message);
-        }
-        // $user = User::withTrashed()->where('id', (int)$request->input('user_id'))->first();
-        $is_user_authorized = false;
-
-        if (!empty($user)) {
-            if ($user->status === 0) {
-                $is_user_authorized = false;
-            } elseif ($user->status === 1) {
-                $is_user_authorized = !$user->trashed();
-            }
-        }
-        else {
-            return $this->sendError(__('messages.not_matched'), ['error' => __('messages.unauthorised')], 200);
-        }
-
+    if ($user == null) {
+        return response()->json([
+            'status' => false,
+            'message' => __('messages.register_before_login')
+        ]);
     }
+
+    if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
+        $user = Auth::user();
+
+        if ($user->is_banned == 1 || $user->status == 0) {
+            return response()->json([
+                'status' => false,
+                'message' => __('messages.login_error')
+            ]);
+        }
+
+        // تم حذف التحقق من الدور هنا
+
+        $user['api_token'] = $user->createToken(setting('app_name'))->plainTextToken;
+
+        $loginResource = new LoginResource($user);
+        $message = __('messages.user_login');
+
+        return $this->sendResponse($loginResource, $message);
+    }
+
+    return $this->sendError(__('messages.not_matched'), [
+        'error' => __('messages.unauthorised')
+    ], 200);
+}
+
 
     public function socialLogin(Request $request)
     {
@@ -319,4 +314,37 @@ class AuthController extends Controller
             'message' => $message,
         ], 200);
     }
+    
+public function signup(Request $request)
+{
+    $validated = $request->validate([
+        'first_name' => 'required|string|max:255',
+        'last_name' => 'required|string|max:255',
+        'mobile' => 'required|string|max:20|unique:users,mobile',
+        'email' => 'required|email|unique:users,email',
+        'password' => 'required|string|min:6|confirmed',
+    ]);
+
+    $user = User::create([
+        'first_name' => $validated['first_name'],
+        'last_name' => $validated['last_name'],
+        'mobile' => $validated['mobile'],
+        'email' => $validated['email'],
+        'password' => Hash::make($validated['password']),
+    ]);
+
+    // تأكد من تعيين الدور بشكل صحيح
+    $user->assignRole('user');
+
+    // إعادة بيانات المستخدم مع التأكد من وجود الدور
+    $user->load('roles');
+
+    return response()->json([
+        'status' => true,
+        'message' => 'User registered successfully',
+        'data' => $user,
+    ]);
+}
+
+
 }
